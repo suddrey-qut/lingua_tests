@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+import rospy
+import actionlib
+import time
+from lingua_tests.msg import CountAction, CountFeedback, CountResult
+
+def callback(goal):
+  server.publish_feedback(CountFeedback(counted=0))
+  for n in range(goal.time):
+    time.sleep(1)
+    server.publish_feedback(CountFeedback(counted=n+1))
+
+  server.set_succeeded(result=CountResult(goal.time))
+
+if __name__ == '__main__':
+  rospy.init_node("counter")
+  server = actionlib.SimpleActionServer('count', CountAction, execute_cb=callback, auto_start=False)
+  server.start()
+  print('Ready')
+  rospy.spin()

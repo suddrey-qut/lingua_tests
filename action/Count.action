@@ -1,0 +1,5 @@
+uint32 time
+----
+uint32 total
+----
+uint32 counted
