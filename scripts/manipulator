@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+import rospy
+import actionlib
+import time
+from rv_msgs.msg import ActuateGripperAction, ActuateGripperResult, ActuateGripperFeedback
+from rv_msgs.msg import MoveToPoseAction, MoveToPoseResult
+
+def callback1(goal):
+  for n in range(1):
+    print('Open gripper:',n)
+    rospy.sleep(1)
+    server1.publish_feedback(ActuateGripperFeedback(feedback=1))
+  server1.set_succeeded(ActuateGripperResult(result=1))
+
+def callback2(goal):
+  print(goal)
+  for n in range(5):
+    print('Move to pose:',n)
+    rospy.sleep(1)
+  server2.set_succeeded(MoveToPoseResult(result=1))
+
+if __name__ == '__main__':
+  rospy.init_node("manipulator")
+  server1 = actionlib.SimpleActionServer('/arm/gripper', ActuateGripperAction, execute_cb=callback1, auto_start=False)
+  server2 = actionlib.SimpleActionServer('/arm/cartesian/pose', MoveToPoseAction, execute_cb=callback2, auto_start=False)
+  server1.start()
+  server2.start()
+  print('Ready')
+  rospy.spin()
