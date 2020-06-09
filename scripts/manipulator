@@ -15,7 +15,7 @@ def callback1(goal):
 
 def callback2(goal):
   print(goal)
-  for n in range(5):
+  for n in range(3):
     print('Move to pose:',n)
     rospy.sleep(1)
   server2.set_succeeded(MoveToPoseResult(result=1))
