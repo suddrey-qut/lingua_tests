@@ -1,0 +1,185 @@
+import xml.etree.ElementTree as ET
+
+def search(tree, s):
+	root = tree.getroot()
+	for obj in root.findall('object'):
+		if obj.find('name').text.lower() == s.lower():
+			return True
+	return False
+
+def addIfNotExist(root,node):
+	sname = node.find('name').text.lower()
+	for obj in root.findall('object'):
+		if obj.find('name').text.lower() == sname.lower():
+			return
+	print 'Added '+sname
+	root.append(node)
+
+def show():
+	f = open('./data_Jan-12-2015.xml', 'r')
+	s = f.read()
+	counter = 0
+	index=0
+	while not s.find('keepMug1 inside microwave') == -1:
+		t = s.find('keepMug1 inside microwave')
+		print s[t:t:10]+'\n'
+		s = s[t+10:]
+	f.close()
+
+def replace():
+	tree = ET.parse('./data_Feb-18-2015.xml')
+	root = tree.getroot()
+	count=0
+	for obj in root.findall('point'):
+		for inst in obj.findall('instruction'):
+			if not inst == None and not inst.text == None:
+				inst.text = inst.text.replace('keep cd_2 shelf_1 on','keep Cd_2 On Shelf_1')
+				inst.text = inst.text.replace('keep xboxController_1 shelf_1 on','keep XboxController_1 On Shelf_1')
+				inst.text = inst.text.replace('keep xbox_1 shelf_1 on','keep Xbox_1 On Shelf_1')
+				inst.text = inst.text.replace('keep book_2 shelf_1 on','keep Book_2 On Shelf_1')
+				inst.text = inst.text.replace("walk","moveto")
+				inst.text = inst.text.replace('keep coke_1 snackTable_1 on','keep Coke_1 On SnackTable_1')
+				inst.text = inst.text.replace('keep cd_1 snackTable_1 on','keep Cd_1 On SnackTable_1')
+				inst.text = inst.text.replace('keep cd_2 snackTable_1 on','keep Cd_2 On SnackTable_1')
+				inst.text = inst.text.replace('keep book_1 snackTable_1 on','keep Book_1 On SnackTable_1')
+				inst.text = inst.text.replace('keep Book_1 SnackTable_1 On','keep Book_1 On SnackTable_1')
+				inst.text = inst.text.replace('Keep Coke1 StoveFire_1','Keep Coke_1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep Coke1 StoveFire_2','Keep Coke_1 On StoveFire_2')
+				inst.text = inst.text.replace('Keep Coke1 StoveFire_3','Keep Coke_1 On StoveFire_3')
+				inst.text = inst.text.replace('Keep Coke1 StoveFire_4','Keep Coke_1 On StoveFire_4')
+				inst.text = inst.text.replace('Keep Ramen1 StoveFire_1','Keep Ramen_1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep Ramen1 StoveFire_2','Keep Ramen_1 On StoveFire_2')
+				inst.text = inst.text.replace('Keep Ramen1 StoveFire_3','Keep Ramen_1 On StoveFire_3')
+				inst.text = inst.text.replace('Keep Ramen1 StoveFire_4','Keep Ramen_1 On StoveFire_4')
+				inst.text = inst.text.replace('Keep BoiledEgg1 StoveFire_1','Keep BoiledEgg_1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep BoiledEgg1 StoveFire_2','Keep BoiledEgg_1 On StoveFire_2')
+				inst.text = inst.text.replace('Keep BoiledEgg1 StoveFire_3','Keep BoiledEgg_1 On StoveFire_3')
+				inst.text = inst.text.replace('Keep BoiledEgg1 StoveFire_4','Keep BoiledEgg_1 On StoveFire_4')
+				inst.text = inst.text.replace('Keep Mug1 StoveFire_1','Keep Mug_1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep Kettle Stove1','Keep Kettle On Stove1')
+				inst.text = inst.text.replace('Keep Kettle Stove2','Keep Kettle On Stove2')
+				inst.text = inst.text.replace('Keep Kettle Stove3','Keep Kettle On Stove3')
+				inst.text = inst.text.replace('Keep Kettle Stove4','Keep Kettle On Stove4')
+				inst.text = inst.text.replace('KeepMug1 inside microwave','Keep Mug1 Inside Microwave')
+				inst.text = inst.text.replace('keepMug1 inside microwave','Keep Mug1 Inside Microwave')
+				inst.text = inst.text.replace('Keep Mug1 StoveFire_1','Keep Mug1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep Mug1 StoveFire_2','Keep Mug1 On StoveFire_2')
+				inst.text = inst.text.replace('Keep Mug1 StoveFire_3','Keep Mug1 On StoveFire_3')
+				inst.text = inst.text.replace('Keep Mug1 StoveFire_4','Keep Mug1 On StoveFire_4')
+				inst.text = inst.text.replace('Keep Bowl1 StoveFire_1','Keep Bowl1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep Bowl1 StoveFire_2','Keep Bowl1 On StoveFire_2')
+				inst.text = inst.text.replace('Keep Bowl1 StoveFire_3','Keep Bowl1 On StoveFire_3')
+				inst.text = inst.text.replace('Keep Bowl1 StoveFire_4','Keep Bowl1 On StoveFire_4')
+				inst.text = inst.text.replace('keep garbageBag_1 coffeeTable_1 on','Keep GarbageBag_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep GarbageBag_1 CoffeeTable_1 On','keep GarbageBag_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep tv_1Remote_1 snackTable_1 on','Keep Tv_1Remote_1 On SnackTable_1')
+				inst.text = inst.text.replace('keep xboxController_1 snackTable_1 on','Keep XboxController_1 On SnackTable_1')
+				inst.text = inst.text.replace('keep garbageBag_1 snackTable_1 on','Keep GarbageBag_1 On SnackTable_1')
+				inst.text = inst.text.replace('Keep IceCream1 StoveFire_1','Keep IceCream1 On StoveFire_1')
+				inst.text = inst.text.replace('Keep IceCream1 StoveFire_2','Keep IceCream1 On StoveFire_2')
+				inst.text = inst.text.replace('Keep IceCream1 StoveFire_3','Keep IceCream1 On StoveFire_3')
+				inst.text = inst.text.replace('Keep IceCream1 StoveFire_4','Keep IceCream1 On StoveFire_4')
+				inst.text = inst.text.replace('keepInstantRamen1 inside microwave','Keep InstantRamen1 Inside Microwave')
+				inst.text = inst.text.replace('KeepInstantRamen1 inside microwave','Keep InstantRamen1 Inside Microwave')
+				inst.text = inst.text.replace('KeepKettle inside microwave','Keep Kettle Inside Microwave')
+				inst.text = inst.text.replace('KeepBowl1 inside microwave','Keep Bowl1 Inside Microwave')
+				inst.text = inst.text.replace('KeepPlate1 inside microwave','Keep Plate1 Inside Microwave')
+				inst.text = inst.text.replace('KeepLongCup1 inside microwave','Keep LongCup1 Inside Microwave')
+				inst.text = inst.text.replace('KeepLongCup2 inside microwave','Keep LongCup2 Inside Microwave')
+				inst.text = inst.text.replace('Keep LongCup1 stove1','Keep LongCup1 On Stove1')
+				inst.text = inst.text.replace('Keep LongCup1 stove2','Keep LongCup1 On Stove2')
+				inst.text = inst.text.replace('Keep LongCup1 stove3','Keep LongCup1 On Stove3')
+				inst.text = inst.text.replace('Keep LongCup1 stove4','Keep LongCup1 On Stove4')
+				inst.text = inst.text.replace('keep book_1 coffeeTable_1 on','keep Book_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep book_2 coffeeTable_1 on','keep Book_2 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep beer_1 coffeeTable_1 on','keep Beer_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep bagOfChips_1 coffeeTable_1 on','keep BagOfChips_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep pillow_1 loveseat_1 on','keep Pillow_1 On Loveseat_1')
+				inst.text = inst.text.replace('keep pillow_2 loveseat_1 on','keep Pillow_2 On Loveseat_1')
+				inst.text = inst.text.replace('keep pillow_3 loveseat_1 on','keep Pillow_3 On Loveseat_1')
+				inst.text = inst.text.replace('keep coke_1 shelf_1 on','keep Coke_1 On Shelf_1')
+				inst.text = inst.text.replace('keep bagOfChips_1 shelf_1 on','keep BagOfChips_1 On Shelf_1')
+				inst.text = inst.text.replace('keep pillow_1 loveseat_1 on','keep Pillow_1 On Loveseat_1')
+				inst.text = inst.text.replace('keep pillow_2 loveseat_1 on','keep Pillow_2 On Loveseat_1')
+				inst.text = inst.text.replace('keep pillow_3 loveseat_1 on','keep Pillow_3 On Loveseat_1')
+				inst.text = inst.text.replace('press microwave button','press MicrowaveButton')
+				inst.text = inst.text.replace('keep pillow_1 armchair_1 on','keep Pillow_1 On Armchair_1')
+				inst.text = inst.text.replace('keep pillow_2 armchair_1 on','keep Pillow_2 On Armchair_1')
+				inst.text = inst.text.replace('keep pillow_3 armchair_1 on','keep Pillow_3 On Armchair_1')
+				inst.text = inst.text.replace('keep pillow_1 armchair_2 on','keep Pillow_1 On Armchair_2')
+				inst.text = inst.text.replace('keep pillow_2 armchair_2 on','keep Pillow_2 On Armchair_2')
+				inst.text = inst.text.replace('keep pillow_3 armchair_2 on','keep Pillow_3 On Armchair_2')
+				inst.text = inst.text.replace('keep beer_1 snackTable_1 on','keep Beer_1 On SnackTable_1')
+				inst.text = inst.text.replace('keep xboxController_1 coffeeTable_1 on','keep XboxController_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep coke_1 coffeeTable_1 on','keep Coke_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep bowl_1 coffeeTable_1 on','keep Bowl_1 On CoffeeTable_1')
+				inst.text = inst.text.replace('keep garbageBag_1 shelf_1 on','keep GarbageBag_1 On Shelf_1')
+				inst.text = inst.text.replace('keep tv_1Remote_1 coffeeTable_1 on','keep Tv_1Remote_1 On CoffeeTable_1')
+				a = ["keep xbox_1 snackTable_1 on","keep bowl_1 shelf_1 on","keep coke_1 garbageBin_1 on","keep beer_1 garbageBin_1 on","keep garbageBag_1 garbageBin_1 on","keep bagOfChips_1 garbageBin_1 on","keep book_1 shelf_1 on","keep xbox_1 coffeeTable_1 on","keep pillow_1 coffeeTable_1 on","keep cd_1 coffeeTable_1 on","keep book_3 snackTable_1 on","keep beer_1 shelf_1 on","keep bagOfChips_1 snackTable_1 on","keep bowl_1 snackTable_1 on","keep xbox_1 armchair_2 on","keep pillow_3 coffeeTable_1 on","keep cd_2 coffeeTable_1 on","keep bowl_1 garbageBin_1 on","keep book_2 snackTable_1 on","keep tv_1Remote_1 armchair_2 on","keep bowl_1 armchair_1 on","keep bagOfChips_1 armchair_1 on","keep book_3 coffeeTable_1 on","keep bagOfChips_1 garbageBag_1 inside","Keep LongCup1 Stove1","Keep LongCup2 Stove1","Keep Glass1 Stove1","Keep Plate1 Stove1","Keep InstantRamen1 Stove1","Keep InstantRamen1 Stove2","Keep InstantRamen1 Stove3","Keep InstantRamen1 Stove4","Keep Plate1 Stove1","Keep Plate1 Stove2","Keep Plate1 Stove3","Keep Plate1 Stove4","Keep Plate2 Stove1","Keep Plate2 Stove2","Keep Plate2 Stove3","Keep Plate2 Stove4","Stop pouring bagOfChips_1","Keep Spoon1 Stove1","Keep Spoon1 Stove2","Keep Spoon1 Stove3","Keep Spoon1 Stove4","turn sink knob","turn stove knob 1","turn stove knob 2","turn stove knob 3","turn stove knob 4","open fridge left door","open fridge right door","close fridge left door","close fridge right door","keep BagOfChips_1 On  SnackTable_1","keep BagOfChips_1 On  Armchair_1","Keep InstantRamen1 On Stove1","Keep InstantRamen1 On Stove2","Keep InstantRamen1 On Stove3","Keep InstantRamen1 On Stove4","Stove1","Stove2","Stove3","Stove4","Insert cd_1","Insert cd_2"]
+				b = ["keep Xbox_1 On SnackTable_1","keep Bowl_1 On Shelf_1","keep Coke_1 On GarbageBin_1","keep Beer_1 On GarbageBin_1","keep GarbageBag_1 On GarbageBin_1","keep BagOfChips_1 On GarbageBin_1","keep Book_1 On Shelf_1","keep Xbox_1 On CoffeeTable_1","keep Pillow_1 On CoffeeTable_1","keep Cd_1 On CoffeeTable_1","keep Book_3 On SnackTable_1","keep Beer_1 On Shelf_1","keep BagOfChips_1 On  SnackTable_1","keep Bowl_1 On SnackTable_1","keep Xbox_1 On Armchair_2","keep Pillow_3 On CoffeeTable_1","keep Cd_2 On CoffeeTable_1","keep Bowl_1 On GarbageBin_1","keep Book_2 On SnackTable_1","keep Tv_1Remote_1 On Armchair_2","keep Bowl_1 On Armchair_1","keep BagOfChips_1 On  Armchair_1","keep Book_3 On CoffeeTable_1","keep BagOfChips_1 Inside GarbageBag_1","Keep LongCup1 On Stove1","Keep LongCup2 On Stove1","Keep Glass1 On Stove1","Keep Plate1 On Stove1","Keep InstantRamen1 On Stove1","Keep InstantRamen1 On Stove2","Keep InstantRamen1 On Stove3","Keep InstantRamen1 On Stove4","Keep Plate1 On Stove1","Keep Plate1 On Stove2","Keep Plate1 On Stove3","Keep Plate1 On Stove4","Keep Plate2 On Stove1","Keep Plate2 On Stove2","Keep Plate2 On Stove3","Keep Plate2 On Stove4","Pour bagOfChips_1","Keep Spoon1 On Stove1","Keep Spoon1 On Stove2","Keep Spoon1 On Stove3","Keep Spoon1 On Stove4","turn SinkKnob","turn StoveKnob_1","turn StoveKnob_2","turn StoveKnob_3","turn StoveKnob_4","open FridgeLeftDoor","open FridgeRightDoor","close FridgeLeftDoor","close FridgeRightDoor","keep BagOfChips_1 On SnackTable_1","keep BagOfChips_1 On Armchair_1","Keep InstantRamen1 On StoveFire_1","Keep InstantRamen1 On StoveFire_2","Keep InstantRamen1 On StoveFire_3","Keep InstantRamen1 On StoveFire_4","StoveFire_1","StoveFire_2","StoveFire_3","StoveFire_4","Insert Cd_1 Xbox_1","Insert Cd_2 Xbox_1"]
+				i=0
+				if not len(a)==len(b):
+					print 'Error: Length of replacing array is not same'
+					return
+				while i<len(a):
+					inst.text = inst.text.replace(a[i],b[i])
+					i=i+1
+		print 'point = '+str(count)
+		count=count+1
+	tree.write('data_Feb-18-2015.xml')
+
+replace()
+
+def addObjects():
+	ar = ["kitchen", "livingRoom"]
+	for i in range(0,2):
+		for j in range(1,11):
+			tree = ET.parse('./Environment/'+ar[i]+"/"+ar[i]+str(j)+".xml")
+			root = tree.getroot()
+			#remove objects
+			for obj in root.findall('object'):
+				if obj.find('name').text.lower() == "camera_1":
+					camera.append(obj)
+			for k in camera:
+				root.remove(k)		
+
+			#add objects
+			if search(tree,"Stove"):
+				addIfNotExist(root,ET.fromstring("<object><name>StoveKnob_1</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveKnob_2</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveKnob_3</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveKnob_4</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveFire_1</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveFire_2</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveFire_3</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>StoveFire_4</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+
+			if search(tree,"Fridge"):
+				addIfNotExist(root,ET.fromstring("<object><name>FridgeButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>FridgeLeftDoor</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>FridgeRightDoor</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+
+			if search(tree,"Microwave"):
+				addIfNotExist(root,ET.fromstring("<object><name>MicrowaveButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+
+			if search(tree,"Sink"):
+				addIfNotExist(root,ET.fromstring("<object><name>SinkKnob</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+
+			if search(tree,"tv_1"):
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1PowerButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1ChannelUpButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1ChannelDownButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1VolumeUpButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1VolumeDownButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+
+			if search(tree,"tv_1Remote_1"):
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1Remote_1PowerButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1Remote_1ChannelUpButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1Remote_1ChannelDownButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1Remote_1VolumeUpButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1Remote_1VolumeDownButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+				addIfNotExist(root,ET.fromstring("<object><name>Tv_1Remote_1MuteButton</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+
+			if search(tree,"IceCream_1"):
+				addIfNotExist(root,ET.fromstring("<object><name>IceCreamScoop</name><position>-200,-200,-200</position><rotation>-200,-200,-200</rotation></object>\n"))
+			tree.write('./Environment/'+ar[i]+"/"+ar[i]+str(j)+".xml")

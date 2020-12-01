@@ -1,0 +1,76 @@
+; PDDL rules which define the domain knowledge of the environment.
+; PDDL rules so far use predicates, for and if conditions. Plan to add
+; continuous variables and time is being considered. 
+; The PDDL rules are based on the notion of environment as list of objects
+; and relationship between them. Each objects has a set of states which have
+; different values. Different objects can have different states however in this
+; version we are dealing only with binary stateValues. At the moment
+; there could be a finite set of pre-defined relationship between objects ex:
+; object on top of other object or inside etc. Also each object has statically
+; defined affordances like cup is graspable and pourable but stove is not.
+; ==========================================================================
+; Predicate List -
+;    state object-name state-name                       = True if object-name has state-name with value 1 and F if 0                  
+;                                                         this is allowed since we only handle binary state values                     
+;    affordance-type object-name                        = True if object-name has the given affordance-type
+;    relationship-type object-name object-name          = True if the given relationship between the two given object names
+;        
+;
+; Action List
+;    Predefined set of primitive actions
+; ==========================================================================
+; Authors: Dipendra Misra (dkm@cs.cornell.edu)
+; Notes  : Rules for naming actions. Base action names are in camelsCap and 
+;          in order to add parameter specific functionality. I have added the 
+;          notation that parameter name be attached to the base action name as 
+;          baseaction_specificparameter. At this point its only for one specific
+;          parameter but in future more could be added. Thus first index of _ 
+;          decides the base action name. Alternatively use startsWith.
+; ==========================================================================
+;
+
+(define (domain simulator)
+(:predicates  (state ?x ?y)
+              (IsGraspable ?x)
+	      (IsSqueezeable ?x)
+	      (IsGrasping ?x ?y)
+	      (Near ?x ?y)
+	      (Inside ?x ?y)
+	      (On ?x ?y)
+	      (Above ?x ?y)
+)
+
+
+; Grasping Functionality
+; Description: Grasp something if not already grasping, its near and not inside another object.
+;              In which case you grasp it and nullify the relationship with other objects.
+
+(:action grasp :parameters (?o)
+:precondition (and (IsGraspable ?o) (Near Robot ?o) (not (IsGrasping Robot ?o))
+				   (forall (?otherobj)
+						(not (Inside ?o ?otherobj))
+				   )
+			  )
+:effect (and (IsGrasping Robot ?o)
+			 (forall (?otherobj)
+                (when (not (= ?o ?otherobj))
+                      (and (not (Inside ?o ?otherobj)) (not (On ?o ?otherobj)) (not (Near ?o ?otherobj))
+			   (not (Inside ?otherobj ?o)) (not (On ?otherobj ?o)) (not (Near ?otherobj ?o)))
+			    )
+			 )
+	    )
+)
+
+
+
+
+ ; Release functionality
+ ; Description: Simply ungrasp it. Not handling the new spatial relations that might develop
+ ;              because of the release ex: it might fall on a stove and get heated
+
+(:action release :parameters (?o)
+:precondition (IsGrasping Robot ?o)
+:effect (not (IsGrasping Robot ?o) ))
+
+
+)

@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find openccg_ros)/launch/openccg.launch">
+    <arg name="grammar" value="$(find lingua)/grammar/grammar.xml" />
+  </include>
+</launch>

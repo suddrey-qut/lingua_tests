@@ -1,0 +1,14 @@
+import xml.etree.ElementTree as ET
+
+def init():
+	f = open("./stovefire.txt").readlines()
+	for i in range(1,11):
+		tree = ET.parse("./kitchen/kitchen"+str(i)+".xml")
+		root = tree.getroot()
+		for obj in root.findall('object'):
+				if obj.find('name').text.startswith("StoveFire"):
+					let = int(obj.find('name').text[-1:])
+					obj.find('rotation').text =  "0,0,0,"
+					obj.find('position').text =  f[5*(i-1)+let-1]
+		tree.write("./kitchen/kitchen"+str(i)+".xml")
+init()

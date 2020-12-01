@@ -1,0 +1,64 @@
+import xml.etree.ElementTree as ET
+
+def init():
+	tree = None
+	select_obj = None
+	rootpath = "/home/dipendra/Research/ProjectCompton/VEIL500/Environment/"
+	env_name = ""
+	while(True):
+		user_input = raw_input("Enter Something\n")
+		#user_input consists of C: changing environment, object, property:new-value, Q
+		if user_input == "C":
+			if not tree == None:
+				tree.write(rootpath+env_name)
+			env_name = raw_input("Okay, so what new environment do you want to work on\n")
+			#save the previous environment
+			#load the new environment
+			if env_name.startswith("kitchen"):
+				env_name = "kitchen/"+env_name+".xml"
+			elif env_name.startswith("livingRoom"):
+				env_name = "livingRoom/"+env_name+".xml"
+			else:
+				print "Error"
+				continue
+			tree = ET.parse(rootpath+env_name)
+			continue
+		if user_input == "Q":
+			#save the previous environment
+			if not tree == None:
+				tree.write(rootpath+env_name)
+			print 'Quiting'
+			return
+		words = user_input.split()
+		if len(words) == 1:
+			#load the object
+			root = tree.getroot()
+			found = False
+			for obj in root.findall('object'):
+				if obj.find('name').text == words[0]:
+					select_obj = obj
+					found = True
+					break
+			if not found:
+				print 'Object not found'
+				continue
+		elif len(words) == 2:
+			#change property
+			if obj == None:
+				print 'Object Not Selected'
+				continue
+			found = False
+			if words[0]=="position":
+				select_obj.find('position').text = words[1]
+				continue
+			if words[0]=="rotation":
+				select_obj.find('rotation').text = words[1]
+				continue
+			for states in select_obj.findall('state'):
+				if states.find('statename').text == words[0]:
+					found = True
+					states.find('statevalue').text = words[1]
+					break	
+			if not found:
+				print 'State Does not Exist'
+init()

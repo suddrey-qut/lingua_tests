@@ -1,0 +1,17 @@
+f = open("./parser_data_Jan-12-2015.xml").readlines()
+g = open("./copied_parser_data_Jan-12-2015.xml","w")
+count = 0
+block = False
+for i in range(0,len(f)):
+	if not block:
+		g.write(f[i])
+	if f[i].startswith("<closure>"):
+		print 'Closure Found'
+		count = count + 1
+		if count == 2:
+			block = True
+		if count == 3:
+			block = False
+print 'Total occurence '+str(count)
+	
+

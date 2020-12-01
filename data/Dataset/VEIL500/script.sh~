@@ -1,0 +1,3 @@
+scp ./Objects.xml ./ControllerInstructions.xml robo328b@brane01.cs.cornell.edu:/home/robo328b/dipendra_tellmedave/ProjectCompton/VEIL500/
+scp ./domainKnowledge.pddl robo328b@brane01.cs.cornell.edu:/home/robo328b/dipendra_tellmedave/ProjectCompton/VEIL500/Environment/
+

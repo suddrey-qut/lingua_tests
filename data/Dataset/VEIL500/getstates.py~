@@ -1,0 +1,8 @@
+
+import xml.etree.ElementTree as ET
+tree = ET.parse('Objects.xml')
+root = tree.getroot()
+f= open("./states",'w')
+for neighbor in root.iter('stateName'):
+	f.write("("+neighbor.text+":t o t)\n")
+

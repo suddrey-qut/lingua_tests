@@ -1,0 +1,39 @@
+import xml.etree.ElementTree as ET
+
+def search(root,text,scenario,objective):
+	for point in root.findall('point'):
+		raw_text = point.find('sentence').text
+		raw_text = raw_text[0:raw_text.find("<br/>")]
+		if raw_text == text and point.find('scenario_id').text == scenario and point.find('objective_id').text == objective:
+			return True
+	return False
+
+all_data = ET.parse('languagedata_Jan-14-2015.xml')
+labelled_data = ET.parse('data_Jan-12-2015.xml')
+
+root1 = all_data.getroot()
+root2 = labelled_data.getroot()
+
+'''for each string data in root1 if it does not exist in
+   root2 then add it '''
+
+total = 0
+found = 0
+output = ET.Element("root")
+
+for point in root1.findall('point'):
+	total = total + 1
+	raw_text = point.find('sentence').text
+	scenario = point.find('scenario').text
+	objective = point.find('objective').text
+	if(search(root2,raw_text,scenario,objective)):
+		found = found + 1
+	else:
+		#this data has not been used
+		output.append(point)	
+print 'Labelled Data '+str(found)
+print 'Unlabelled Data'+str(total-found)
+print 'Total '+str(total)
+tree = ET.ElementTree(output)
+tree.write("unlabelled_data_Jan-14-2015.xml")
+
