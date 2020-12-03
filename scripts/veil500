@@ -3,8 +3,11 @@
 import rospy
 import rospkg
 import os
+import nltk
+import re
 from openccg_ros.srv import Parse, ParseRequest
 import xml.etree.ElementTree as ET
+import collections
 
 rospy.init_node('veil500')
 
@@ -21,13 +24,67 @@ for idx, node in enumerate(tree.iter(tag='span')):
   if node.tag == 'span' and node.text.startswith('Old text : '):
     tests.append('. '.join(node.text.replace('Old text : ', '').split('\n')))
 
-print(len(tests))
+print(tests)
 
 parser = rospy.ServiceProxy('/ccg/parse', Parse)
+n = 0
+m = 0
+passed=0
+words = []
+nouns = set()
+
+r = re.compile(r'([a-z])[0-9_]+')
 
 for test in tests:
+  test_passed=True
   for sent in test.split('.'):
-    print(parser(ParseRequest(text=sent)))
-  break
+    sent = sent.lower().strip().replace(',', ' ,')
+    sent = r.sub(r'\1', sent)
+
+    if len(sent) == 0:
+      continue
+    
+    tokens = nltk.word_tokenize(sent)
+    tagged = nltk.pos_tag(tokens)
+    nouns.update((t[0] for t in tagged if t[1] == 'NN'))
+
+    success = len(parser(ParseRequest(text=sent)).parses) > 0
+    if not success:
+      print(sent)
+      words += sent.split()
+      test_passed=False
+
+    n += 1
+    m += 1 if success > 0 else 0
+
+  passed += 1 if test_passed else 0
 
 
+
+# missing = []
+# for noun in nouns:
+#   if nltk.pos_tag([noun])[0][1] == 'NN':
+#     parses = parser(ParseRequest(text=noun.lower()))
+#     #print(parses)
+
+#     success = len(parses.parses) > 0
+    
+#     if not success:
+#       missing.append(noun)
+#       print('<entry pos="N" word="' + noun.lower().strip() + '" class="object" macros="@sg @sg-X"/>')
+  
+
+# print(list(set(missing)))
+# print(len(missing))
+
+
+counted = collections.Counter(words)
+
+with open('/home/suddrey/temp.csv', 'w') as f:
+  for word in counted:
+    success = len(parser(ParseRequest(text=word)).parses) > 0
+    if not success:
+      f.write(word + ',' + str(counted[word]) + '\n')
+
+print('Parsed:', m, 'Total:', n, 'Rate:', m/n)
+print('Passed:', passed, 'Tests:', len(tests), passed/len(tests))
