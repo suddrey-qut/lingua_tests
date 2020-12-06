@@ -4,62 +4,139 @@ import rospy
 import rospkg
 import os
 import nltk
+import csv
 import re
 from openccg_ros.srv import Parse, ParseRequest
 import xml.etree.ElementTree as ET
 import collections
+
+from datetime import datetime
+
+from lingua.ccg_reader import CCGReader
+
+now = datetime.now() 
+
+date_time = now.strftime("%Y-%m-%d-%H-%M-%S")
+print(date_time)
 
 rospy.init_node('veil500')
 
 rospack = rospkg.RosPack()
 path = rospack.get_path('lingua_tests')
 
-with open(os.path.join(path, 'data', 'Dataset/VEIL500', 'unlabelled_data_Feb-18-2015.xml')) as f:
-  data = f.read()
+# with open(os.path.join(path, 'data', 'Dataset/VEIL500', 'unlabelled_data_Feb-18-2015.xml')) as f:
+#   data = f.read()
 
-tree = ET.fromstring(data)
-tests = []
+# tree = ET.fromstring(data)
+# tests = []
 
-for idx, node in enumerate(tree.iter(tag='span')):
-  if node.tag == 'span' and node.text.startswith('Old text : '):
-    tests.append('. '.join(node.text.replace('Old text : ', '').split('\n')))
-
-print(tests)
+# for idx, node in enumerate(tree.iter(tag='span')):
+#   if node.tag == 'span' and node.text.startswith('Old text : '):
+#     tests.append('. '.join(node.text.replace('Old text : ', '').split('\n')))
 
 parser = rospy.ServiceProxy('/ccg/parse', Parse)
 n = 0
 m = 0
+test_idx = 0
 passed=0
 words = []
 nouns = set()
 
-r = re.compile(r'([a-z])[0-9_]+')
+tests = []
 
-for test in tests:
-  test_passed=True
-  for sent in test.split('.'):
+with open(os.path.join(path, 'results', 'base.csv'.format(date_time)), 'r') as f:
+  line = f.readline()
+  reader = csv.reader(f)
+
+  for line in reader:
+    tests.append(line)
+    
+
+r = re.compile(r'([a-z])[0-9_]+')
+valid = 0
+
+succeeded = []
+parsed_only = []
+failed = []
+invalid = []
+stupid = []
+
+# with open(os.path.join(path, 'results', 'invalid-31.csv'.format(date_time)), 'r') as f:
+#   line = f.readline()
+#   reader = csv.reader(f)
+
+#   for line in reader:
+#     stupid.append(line[5])
+
+with open(os.path.join(path, 'results', 'base.csv'.format(date_time)), 'w') as f:
+  f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')
+  for test in tests:
+    print(test)
+    sent = test[5]
+    
+    test_passed=True
     sent = sent.lower().strip().replace(',', ' ,')
     sent = r.sub(r'\1', sent)
 
+    print(sent)
     if len(sent) == 0:
       continue
+  
+    # tokens = nltk.word_tokenize(sent)
+    # tagged = nltk.pos_tag(tokens)
+    # nouns.update((t[0] for t in tagged if t[1] == 'NN'))
+    parses = parser(ParseRequest(text=sent)).parses
+    success = False
+
+    parsed = True if len(parses) > 0 else False
+
+    for parse in parses:
+      utterance, t = CCGReader.read(parse)
+      
+      if t:
+        print(t)
+        success = True
+        valid += 1
+        break
+
+    # test[4] = '0' if test[5] in stupid else ''
+
+    n += 1 if test[4] != '0' else 0
+    m += 1 if parsed else 0
+
+    if test[4] == '0':
+      invalid.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
     
-    tokens = nltk.word_tokenize(sent)
-    tagged = nltk.pos_tag(tokens)
-    nouns.update((t[0] for t in tagged if t[1] == 'NN'))
+    elif not parsed:
+      failed.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
 
-    success = len(parser(ParseRequest(text=sent)).parses) > 0
-    if not success:
-      print(sent)
-      words += sent.split()
-      test_passed=False
+    elif parsed and not success:
+      parsed_only.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
 
-    n += 1
-    m += 1 if success > 0 else 0
+    elif success:
+      succeeded.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
 
-  passed += 1 if test_passed else 0
+    f.write('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
 
+with open(os.path.join(path, 'results', 'invalid-{}.csv'.format(len(invalid))), 'w') as f:
+  f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')
+  for line in invalid:
+    f.write(line)
 
+with open(os.path.join(path, 'results', 'success-{}.csv'.format(valid)), 'w') as f:
+  f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')
+  for line in succeeded:
+    f.write(line)
+
+with open(os.path.join(path, 'results', 'parsed-{}.csv'.format(m)), 'w') as f:
+  f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')
+  for line in parsed_only:
+    f.write(line)
+
+with open(os.path.join(path, 'results', 'failed-{}.csv'.format(n-m)), 'w') as f:
+  f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')
+  for line in failed:
+    f.write(line)
 
 # missing = []
 # for noun in nouns:
@@ -78,13 +155,15 @@ for test in tests:
 # print(len(missing))
 
 
-counted = collections.Counter(words)
+# counted = collections.Counter(words)
 
-with open('/home/suddrey/temp.csv', 'w') as f:
-  for word in counted:
-    success = len(parser(ParseRequest(text=word)).parses) > 0
-    if not success:
-      f.write(word + ',' + str(counted[word]) + '\n')
+# with open('/home/suddrey/temp.csv', 'w') as f:
+#   for word in counted:
+#     success = len(parser(ParseRequest(text=word)).parses) > 0
+#     if not success:
+#       f.write(word + ',' + str(counted[word]) + '\n')
 
-print('Parsed:', m, 'Total:', n, 'Rate:', m/n)
-print('Passed:', passed, 'Tests:', len(tests), passed/len(tests))
+print('Invalid:', len(invalid))
+print('Valid:', n)
+print('Parsed:', m, 'Rate:', m/n)
+print('Converted', valid, 'Rate:', valid/n)
