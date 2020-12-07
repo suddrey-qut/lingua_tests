@@ -3,7 +3,6 @@
 import rospy
 import rospkg
 import os
-import nltk
 import csv
 import re
 from openccg_ros.srv import Parse, ParseRequest
@@ -94,7 +93,7 @@ with open(os.path.join(path, 'results', 'base.csv'.format(date_time)), 'w') as f
       utterance, t = CCGReader.read(parse)
       
       if t:
-        print(t)
+        print(t.to_btree())
         success = True
         valid += 1
         break
@@ -166,4 +165,4 @@ with open(os.path.join(path, 'results', 'failed-{}.csv'.format(n-m)), 'w') as f:
 print('Invalid:', len(invalid))
 print('Valid:', n)
 print('Parsed:', m, 'Rate:', m/n)
-print('Converted', valid, 'Rate:', valid/n)
+print('Converted', valid, 'Rate:', valid/m)
