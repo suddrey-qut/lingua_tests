@@ -1,0 +1,12 @@
+[
+    {
+        "name": "see(object arg0)",
+        "postconditions": [],
+        "preconditions": [],
+        "root": {
+            "class_name": "Noop",
+            "package": "rv_leaves.leaves.generic.noop",
+            "type": "class"
+        }
+    }
+]

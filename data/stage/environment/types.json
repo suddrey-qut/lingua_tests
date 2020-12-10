@@ -1,0 +1,13 @@
+[
+    {
+      "typename": "room"
+    },
+    {
+      "typename": "kitchen",
+      "parent": "room"
+    },  
+    {
+      "typename": "lounge",
+      "parent": "room"
+    }  
+  ]

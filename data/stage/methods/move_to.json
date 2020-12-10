@@ -1,0 +1,16 @@
+[
+    {
+        "name": "move_to(room arg0)",
+        "postconditions": [],
+        "preconditions": [],
+        "root": {
+            "args": {
+                "mapping": {
+                    "arg0": "arg0"
+                }
+            },
+            "method_name": "drive_to(room arg0)",
+            "type": "behaviour"
+        }
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "name": "patrol()",
+        "postconditions": [],
+        "preconditions": [],
+        "root": {
+            "child": {
+                "args": {
+                    "mapping": {
+                        "arg0": {
+                            "args": {
+                                "left": {
+                                    "args": {
+                                        "limit": {
+                                            "args": {
+                                                "count": 1
+                                            },
+                                            "class_name": "Only",
+                                            "package": "lingua.types"
+                                        },
+                                        "name": "kitchen",
+                                        "type_name": "room"
+                                    },
+                                    "class_name": "Object",
+                                    "package": "lingua.types",
+                                    "type": "class"
+                                },
+                                "right": {
+                                    "args": {
+                                        "limit": {
+                                            "args": {
+                                                "count": 1
+                                            },
+                                            "class_name": "Only",
+                                            "package": "lingua.types"
+                                        },
+                                        "name": "lounge",
+                                        "type_name": "room"
+                                    },
+                                    "class_name": "Object",
+                                    "package": "lingua.types",
+                                    "type": "class"
+                                },
+                                "tag": "and"
+                            },
+                            "class_name": "Conjunction",
+                            "package": "lingua.types",
+                            "type": "class"
+                        }
+                    }
+                },
+                "method_name": "drive_to(room arg0)",
+                "type": "behaviour"
+            },
+            "class_name": "SuccessIsRunning",
+            "package": "py_trees.decorators",
+            "type": "decorator"
+        }
+    }
+]
