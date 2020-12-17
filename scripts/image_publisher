@@ -1,0 +1,50 @@
+#!/usr/bin/env python
+
+import rospy
+import cv2
+import os
+import rospkg
+import ros_numpy
+import random
+import numpy as np
+
+from sensor_msgs.msg import Image, CameraInfo
+
+__path__ = rospkg.RosPack().get_path('lingua_tests')
+
+rospy.init_node('image_publisher')
+
+images = []
+images.append(cv2.imread(os.path.join(__path__, 'data', 'stage', 'images', 'no_face.jpg')))
+images.append(cv2.imread(os.path.join(__path__, 'data', 'stage', 'images', 'face.jpg')))
+
+for idx, img in enumerate(images):
+    img = cv2.resize(img, (960, 640))
+    images[idx] = ros_numpy.msgify(Image, img, encoding='bgr8')
+
+publisher_rgb = rospy.Publisher('/camera/color/image_rect_color', Image, queue_size=1)
+publisher_rgb_info = rospy.Publisher('/camera/color/camera_info', CameraInfo, queue_size=1)
+
+publisher_depth = rospy.Publisher('/camera/depth/image_meters_aligned', Image, queue_size=1)
+publisher_depth_info = rospy.Publisher('/camera/aligned_depth_to_color/camera_info', CameraInfo, queue_size=1)
+
+frame = 0
+idx = 0
+
+depth = ros_numpy.msgify(Image, np.ones(shape=(960, 640), dtype=np.uint8), encoding='mono8')
+
+while not rospy.is_shutdown():
+    if frame > 30 * 5:
+        if random.uniform(0, 1) < 0.5:
+            idx = 1 - idx
+        frame = 0
+
+    publisher_rgb.publish(images[idx])
+    publisher_rgb_info.publish(CameraInfo())
+
+    publisher_depth.publish(depth)
+    publisher_depth_info.publish(CameraInfo())
+
+    frame += 1
+    rospy.sleep(0.03)
+

@@ -9,4 +9,7 @@
     <arg name="map_file" value="$(find turtlebot_stage)/maps/maze.yaml" />
     <arg name="world_file" value="$(find turtlebot_stage)/maps/stage/maze.world" />
   </include>
+
+  <node pkg="lingua_tests" type="image_publisher" name="image_publisher" />
+  <node pkg="rv_face_tracking" type="face_tracking" name="face_tracking" />
 </launch>

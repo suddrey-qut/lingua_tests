@@ -4,9 +4,20 @@
         "postconditions": [],
         "preconditions": [],
         "root": {
-            "class_name": "Noop",
-            "package": "rv_leaves.leaves.generic.noop",
-            "type": "class"
-        }
+            "children": [
+                {
+                    "class_name": "GetObservation",
+                    "package": "rv_leaves.leaves.vision.observation",
+                    "type": "class"
+                },
+                {
+                    "class_name": "GetFaces",
+                    "package": "rv_leaves.leaves.vision.detectors",
+                    "type": "class"
+                }
+            ],
+            "type": "sequence"
+        },
+        "ground": false
     }
 ]
