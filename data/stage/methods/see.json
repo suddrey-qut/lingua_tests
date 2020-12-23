@@ -6,18 +6,12 @@
         "root": {
             "children": [
                 {
-                    "class_name": "GetObservation",
-                    "package": "rv_leaves.leaves.vision.observation",
-                    "type": "class"
-                },
-                {
-                    "class_name": "GetFaces",
-                    "package": "rv_leaves.leaves.vision.detectors",
+                    "class_name": "Noop",
+                    "package": "rv_leaves.leaves.generic.noop",
                     "type": "class"
                 }
             ],
             "type": "sequence"
-        },
-        "ground": false
+        }
     }
 ]

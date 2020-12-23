@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find lingua)/launch/lingua.launch">
+    <arg name="method_path" value="$(find lingua_tests)/data/panda/methods" />
+    <arg name="objects_file" value="$(find lingua_tests)/data/panda/environment/objects.json" />
+    <arg name="types_file" value="$(find lingua_tests)/data/panda/environment/types.json" />
+  </include>
+  
+</launch>

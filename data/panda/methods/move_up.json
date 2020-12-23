@@ -1,0 +1,37 @@
+[
+    {
+        "name": "move_up()", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "class_name": "GetEEPose", 
+                        "package": "rv_leaves.leaves.manipulation.status", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "z": 0.1
+                        }, 
+                        "class_name": "TranslatePose", 
+                        "package": "rv_leaves.leaves.generic.pose", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "speed": 0.2
+                        }, 
+                        "class_name": "MoveGripperToPose", 
+                        "package": "rv_leaves.leaves.manipulation.motion", 
+                        "type": "class"
+                    }
+                ]
+            }, 
+            "class_name": "LinguaSequence", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]

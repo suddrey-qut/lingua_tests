@@ -1,0 +1,134 @@
+[
+    {
+        "name": "pick_up(object arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "left": {
+                    "args": {
+                        "arguments": {
+                            "args": {
+                                "arg0": {
+                                    "args": {
+                                        "limit": {
+                                            "args": {
+                                                "count": 1
+                                            }, 
+                                            "class_name": "Only", 
+                                            "package": "lingua.types"
+                                        }, 
+                                        "name": "gripper", 
+                                        "type_name": "tool"
+                                    }, 
+                                    "class_name": "Object", 
+                                    "package": "lingua.types", 
+                                    "type": "class"
+                                }
+                            }, 
+                            "class_name": "dict"
+                        }, 
+                        "name": "open(tool arg0)"
+                    }, 
+                    "class_name": "Task", 
+                    "method_name": "open(tool arg0)", 
+                    "package": "lingua.types", 
+                    "type": "class"
+                }, 
+                "right": {
+                    "args": {
+                        "left": {
+                            "args": {
+                                "arguments": {
+                                    "args": {
+                                        "arg0": "arg0"
+                                    }, 
+                                    "class_name": "dict"
+                                }, 
+                                "name": "move_to(object arg0)"
+                            }, 
+                            "class_name": "Task", 
+                            "method_name": "move_to(object arg0)", 
+                            "package": "lingua.types", 
+                            "type": "class"
+                        }, 
+                        "right": {
+                            "args": {
+                                "left": {
+                                    "args": {
+                                        "arguments": {
+                                            "args": {
+                                                "arg0": {
+                                                    "args": {
+                                                        "limit": {
+                                                            "args": {
+                                                                "count": 1
+                                                            }, 
+                                                            "class_name": "Only", 
+                                                            "package": "lingua.types"
+                                                        }, 
+                                                        "name": "gripper", 
+                                                        "type_name": "tool"
+                                                    }, 
+                                                    "class_name": "Object", 
+                                                    "package": "lingua.types", 
+                                                    "type": "class"
+                                                }
+                                            }, 
+                                            "class_name": "dict"
+                                        }, 
+                                        "name": "close(tool arg0)"
+                                    }, 
+                                    "class_name": "Task", 
+                                    "method_name": "close(tool arg0)", 
+                                    "package": "lingua.types", 
+                                    "type": "class"
+                                }, 
+                                "right": {
+                                    "args": {
+                                        "body": {
+                                            "args": {
+                                                "arguments": {
+                                                    "args": {}, 
+                                                    "class_name": "dict"
+                                                }, 
+                                                "name": "move_up()"
+                                            }, 
+                                            "class_name": "Task", 
+                                            "method_name": "move_up()", 
+                                            "package": "lingua.types", 
+                                            "type": "class"
+                                        }, 
+                                        "duration": {
+                                            "args": {
+                                                "time": 3.0, 
+                                                "units": "second"
+                                            }, 
+                                            "class_name": "Duration", 
+                                            "package": "lingua.types"
+                                        }
+                                    }, 
+                                    "class_name": "ForLoop", 
+                                    "package": "lingua.types", 
+                                    "type": "class"
+                                }, 
+                                "tag": "and"
+                            }, 
+                            "class_name": "Conjunction", 
+                            "package": "lingua.types", 
+                            "type": "class"
+                        }, 
+                        "tag": "and"
+                    }, 
+                    "class_name": "Conjunction", 
+                    "package": "lingua.types", 
+                    "type": "class"
+                }, 
+                "tag": "and"
+            }, 
+            "class_name": "Conjunction", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]
