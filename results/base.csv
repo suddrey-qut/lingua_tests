@@ -1895,7 +1895,7 @@
 582,0,1,1,1,"pick up books and move to table"
 582,1,1,1,1,"turn off tv"
 582,2,1,1,1,"gather food and put on table"
-583,0,0,0,,"tell me dave website has been visited 5000 times"
+583,0,0,0,0,"tell me dave website has been visited 5000 times"
 584,0,1,1,1,"turn off the tv"
 584,2,1,1,1,"pick up brown book"
 584,4,1,1,1,"put brown book on table"
