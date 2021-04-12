@@ -7,7 +7,7 @@ project(lingua_tests)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS roscpp actionlib_msgs message_generation wire_msgs problib)
+find_package(catkin REQUIRED COMPONENTS roscpp actionlib_msgs message_generation)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -129,7 +129,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(world_model src/world_model.cpp)
+#add_executable(world_model src/world_model.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -142,9 +142,9 @@ add_executable(world_model src/world_model.cpp)
 # add_dependencies(world_model ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(world_model
-  ${catkin_LIBRARIES}
-)
+#target_link_libraries(world_model
+#  ${catkin_LIBRARIES}
+#)
 
 #############
 ## Install ##

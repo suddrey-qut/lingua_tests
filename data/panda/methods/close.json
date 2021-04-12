@@ -1,0 +1,12 @@
+[
+    {
+        "name": "close(tool arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "class_name": "Grasp", 
+            "package": "rv_leaves.leaves.manipulation.grasping", 
+            "type": "class"
+        }
+    }
+]

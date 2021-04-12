@@ -1,0 +1,12 @@
+[
+    {
+        "name": "open(tool arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "class_name": "ActuateGripper", 
+            "package": "rv_leaves.leaves.manipulation.grasping", 
+            "type": "class"
+        }
+    }
+]

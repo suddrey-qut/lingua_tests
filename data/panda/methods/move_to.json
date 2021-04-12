@@ -1,0 +1,77 @@
+[
+    {
+        "name": "move_to(object arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "load_value": "${arg0}"
+                        }, 
+                        "class_name": "GetObjectPose", 
+                        "package": "lingua.leaves", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "z": 0.1
+                        }, 
+                        "class_name": "TranslatePose", 
+                        "package": "rv_leaves.leaves.generic.pose", 
+                        "type": "class"
+                    }, 
+                    {
+                        "class_name": "MoveGripperToPose", 
+                        "package": "rv_leaves.leaves.manipulation.motion", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "z": -0.07
+                        }, 
+                        "class_name": "TranslatePose", 
+                        "package": "rv_leaves.leaves.generic.pose", 
+                        "type": "class"
+                    }, 
+                    {
+                        "class_name": "MoveGripperToPose", 
+                        "package": "rv_leaves.leaves.manipulation.motion", 
+                        "type": "class"
+                    }
+                ]
+            }, 
+            "class_name": "LinguaSequence", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }, 
+    {
+        "name": "move_to(location arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "load_value": "${arg0}"
+                        }, 
+                        "class_name": "GetObjectPose", 
+                        "package": "lingua.leaves", 
+                        "type": "class"
+                    }, 
+                    {
+                        "class_name": "MoveGripperToPose", 
+                        "package": "rv_leaves.leaves.manipulation.motion", 
+                        "type": "class"
+                    }
+                ]
+            }, 
+            "class_name": "LinguaSequence", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]

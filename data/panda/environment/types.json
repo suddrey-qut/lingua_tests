@@ -1,0 +1,19 @@
+[
+  {
+    "typename": "tool"
+  },
+  {
+    "typename": "gripper",
+    "parent": "tool"
+  },  
+  {
+    "typename": "object"
+  },
+  {
+    "typename": "ball",
+    "parent": "object"
+  },
+  {
+    "typename": "location"
+  }
+]

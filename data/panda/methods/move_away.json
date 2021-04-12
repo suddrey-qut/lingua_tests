@@ -1,0 +1,37 @@
+[
+    {
+        "name": "move_away()", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "arguments": {
+                    "args": {
+                        "arg0": {
+                            "args": {
+                                "limit": {
+                                    "args": {
+                                        "count": 1
+                                    }, 
+                                    "class_name": "Only", 
+                                    "package": "lingua.types"
+                                }, 
+                                "name": "home", 
+                                "type_name": "location"
+                            }, 
+                            "class_name": "Object", 
+                            "package": "lingua.types", 
+                            "type": "class"
+                        }
+                    }, 
+                    "class_name": "dict"
+                }, 
+                "name": "move_to(location arg0)"
+            }, 
+            "class_name": "Task", 
+            "method_name": "move_to(location arg0)", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]

@@ -10,6 +10,9 @@
     <arg name="world_file" value="$(find turtlebot_stage)/maps/stage/maze.world" />
   </include>
 
+  <node pkg="rv_face_tracking" type="face_tracking_publisher" name="face_tracking" />
+  
   <node pkg="lingua_tests" type="image_publisher" name="image_publisher" />
-  <node pkg="rv_face_tracking" type="face_tracking" name="face_tracking" />
+  <node pkg="lingua_tests" type="person_detector" name="person_detector" />
+  
 </launch>

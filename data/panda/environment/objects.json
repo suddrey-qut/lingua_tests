@@ -1,0 +1,107 @@
+[
+  {
+      "attributes": [
+          {
+              "key": "class_label",
+              "value": [
+                  "gripper"
+              ]
+          }
+      ],
+      "object_id": "g1",
+      "transient": false
+  },
+  {
+    "attributes": [
+      {
+        "key": "class_label",
+          "value": [
+              "bin"
+          ]
+      }
+    ],
+    "object_id": "c0",
+    "position": {
+        "header": {
+            "frame_id": "panda_link0",
+            "stamp": 107.2
+        },
+        "pose": {
+            "orientation": {
+                "w":  -1.85801500e-04,
+                "x": 9.99734763e-01,
+                "y": 2.13176764e-02,
+                "z": 8.71353028e-03
+            },
+            "position": {
+                "x": 0.52067,
+                "y": -0.0377,
+                "z": 0.0447872345321
+            }
+        }
+    },
+    "transient": false
+  },
+  {
+    "attributes": [
+      {
+        "key": "class_label",
+          "value": [
+              "box"
+          ]
+      }
+    ],
+    "object_id": "c1",
+    "position": {
+        "header": {
+            "frame_id": "panda_link0",
+            "stamp": 107.2
+        },
+        "pose": {
+            "orientation": {
+                "w": -0.00278087,
+                "x": 0.74475429,
+                "y": 0.66732577,
+                "z": 0.00310353
+            },
+            "position": {
+                "x": 0.0408106533049,
+                "y": 0.531450799899,
+                "z": 0.0390970706548
+            }
+        }
+    },
+    "transient": false
+  },
+  {
+    "attributes": [
+      {
+        "key": "class_label",
+          "value": [
+              "home"
+          ]
+      }
+    ],
+    "object_id": "c2",
+    "position": {
+        "header": {
+            "frame_id": "panda_link0",
+            "stamp": 107.2
+        },
+        "pose": {
+            "orientation": {
+                "w": 0.0133296795897,
+                "x": -0.932396578599,
+                "y": -0.361148254385,
+                "z": -0.0050238520321
+            },
+            "position": {
+                "x": 0.416754315433,
+                "y": 0.347838306249,
+                "z": 0.538514867653
+            }
+        }
+    },
+    "transient": false
+  }
+]
