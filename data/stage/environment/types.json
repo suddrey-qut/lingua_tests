@@ -9,5 +9,8 @@
     {
       "typename": "lounge",
       "parent": "room"
-    }  
+    },
+    {
+        "typename": "person"
+    }
   ]

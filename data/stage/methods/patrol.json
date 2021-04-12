@@ -1,0 +1,61 @@
+[
+    {
+        "name": "patrol()",
+        "postconditions": [],
+        "preconditions": [],
+        "root": {
+            "args": {
+                "arguments": {
+                    "args": {
+                        "arg0": {
+                            "args": {
+                                "left": {
+                                    "args": {
+                                        "limit": {
+                                            "args": {
+                                                "count": 1
+                                            },
+                                            "class_name": "Only",
+                                            "package": "lingua.types"
+                                        },
+                                        "name": "kitchen",
+                                        "type_name": "room"
+                                    },
+                                    "class_name": "Object",
+                                    "package": "lingua.types",
+                                    "type": "class"
+                                },
+                                "right": {
+                                    "args": {
+                                        "limit": {
+                                            "args": {
+                                                "count": 1
+                                            },
+                                            "class_name": "Only",
+                                            "package": "lingua.types"
+                                        },
+                                        "name": "lounge",
+                                        "type_name": "room"
+                                    },
+                                    "class_name": "Object",
+                                    "package": "lingua.types",
+                                    "type": "class"
+                                },
+                                "tag": "and"
+                            },
+                            "class_name": "Conjunction",
+                            "package": "lingua.types",
+                            "type": "class"
+                        }
+                    },
+                    "class_name": "dict"
+                },
+                "name": "drive_to(room arg0)"
+            },
+            "class_name": "Task",
+            "method_name": "drive_to(room arg0)",
+            "package": "lingua.types",
+            "type": "class"
+        }
+    }
+]

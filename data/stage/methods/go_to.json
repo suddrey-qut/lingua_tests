@@ -1,0 +1,22 @@
+[
+    {
+        "name": "go_to(room arg0)",
+        "postconditions": [],
+        "preconditions": [],
+        "root": {
+            "args": {
+                "arguments": {
+                    "args": {
+                        "arg0": "arg0"
+                    },
+                    "class_name": "dict"
+                },
+                "name": "drive_to(room arg0)"
+            },
+            "class_name": "Task",
+            "method_name": "drive_to(room arg0)",
+            "package": "lingua.types",
+            "type": "class"
+        }
+    }
+]

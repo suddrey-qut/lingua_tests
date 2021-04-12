@@ -23,16 +23,6 @@ rospy.init_node('veil500')
 rospack = rospkg.RosPack()
 path = rospack.get_path('lingua_tests')
 
-# with open(os.path.join(path, 'data', 'Dataset/VEIL500', 'unlabelled_data_Feb-18-2015.xml')) as f:
-#   data = f.read()
-
-# tree = ET.fromstring(data)
-# tests = []
-
-# for idx, node in enumerate(tree.iter(tag='span')):
-#   if node.tag == 'span' and node.text.startswith('Old text : '):
-#     tests.append('. '.join(node.text.replace('Old text : ', '').split('\n')))
-
 parser = rospy.ServiceProxy('/ccg/parse', Parse)
 n = 0
 m = 0
@@ -43,7 +33,7 @@ nouns = set()
 
 tests = []
 
-with open(os.path.join(path, 'results', 'base.csv'.format(date_time)), 'r') as f:
+with open(os.path.join(path, 'results', 'base.csv'), 'r') as f:
   line = f.readline()
   reader = csv.reader(f)
 

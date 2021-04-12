@@ -4,14 +4,18 @@
         "postconditions": [],
         "preconditions": [],
         "root": {
-            "children": [
+            "args": {
+              "children": [
                 {
                     "class_name": "Noop",
                     "package": "rv_leaves.leaves.generic.noop",
                     "type": "class"
                 }
-            ],
-            "type": "sequence"
+              ]
+            },
+            "class_name": "LinguaSequence",
+            "package": "lingua.types",
+            "type": "class"
         }
     }
 ]

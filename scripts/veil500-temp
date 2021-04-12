@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+
+import rospy
+import rospkg
+import os
+import csv
+import re
+import sys
+from openccg_ros.srv import Parse, ParseRequest
+import xml.etree.ElementTree as ET
+import collections
+
+from datetime import datetime
+
+from lingua.ccg_reader import CCGReader
+
+now = datetime.now() 
+
+date_time = now.strftime("%Y-%m-%d-%H-%M-%S")
+print(date_time)
+
+rospy.init_node('veil500')
+
+rospack = rospkg.RosPack()
+path = rospack.get_path('lingua_tests')
+
+parser = rospy.ServiceProxy('/ccg/parse', Parse)
+
+parses = parser(ParseRequest(text=sys.argv[1])).parses
+success = False
+
+parsed = True if len(parses) > 0 else False
+
+for parse in parses:
+  utterance, t = CCGReader.read(parse)
+  
+  if t:
+    print(t.to_btree())
+    break
+  print(t)
