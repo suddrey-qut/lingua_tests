@@ -23,18 +23,18 @@ def at(args):
   print(ps)
 
   result = collection.find({'$and': [
-    {'position.pose.position.x': {'$gte': ps.pose.position.x - 1}}, 
-    {'position.pose.position.x': {'$lte': ps.pose.position.x + 1}}, 
-    {'position.pose.position.y': {'$gte': ps.pose.position.y - 1}},
-    {'position.pose.position.y': {'$lte': ps.pose.position.y + 1}},
+    {'position.pose.position.x': {'$gte': ps.pose.position.x - 0.2}}, 
+    {'position.pose.position.x': {'$lte': ps.pose.position.x + 0.2}}, 
+    {'position.pose.position.y': {'$gte': ps.pose.position.y - 0.2}},
+    {'position.pose.position.y': {'$lte': ps.pose.position.y + 0.2}},
     {'position.pose.position.z': {'$gte': -0.1}}, 
     {'position.pose.position.z': {'$lte': 0.1}}, 
   ]})
 
   ids = [item['object_id'] for item in result]
   
-  if pose_covariance.pose.pose.position.x > ps.pose.position.x - 1 and pose_covariance.pose.pose.position.x < ps.pose.position.x + 1 and \
-     pose_covariance.pose.pose.position.y > ps.pose.position.y - 1 and pose_covariance.pose.pose.position.y < ps.pose.position.y  + 1:
+  if pose_covariance.pose.pose.position.x > ps.pose.position.x - 0.2 and pose_covariance.pose.pose.position.x < ps.pose.position.x + 0.2 and \
+     pose_covariance.pose.pose.position.y > ps.pose.position.y - 0.2 and pose_covariance.pose.pose.position.y < ps.pose.position.y  + 0.2:
      print('Agent at location')
      ids.append('agent')
 

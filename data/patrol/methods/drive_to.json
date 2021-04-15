@@ -1,34 +1,75 @@
 [
-    {
-        "name": "drive_to(room arg0)",
-        "postconditions": [],
-        "preconditions": [],
-        "root": {
+  {
+    "name": "drive_to(room arg0)",
+    "postconditions": [
+      {
+        "args": {
+          "predicate": "(at ${arg0} agent)",
+          "child": {
+            "class_name": "AtLocation",
+            "package": "lingua_tests.patrol.leaves",
+            "type": "class",
             "args": {
-                "children": [
-                    {
-                        "args": {
-                            "load_value": "${arg0}"
-                        },
-                        "class_name": "GetObjectPose",
-                        "package": "lingua.leaves",
-                        "type": "class"
-                    },
-                    {
-                        "class_name": "Print",
-                        "package": "rv_leaves.leaves.generic.console",
-                        "type": "class"
-                    },
-                    {
-                        "class_name": "MoveToPose",
-                        "package": "rv_leaves.leaves.mobility.motion",
-                        "type": "class"
-                    }
-                ]
+              "load_value": "${arg0}"
+            }
+          }
+        },
+        "class_name": "Conditional",
+        "package": "lingua.decorators",
+        "type": "decorator"
+      }
+    ],
+    "preconditions": [
+      {
+        "args": {
+          "predicate": "(not (at ${arg0} agent))",
+          "child": {
+            "class_name": "Inverter",
+            "package": "py_trees.decorators",
+            "type": "decorator",
+            "args": {
+              "child": {
+                "class_name": "AtLocation",
+                "package": "lingua_tests.patrol.leaves",
+                "type": "class",
+                "args": {
+                  "load_value": "${arg0}"
+                }
+              }
+            }
+          }
+        },
+        "class_name": "Conditional",
+        "package": "lingua.decorators",
+        "type": "decorator"
+      }
+    ],
+    "root": {
+      "args": {
+        "children": [
+          {
+            "args": {
+              "load_value": "${arg0}"
             },
-            "class_name": "LinguaSequence",
-            "package": "lingua.types",
+            "class_name": "GetObjectPose",
+            "package": "lingua.leaves",
             "type": "class"
-        }
+          },
+          {
+            "class_name": "Print",
+            "package": "rv_leaves.leaves.generic.console",
+            "type": "class"
+          },
+          {
+            "class_name": "MoveToPose",
+            "package": "rv_leaves.leaves.mobility.motion",
+            "type": "class"
+          }
+        ]
+      },
+      "class_name": "LinguaSequence",
+      "package": "lingua.types",
+      "type": "class"
     }
+  }
 ]
