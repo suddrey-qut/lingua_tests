@@ -26,12 +26,10 @@ rospy.Subscriber('/faces', Observation, callback, queue_size=1)
 
 print('Ready')
 while not rospy.is_shutdown():
-  print(timeit.default_timer() - last_detection)
   if timeit.default_timer() - last_detection < 2:
     service(TellRequest('(class_label person p1)'))
     print('Inserted person')
   else:
-    service(TellRequest('(not (class_label person p1))'))
-    print('Removed person')
+    service(TellRequest('(not (class_label person p1))'))  
   rospy.sleep(0.1)
 

@@ -8,7 +8,8 @@
                 "children": [
                     {
                         "args": {
-                            "load_value": "${arg0}"
+                            "load_value": "${arg0}", 
+                            "save_key": "pose"
                         }, 
                         "class_name": "GetObjectPose", 
                         "package": "lingua.leaves", 
@@ -16,6 +17,8 @@
                     }, 
                     {
                         "args": {
+                            "load_key": "pose", 
+                            "save_key": "pose", 
                             "z": 0.1
                         }, 
                         "class_name": "TranslatePose", 
@@ -23,12 +26,17 @@
                         "type": "class"
                     }, 
                     {
+                        "args": {
+                            "load_key": "pose"
+                        }, 
                         "class_name": "MoveGripperToPose", 
                         "package": "rv_leaves.leaves.manipulation.motion", 
                         "type": "class"
                     }, 
                     {
                         "args": {
+                            "load_key": "pose", 
+                            "save_key": "pose", 
                             "z": -0.07
                         }, 
                         "class_name": "TranslatePose", 
@@ -36,6 +44,9 @@
                         "type": "class"
                     }, 
                     {
+                        "args": {
+                            "load_key": "pose"
+                        }, 
                         "class_name": "MoveGripperToPose", 
                         "package": "rv_leaves.leaves.manipulation.motion", 
                         "type": "class"

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "move(location arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "arguments": {
+                    "args": {
+                        "arg0": "${arg0}"
+                    }, 
+                    "class_name": "dict"
+                }, 
+                "name": "move_to(location arg0)"
+            }, 
+            "class_name": "Task", 
+            "method_name": "move_to(location arg0)", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]

@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find ggcnn)/launch/ggcnn_service.launch" />
+  <!-- <include file="$(find wire_core)/launch/start.launch">
+    <arg name="world_frame" value="panda_link0" />
+  </include> -->
+
+  <node pkg="lingua_tests" type="block_detector" name="detector" output="screen" />
+</launch>

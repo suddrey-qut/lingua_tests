@@ -1,0 +1,114 @@
+[
+    {
+        "name": "put_in(object arg0, object arg1)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "arguments": {
+                                "args": {
+                                    "arg0": "${arg0}"
+                                }, 
+                                "class_name": "dict"
+                            }, 
+                            "name": "pick_up(object arg0)"
+                        }, 
+                        "class_name": "Task", 
+                        "method_name": "pick_up(object arg0)", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "left": {
+                                "args": {
+                                    "arguments": {
+                                        "args": {
+                                            "arg0": "${arg1}"
+                                        }, 
+                                        "class_name": "dict"
+                                    }, 
+                                    "name": "move_to(object arg0)"
+                                }, 
+                                "class_name": "Task", 
+                                "method_name": "move_to(object arg0)", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }, 
+                            "right": {
+                                "args": {
+                                    "arguments": {
+                                        "args": {
+                                            "arg0": {
+                                                "args": {
+                                                    "limit": {
+                                                        "args": {
+                                                            "count": 1
+                                                        }, 
+                                                        "class_name": "Only", 
+                                                        "package": "lingua.types"
+                                                    }, 
+                                                    "name": "gripper", 
+                                                    "type_name": "tool"
+                                                }, 
+                                                "class_name": "Object", 
+                                                "package": "lingua.types", 
+                                                "type": "class"
+                                            }
+                                        }, 
+                                        "class_name": "dict"
+                                    }, 
+                                    "name": "open(tool arg0)"
+                                }, 
+                                "class_name": "Task", 
+                                "method_name": "open(tool arg0)", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }, 
+                            "tag": "and"
+                        }, 
+                        "class_name": "Conjunction", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "arguments": {
+                                "args": {
+                                    "arg0": {
+                                        "args": {
+                                            "limit": {
+                                                "args": {
+                                                    "count": 1
+                                                }, 
+                                                "class_name": "Only", 
+                                                "package": "lingua.types"
+                                            }, 
+                                            "name": "home", 
+                                            "type_name": "location"
+                                        }, 
+                                        "class_name": "Object", 
+                                        "package": "lingua.types", 
+                                        "type": "class"
+                                    }
+                                }, 
+                                "class_name": "dict"
+                            }, 
+                            "name": "move(location arg0)"
+                        }, 
+                        "class_name": "Task", 
+                        "method_name": "move(location arg0)", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }
+                ]
+            }, 
+            "class_name": "LinguaSequence", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]
