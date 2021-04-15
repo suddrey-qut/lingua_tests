@@ -4,6 +4,8 @@
     <arg name="method_path" value="$(find lingua_tests)/data/patrol/methods" />
     <arg name="objects_file" value="$(find lingua_tests)/data/patrol/environment/objects.json" />
     <arg name="types_file" value="$(find lingua_tests)/data/patrol/environment/types.json" />
+
+    <arg name="handlers" value="$(find lingua_tests)/data/patrol/environment/handlers.json" />
   </include>
 
   <node pkg="rv_face_tracking" type="face_tracking_publisher" name="face_tracking" output="screen"/>

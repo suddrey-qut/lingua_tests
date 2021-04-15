@@ -1,0 +1,15 @@
+[
+  {
+    "pattern": "\\(open (.*)\\)",
+    "callback": "lingua_tests.panda.callbacks/gripper_open"
+  },
+  {
+    "pattern": "\\(on (.*) (.*)\\)",
+    "callback": "lingua_tests.panda.callbacks/on"
+  },
+  {
+    "pattern": "\\(in (.*) (.*)\\)",
+    "callback": "lingua_tests.panda.callbacks/on"
+  }
+
+]

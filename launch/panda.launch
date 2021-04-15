@@ -3,6 +3,8 @@
     <arg name="method_path" value="$(find lingua_tests)/data/panda/methods" />
     <arg name="objects_file" value="$(find lingua_tests)/data/panda/environment/objects.json" />
     <arg name="types_file" value="$(find lingua_tests)/data/panda/environment/types.json" />
+
+    <arg name="handlers" value="$(find lingua_tests)/data/panda/environment/handlers.json" />
   </include>
   
 </launch>
