@@ -5,13 +5,13 @@
         "preconditions": [],
         "root": {
             "args": {
-              "children": [
-                {
-                    "class_name": "Noop",
-                    "package": "rv_leaves.leaves.generic.noop",
-                    "type": "class"
-                }
-              ]
+                "children": [
+                    {
+                        "class_name": "Noop",
+                        "package": "rv_leaves.leaves.generic.noop",
+                        "type": "class"
+                    }
+                ]
             },
             "class_name": "LinguaSequence",
             "package": "lingua.types",

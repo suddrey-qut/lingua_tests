@@ -1,8 +1,37 @@
 [
     {
         "name": "move_to(object arg0)", 
-        "postconditions": [], 
-        "preconditions": [], 
+        "postconditions": [
+          {
+            "type": "class", 
+            "package": "lingua.types",
+            "class_name": "Condition",
+            "args": {
+              "predicate": "(in g1 arg0)",
+              "arguments": {
+                "class_name": "dict",
+                "args": {
+                  "arg0": "${arg0}"
+                }
+              }
+            }
+          }
+        ], 
+        "preconditions": [
+          {
+            "type": "class", 
+            "package": "lingua.types",
+            "class_name": "Condition",
+            "args": {
+              "predicate": "(open g1)",
+              "arguments": {
+                "class_name": "dict",
+                "args": {
+                }
+              }
+            }
+          }
+        ], 
         "root": {
             "args": {
                 "children": [

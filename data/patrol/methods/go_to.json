@@ -7,7 +7,7 @@
             "args": {
                 "arguments": {
                     "args": {
-                        "arg0": "arg0"
+                        "arg0": "${arg0}"
                     },
                     "class_name": "dict"
                 },

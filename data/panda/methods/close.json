@@ -1,8 +1,52 @@
 [
     {
         "name": "close(tool arg0)", 
-        "postconditions": [], 
-        "preconditions": [], 
+        "postconditions": [
+          {
+            "type": "class", 
+            "package": "lingua.types",
+            "class_name": "Condition",
+            "args": {
+              "predicate": "(not (open arg0))",
+              "arguments": {
+                "class_name": "dict",
+                "args": {
+                  "arg0": "${arg0}"
+                }
+              }
+            }
+          },
+          {
+            "type": "class", 
+            "package": "lingua.types",
+            "class_name": "Condition",
+            "args": {
+              "predicate": "(holding arg0 (in arg0 ?))",
+              "arguments": {
+                "class_name": "dict",
+                "args": {
+                  "arg0": "${arg0}"
+                }
+              }
+            }
+          }
+        ], 
+        "preconditions": [
+          {
+            "type": "class", 
+            "package": "lingua.types",
+            "class_name": "Condition",
+            "args": {
+              "predicate": "(open arg0)",
+              "arguments": {
+                "class_name": "dict",
+                "args": {
+                  "arg0": "${arg0}"
+                }
+              }
+            }
+          }
+        ], 
         "root": {
             "class_name": "Grasp", 
             "package": "rv_leaves.leaves.manipulation.grasping", 

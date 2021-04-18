@@ -2,5 +2,9 @@
   {
     "pattern": "\\(at (.*) (.*)\\)",
     "callback": "lingua_tests.patrol.callbacks/at"
+  },
+  {
+    "pattern": "\\(in (.*) (.*)\\)",
+    "callback": "lingua_tests.patrol.callbacks/at"
   }
 ]
