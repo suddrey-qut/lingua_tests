@@ -2,6 +2,7 @@ import rospy
 import pymongo
 from sensor_msgs.msg import JointState
 from lingua_world.srv import GetObjectPose, GetObjectPoseRequest
+from rv_msgs.msg import ManipulatorState
 
 client = pymongo.MongoClient()
 db = client.lingua
@@ -18,13 +19,15 @@ def gripper_open(args):
 
 def on(args):
   location_id = args[0]
+  object_id = args[1]
+  
+  ee_pose = rospy.wait_for_message('/arm/state', ManipulatorState)
 
   srv = rospy.ServiceProxy('/lingua/world/get_pose', GetObjectPose)
   srv.wait_for_service()
 
   ps = srv(location_id).pose_stamped
-  print(ps)
-
+  
   result = collection.find({'$and': [
     {'position.pose.position.x': {'$gte': ps.pose.position.x - 0.2}}, 
     {'position.pose.position.x': {'$lte': ps.pose.position.x + 0.2}}, 
@@ -36,7 +39,18 @@ def on(args):
 
   ids = [item['object_id'] for item in result]
 
-  if args[1] == '?':
+  print('EE Pose')
+  print(ee_pose)
+
+  print('Target')
+  print(ps)
+  
+  if ee_pose.pose.position.x > ps.pose.position.x - 0.2 and ee_pose.pose.position.x < ps.pose.position.x + 0.2 and \
+     ee_pose.pose.position.y > ps.pose.position.y - 0.2 and ee_pose.pose.position.y < ps.pose.position.y  + 0.2:
+     
+     ids.append('g1')
+
+  if object_id == '?':
     return ids
   
-  return args[1] in ids
+  return object_id in ids

@@ -1,0 +1,15 @@
+[
+    {
+        "name": "see(object arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "load_value": "${arg0}"
+            }, 
+            "class_name": "GroundObjects", 
+            "package": "lingua.leaves", 
+            "type": "class"
+        }
+    }
+]

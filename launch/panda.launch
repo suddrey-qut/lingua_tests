@@ -6,5 +6,7 @@
 
     <arg name="handlers" value="$(find lingua_tests)/data/panda/environment/handlers.json" />
   </include>
+
+  <include file="$(find lingua_tests)/launch/detector.launch" />
   
 </launch>

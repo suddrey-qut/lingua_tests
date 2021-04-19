@@ -1,6 +1,6 @@
 [
     {
-        "name": "move_away()", 
+        "name": "move(location arg0)", 
         "postconditions": [], 
         "preconditions": [], 
         "root": {
@@ -16,20 +16,21 @@
                                     "class_name": "Only", 
                                     "package": "lingua.types"
                                 }, 
-                                "name": "home", 
-                                "type_name": "location"
+                                "name": "gripper", 
+                                "type_name": "tool"
                             }, 
                             "class_name": "Object", 
                             "package": "lingua.types", 
                             "type": "class"
-                        }
+                        }, 
+                        "arg1": "${arg0}"
                     }, 
                     "class_name": "dict"
                 }, 
-                "name": "move_to(location arg0)"
+                "name": "move_to(tool arg0, location arg1)"
             }, 
             "class_name": "Task", 
-            "method_name": "move_to(location arg0)", 
+            "method_name": "move_to(tool arg0, location arg1)", 
             "package": "lingua.types", 
             "type": "class"
         }

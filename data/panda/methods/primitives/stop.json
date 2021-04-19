@@ -1,0 +1,12 @@
+[
+    {
+        "name": "stop()", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "class_name": "Stop", 
+            "package": "lingua.leaves", 
+            "type": "class"
+        }
+    }
+]

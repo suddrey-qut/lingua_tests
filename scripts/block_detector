@@ -31,16 +31,14 @@ def unblock_cb(msg):
   blocked = False
 
 def image_cb(depth_info, depth_image, rgb_info, rgb_image):
-  print('frame')
+  
   state = rospy.wait_for_message('/arm/state', ManipulatorState)
   joint_states = rospy.wait_for_message('/joint_states', JointState)
 
   if blocked:
-    print('Blocked')
     return
 
   if sum(joint_states.position[-2:]) < 0.074:
-    print('fingers closed')
     return
 
   global out_mask
@@ -91,9 +89,6 @@ def image_cb(depth_info, depth_image, rgb_info, rgb_image):
       if area < 1000:
         continue
 
-      print('Spotted:', color_name)
-
-
       detection = Detection()
 
       x,y,width,height = cv2.boundingRect(contour)
@@ -119,19 +114,15 @@ def image_cb(depth_info, depth_image, rgb_info, rgb_image):
       detection.class_label = 'block'
       observation.detections.append(detection)
     
-    print(color_name, len(observation.detections))
     if len(observation.detections) == 0:
       continue
 
     result = ggcnn(observation)
     
     for idx, detection in enumerate(result.result.detections):
-      print('Detection', color_name)
-
       if detection.grasp_pose.pose.position.z < 0.04:
         continue
-      print(color_name)
-
+      
       t = TransformStamped()
 
       t.header.stamp = rospy.Time.now()

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "open(tool arg0)", 
+        "postconditions": [
+            {
+                "args": {
+                    "arguments": {
+                        "args": {
+                            "arg0": "${arg0}"
+                        }, 
+                        "class_name": "dict"
+                    }, 
+                    "predicate": "(open arg0)"
+                }, 
+                "class_name": "Condition", 
+                "package": "lingua.types", 
+                "type": "class"
+            }
+        ], 
+        "preconditions": [
+            {
+                "args": {
+                    "arguments": {
+                        "args": {
+                            "arg0": "${arg0}"
+                        }, 
+                        "class_name": "dict"
+                    }, 
+                    "predicate": "(not (open arg0))"
+                }, 
+                "class_name": "Condition", 
+                "package": "lingua.types", 
+                "type": "class"
+            }
+        ], 
+        "root": {
+            "class_name": "ActuateGripper", 
+            "package": "rv_leaves.leaves.manipulation.grasping", 
+            "type": "class"
+        }
+    }
+]

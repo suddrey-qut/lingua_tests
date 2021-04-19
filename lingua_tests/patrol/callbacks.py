@@ -13,7 +13,7 @@ collection = db.objects
 def at(args):
   location_id = args[0]
   object_id = args[1]
-  print('wtf')
+  
   pose_covariance = rospy.wait_for_message('/amcl_pose', PoseWithCovarianceStamped)
   
   srv = rospy.ServiceProxy('/lingua/world/get_pose', GetObjectPose)
