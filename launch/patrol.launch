@@ -1,4 +1,6 @@
 <launch>
+  <rosparam param="lingua_world/broadcast_transforms">true</rosparam>
+
   <arg name="sim" default="false" />
   <include file="$(find lingua)/launch/lingua.launch">
     <arg name="method_path" value="$(find lingua_tests)/data/patrol/methods" />
@@ -8,7 +10,7 @@
     <arg name="handlers" value="$(find lingua_tests)/data/patrol/environment/handlers.json" />
   </include>
 
-  <node pkg="rv_face_tracking" type="face_tracking_publisher" name="face_tracking" output="screen"/>
+  <!--<node pkg="rv_face_tracking" type="face_tracking_publisher" name="face_tracking" output="screen"/>-->
 
   <group if="$(arg sim)">
 
