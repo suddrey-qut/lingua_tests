@@ -1,6 +1,6 @@
 [
     {
-        "name": "move_over(object arg0)", 
+        "name": "move_over(tool arg0, object arg0)", 
         "postconditions": [], 
         "preconditions": [], 
         "root": {
@@ -8,7 +8,7 @@
                 "children": [
                     {
                         "args": {
-                            "load_value": "${arg0}"
+                            "load_value": "${arg1}"
                         }, 
                         "class_name": "GetObjectPose", 
                         "package": "lingua.leaves", 
@@ -34,7 +34,7 @@
                     }, 
                     {
                         "args": {
-                            "z": -0.15
+                            "z": -0.2
                         }, 
                         "class_name": "TranslatePose", 
                         "package": "rv_leaves.leaves.generic.pose", 

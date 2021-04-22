@@ -14,14 +14,17 @@ def gripper_open(args):
   if args[0] == '?':
     return ['g1'] if gripper_open('g1') else []
   
-  msg = rospy.wait_for_message('/franka_gripper/joint_states', JointState)
-  return msg.position[0] > 0.035 and msg.position[1] > 0.035
+  positions = rospy.wait_for_message('/joint_states', JointState).position[-2:]
+  print(positions)
+  result = positions[0] > 0.035 and positions[1] > 0.035
+  print(result)
+  return result
 
 def on(args):
   location_id = args[0]
   object_id = args[1]
   
-  ee_pose = rospy.wait_for_message('/arm/state', ManipulatorState)
+  ee_pose = rospy.wait_for_message('/arm/state', ManipulatorState).ee_pose
 
   srv = rospy.ServiceProxy('/lingua/world/get_pose', GetObjectPose)
   srv.wait_for_service()

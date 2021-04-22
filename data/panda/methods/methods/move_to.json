@@ -1,39 +1,8 @@
 [
     {
         "name": "move_to(tool arg0, object arg1)", 
-        "postconditions": [
-            {
-                "args": {
-                    "arguments": {
-                        "args": {
-                            "arg0": "${arg0}", 
-                            "arg1": "${arg1}"
-                        }, 
-                        "class_name": "dict"
-                    }, 
-                    "predicate": "(at arg1 arg0)"
-                }, 
-                "class_name": "Condition", 
-                "package": "lingua.types", 
-                "type": "class"
-            }
-        ], 
-        "preconditions": [
-            {
-                "args": {
-                    "arguments": {
-                        "args": {
-                            "arg0": "${arg0}"
-                        }, 
-                        "class_name": "dict"
-                    }, 
-                    "predicate": "(open arg0)"
-                }, 
-                "class_name": "Condition", 
-                "package": "lingua.types", 
-                "type": "class"
-            }
-        ], 
+        "postconditions": [], 
+        "preconditions": [], 
         "root": {
             "args": {
                 "children": [
@@ -90,33 +59,6 @@
         }
     }, 
     {
-        "name": "move_to(tool arg0, location arg1)", 
-        "postconditions": [], 
-        "preconditions": [], 
-        "root": {
-            "args": {
-                "children": [
-                    {
-                        "args": {
-                            "load_value": "${arg1}"
-                        }, 
-                        "class_name": "GetObjectPose", 
-                        "package": "lingua.leaves", 
-                        "type": "class"
-                    }, 
-                    {
-                        "class_name": "MoveGripperToPose", 
-                        "package": "rv_leaves.leaves.manipulation.motion", 
-                        "type": "class"
-                    }
-                ]
-            }, 
-            "class_name": "LinguaSequence", 
-            "package": "lingua.types", 
-            "type": "class"
-        }
-    }, 
-    {
         "name": "move_to(object arg0)", 
         "postconditions": [], 
         "preconditions": [], 
@@ -148,6 +90,69 @@
             }, 
             "class_name": "Task", 
             "method_name": "move_to(tool arg0, object arg1)", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }, 
+    {
+        "name": "move_to(tool arg0, location arg1)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "load_value": "${arg1}"
+                        }, 
+                        "class_name": "GetObjectPose", 
+                        "package": "lingua.leaves", 
+                        "type": "class"
+                    }, 
+                    {
+                        "class_name": "MoveGripperToPose", 
+                        "package": "rv_leaves.leaves.manipulation.motion", 
+                        "type": "class"
+                    }
+                ]
+            }, 
+            "class_name": "LinguaSequence", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }, 
+    {
+        "name": "move_to(location arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "arguments": {
+                    "args": {
+                        "arg0": {
+                            "args": {
+                                "limit": {
+                                    "args": {
+                                        "count": 1
+                                    }, 
+                                    "class_name": "Only", 
+                                    "package": "lingua.types"
+                                }, 
+                                "name": "gripper", 
+                                "type_name": "tool"
+                            }, 
+                            "class_name": "Object", 
+                            "package": "lingua.types", 
+                            "type": "class"
+                        }, 
+                        "arg1": "${arg0}"
+                    }, 
+                    "class_name": "dict"
+                }, 
+                "name": "move_to(tool arg0, location arg1)"
+            }, 
+            "class_name": "Task", 
+            "method_name": "move_to(tool arg0, location arg1)", 
             "package": "lingua.types", 
             "type": "class"
         }

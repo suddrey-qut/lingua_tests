@@ -15,20 +15,6 @@
                 "class_name": "Condition", 
                 "package": "lingua.types", 
                 "type": "class"
-            }, 
-            {
-                "args": {
-                    "arguments": {
-                        "args": {
-                            "arg0": "${arg0}"
-                        }, 
-                        "class_name": "dict"
-                    }, 
-                    "predicate": "(holding arg0 (in arg0 ?))"
-                }, 
-                "class_name": "Condition", 
-                "package": "lingua.types", 
-                "type": "class"
             }
         ], 
         "preconditions": [

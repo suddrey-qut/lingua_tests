@@ -1,0 +1,229 @@
+[
+    {
+        "name": "put_away(object arg0)", 
+        "postconditions": [], 
+        "preconditions": [], 
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "arguments": {
+                                "args": {
+                                    "arg0": "${arg0}"
+                                }, 
+                                "class_name": "dict"
+                            }, 
+                            "name": "pick_up(object arg0)"
+                        }, 
+                        "class_name": "Task", 
+                        "method_name": "pick_up(object arg0)", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "body": {
+                                "args": {
+                                    "arguments": {
+                                        "args": {
+                                            "arg0": "${arg0}", 
+                                            "arg1": {
+                                                "args": {
+                                                    "limit": {
+                                                        "args": {
+                                                            "count": 1
+                                                        }, 
+                                                        "class_name": "Only", 
+                                                        "package": "lingua.types"
+                                                    }, 
+                                                    "name": "box", 
+                                                    "type_name": "object"
+                                                }, 
+                                                "class_name": "Object", 
+                                                "package": "lingua.types", 
+                                                "type": "class"
+                                            }
+                                        }, 
+                                        "class_name": "dict"
+                                    }, 
+                                    "name": "put_into(object arg0, object arg1)"
+                                }, 
+                                "class_name": "Task", 
+                                "method_name": "put_into(object arg0, object arg1)", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }, 
+                            "condition": {
+                                "args": {
+                                    "attribute": {
+                                        "args": {
+                                            "attributes": [
+                                                {
+                                                    "args": {
+                                                        "type_name": "color", 
+                                                        "value": "blue"
+                                                    }, 
+                                                    "class_name": "Attribute", 
+                                                    "package": "lingua.types", 
+                                                    "type": "class"
+                                                }
+                                            ], 
+                                            "name": "*", 
+                                            "type_name": "dummy"
+                                        }, 
+                                        "class_name": "DummyObject", 
+                                        "package": "lingua.types", 
+                                        "type": "class"
+                                    }, 
+                                    "child": "${arg0}"
+                                }, 
+                                "class_name": "Assertion", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }
+                        }, 
+                        "class_name": "Conditional", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "body": {
+                                "args": {
+                                    "arguments": {
+                                        "args": {
+                                            "arg0": "${arg0}", 
+                                            "arg1": {
+                                                "args": {
+                                                    "limit": {
+                                                        "args": {
+                                                            "count": 1
+                                                        }, 
+                                                        "class_name": "Only", 
+                                                        "package": "lingua.types"
+                                                    }, 
+                                                    "name": "bin", 
+                                                    "type_name": "object"
+                                                }, 
+                                                "class_name": "Object", 
+                                                "package": "lingua.types", 
+                                                "type": "class"
+                                            }
+                                        }, 
+                                        "class_name": "dict"
+                                    }, 
+                                    "name": "put_into(object arg0, object arg1)"
+                                }, 
+                                "class_name": "Task", 
+                                "method_name": "put_into(object arg0, object arg1)", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }, 
+                            "condition": {
+                                "args": {
+                                    "attribute": {
+                                        "args": {
+                                            "attributes": [
+                                                {
+                                                    "args": {
+                                                        "type_name": "color", 
+                                                        "value": "red"
+                                                    }, 
+                                                    "class_name": "Attribute", 
+                                                    "package": "lingua.types", 
+                                                    "type": "class"
+                                                }
+                                            ], 
+                                            "name": "*", 
+                                            "type_name": "dummy"
+                                        }, 
+                                        "class_name": "DummyObject", 
+                                        "package": "lingua.types", 
+                                        "type": "class"
+                                    }, 
+                                    "child": "${arg0}"
+                                }, 
+                                "class_name": "Assertion", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }
+                        }, 
+                        "class_name": "Conditional", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }, 
+                    {
+                        "args": {
+                            "body": {
+                                "args": {
+                                    "arguments": {
+                                        "args": {
+                                            "arg0": "${arg0}", 
+                                            "arg1": {
+                                                "args": {
+                                                    "limit": {
+                                                        "args": {
+                                                            "count": 1
+                                                        }, 
+                                                        "class_name": "Only", 
+                                                        "package": "lingua.types"
+                                                    }, 
+                                                    "name": "bin", 
+                                                    "type_name": "object"
+                                                }, 
+                                                "class_name": "Object", 
+                                                "package": "lingua.types", 
+                                                "type": "class"
+                                            }
+                                        }, 
+                                        "class_name": "dict"
+                                    }, 
+                                    "name": "put_into(object arg0, object arg1)"
+                                }, 
+                                "class_name": "Task", 
+                                "method_name": "put_into(object arg0, object arg1)", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }, 
+                            "condition": {
+                                "args": {
+                                    "attribute": {
+                                        "args": {
+                                            "attributes": [
+                                                {
+                                                    "args": {
+                                                        "type_name": "color", 
+                                                        "value": "green"
+                                                    }, 
+                                                    "class_name": "Attribute", 
+                                                    "package": "lingua.types", 
+                                                    "type": "class"
+                                                }
+                                            ], 
+                                            "name": "*", 
+                                            "type_name": "dummy"
+                                        }, 
+                                        "class_name": "DummyObject", 
+                                        "package": "lingua.types", 
+                                        "type": "class"
+                                    }, 
+                                    "child": "${arg0}"
+                                }, 
+                                "class_name": "Assertion", 
+                                "package": "lingua.types", 
+                                "type": "class"
+                            }
+                        }, 
+                        "class_name": "Conditional", 
+                        "package": "lingua.types", 
+                        "type": "class"
+                    }
+                ]
+            }, 
+            "class_name": "LinguaSequence", 
+            "package": "lingua.types", 
+            "type": "class"
+        }
+    }
+]

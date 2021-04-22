@@ -154,5 +154,5 @@ with open(os.path.join(path, 'results', 'failed-{}.csv'.format(n-m)), 'w') as f:
 
 print('Invalid:', len(invalid))
 print('Valid:', n)
-print('Parsed:', m, 'Rate:', m/n)
-print('Converted', valid, 'Rate:', valid/m)
+print('Parsed:', m, 'Rate:', m/float(n))
+print('Converted', valid, 'Rate:', valid/float(m))
