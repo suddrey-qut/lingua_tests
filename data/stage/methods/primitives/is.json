@@ -1,0 +1,25 @@
+[
+    {
+        "name": "is(object arg0, room arg1)",
+        "postconditions": [],
+        "preconditions": [],
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "load_value": "${arg1}",
+                            "overwrite": true
+                        },
+                        "class_name": "SetObjectPoseAMCL",
+                        "package": "lingua.leaves",
+                        "type": "class"
+                    }
+                ]
+            },
+            "class_name": "LinguaSequence",
+            "package": "lingua.types",
+            "type": "class"
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+      "typename": "room"
+    },
+    {
+      "typename": "kitchen",
+      "parent": "room"
+    },  
+    {
+      "typename": "lounge",
+      "parent": "room"
+    },
+    {
+      "typename": "person"
+    },
+    {
+      "typename": "object"
+    },
+    {
+      "typename": "bell",
+      "parent": "object"
+    },
+    {
+      "typename": "brakes"
+    }
+  ]

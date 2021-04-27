@@ -14,6 +14,10 @@
     "parent": "object"
   },
   {
+    "typename": "block",
+    "parent": "object"
+  },
+  {
     "typename": "location"
   }
 ]

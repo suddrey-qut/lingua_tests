@@ -1,0 +1,14 @@
+[
+  {
+    "pattern": "\\(at (.*) (.*)\\)",
+    "callback": "lingua_tests.patrol.callbacks/at"
+  },
+  {
+    "pattern": "\\(in (.*) (.*)\\)",
+    "callback": "lingua_tests.patrol.callbacks/at"
+  },
+  {
+    "pattern": "\\(locked (.*)\\)",
+    "callback": "lingua_tests.stage.callbacks/locked"
+  }
+]

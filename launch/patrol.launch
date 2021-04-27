@@ -1,7 +1,6 @@
 <launch>
-  <rosparam param="lingua_world/broadcast_transforms">true</rosparam>
+  <rosparam param="/world/broadcast_transforms">true</rosparam>
 
-  <arg name="sim" default="false" />
   <include file="$(find lingua)/launch/lingua.launch">
     <arg name="method_path" value="$(find lingua_tests)/data/patrol/methods" />
     <arg name="objects_file" value="$(find lingua_tests)/data/patrol/environment/objects.json" />
@@ -9,19 +8,4 @@
 
     <arg name="handlers" value="$(find lingua_tests)/data/patrol/environment/handlers.json" />
   </include>
-
-  <!--<node pkg="rv_face_tracking" type="face_tracking_publisher" name="face_tracking" output="screen"/>-->
-
-  <group if="$(arg sim)">
-
-    <include file="$(find turtlebot_stage)/launch/turtlebot_in_stage.launch">
-      <arg name="map_file" value="$(find turtlebot_stage)/maps/maze.yaml" />
-      <arg name="world_file" value="$(find turtlebot_stage)/maps/stage/maze.world" />
-    </include>
-
-    
-    
-    <node pkg="lingua_tests" type="image_publisher" name="image_publisher" />
-    <node pkg="lingua_tests" type="person_detector" name="person_detector" output="screen" />
-  </group>
 </launch>

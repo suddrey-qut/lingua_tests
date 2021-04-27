@@ -1,0 +1,26 @@
+[
+  {
+    "name": "unlock(tool arg0)",
+    "postconditions": [
+      {
+        "type": "class", 
+        "package": "lingua.types",
+        "class_name": "Condition",
+        "args": {
+          "predicate": "(not (locked agent))",
+          "arguments": {
+            "class_name": "dict",
+            "args": {}
+          }
+        }
+      }
+    ],
+    "preconditions": [
+    ],
+    "root": {
+      "class_name": "UnlockBrakes",
+      "package": "lingua_tests.stage.leaves",
+      "type": "class"
+    }
+  }
+]

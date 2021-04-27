@@ -1,0 +1,26 @@
+[
+  {
+    "name": "lock(tool arg0)",
+    "postconditions": [
+      {
+        "type": "class", 
+        "package": "lingua.types",
+        "class_name": "Condition",
+        "args": {
+          "predicate": "(locked agent)",
+          "arguments": {
+            "class_name": "dict",
+            "args": {}
+          }
+        }
+      }
+    ],
+    "preconditions": [
+    ],
+    "root": {
+      "class_name": "LockBrakes",
+      "package": "lingua_tests.stage.leaves",
+      "type": "class"
+    }
+  }
+]

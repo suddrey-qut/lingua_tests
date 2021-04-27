@@ -7,6 +7,8 @@
     <arg name="handlers" value="$(find lingua_tests)/data/panda/environment/handlers.json" />
   </include>
 
-  <include file="$(find lingua_tests)/launch/detector.launch" />
+  <include file="$(find ggcnn)/launch/ggcnn_service.launch" />
+
+  <node pkg="lingua_tests" type="block_detector" name="detector" output="screen" />
   
 </launch>

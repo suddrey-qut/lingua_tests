@@ -1,0 +1,107 @@
+[
+    {
+        "attributes": [
+            {
+                "key": "class_label",
+                "value": [
+                    "tool"
+                ]
+            }
+        ],
+        "object_id": "agent",
+        "transient": false
+    },
+    {
+        "attributes": [
+            {
+                "key": "class_label",
+                "value": [
+                    "lounge"
+                ]
+            }
+        ],
+        "object_id": "l1",
+        "position": {
+            "header": {
+                "frame_id": "map",
+                "stamp": 107.2
+            },
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 2.0,
+                    "y": 2.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "transient": true
+    },
+    {
+        "attributes": [
+            {
+                "key": "class_label",
+                "value": [
+                    "kitchen"
+                ]
+            }
+        ],
+        "object_id": "l2",
+        "position": {
+            "header": {
+                "frame_id": "map",
+                "stamp": 107.2
+            },
+            "pose": {
+                "orientation": {
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "position": {
+                    "x": 2.0,
+                    "y": 4.8,
+                    "z": 0.0
+                }
+            }
+        },
+        "transient": true
+    },
+    {
+      "attributes": [
+          {
+              "key": "class_label",
+              "value": [
+                  "bell"
+              ]
+          }
+      ],
+      "object_id": "bell",
+      "position": {
+          "header": {
+              "frame_id": "map",
+              "stamp": 107.2
+          },
+          "pose": {
+              "orientation": {
+                  "w": 1,
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+              },
+              "position": {
+                  "x": 5.0,
+                  "y": 6.8,
+                  "z": 0.0
+              }
+          }
+      },
+      "transient": true
+  }
+]
