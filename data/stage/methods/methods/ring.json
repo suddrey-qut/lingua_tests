@@ -1,27 +1,27 @@
 [
-  {
-    "name": "ring(object arg0)",
-    "postconditions": [],
-    "preconditions": [
-      {
-        "type": "class", 
-        "package": "lingua.types",
-        "class_name": "Condition",
-        "args": {
-          "predicate": "(at arg0 agent)",
-          "arguments": {
-            "class_name": "dict",
-            "args": {
-              "arg0": "${arg0}"
+    {
+        "name": "ring(object arg0)",
+        "postconditions": [],
+        "preconditions": [
+            {
+                "args": {
+                    "arguments": {
+                        "args": {
+                            "arg0": "${arg0}"
+                        },
+                        "class_name": "dict"
+                    },
+                    "predicate": "(at arg0 agent)"
+                },
+                "class_name": "Condition",
+                "package": "lingua.types",
+                "type": "class"
             }
-          }
+        ],
+        "root": {
+            "class_name": "RingBell",
+            "package": "lingua_tests.stage.leaves",
+            "type": "class"
         }
-      }
-    ],
-    "root": {
-      "class_name": "RingBell",
-      "package": "lingua_tests.stage.leaves",
-      "type": "class"
     }
-  }
 ]

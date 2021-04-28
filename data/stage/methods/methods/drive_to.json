@@ -2,34 +2,34 @@
     {
         "name": "drive_to(room arg0)",
         "postconditions": [
-          {
-            "type": "class", 
-            "package": "lingua.types",
-            "class_name": "Condition",
-            "args": {
-              "predicate": "(at arg0 agent)",
-              "arguments": {
-                "class_name": "dict",
+            {
                 "args": {
-                  "arg0": "${arg0}"
-                }
-              }
+                    "arguments": {
+                        "args": {
+                            "arg0": "${arg0}"
+                        },
+                        "class_name": "dict"
+                    },
+                    "predicate": "(at arg0 agent)"
+                },
+                "class_name": "Condition",
+                "package": "lingua.types",
+                "type": "class"
             }
-          }
         ],
         "preconditions": [
-          {
-            "type": "class", 
-            "package": "lingua.types",
-            "class_name": "Condition",
-            "args": {
-              "predicate": "(not (locked agent))",
-              "arguments": {
-                "class_name": "dict",
-                "args": {}
-              }
+            {
+                "args": {
+                    "arguments": {
+                        "args": {},
+                        "class_name": "dict"
+                    },
+                    "predicate": "(not (locked agent))"
+                },
+                "class_name": "Condition",
+                "package": "lingua.types",
+                "type": "class"
             }
-          }
         ],
         "root": {
             "args": {
@@ -60,63 +60,63 @@
         }
     },
     {
-      "name": "drive_to(object arg0)",
-      "postconditions": [
-        {
-          "type": "class", 
-          "package": "lingua.types",
-          "class_name": "Condition",
-          "args": {
-            "predicate": "(at arg0 agent)",
-            "arguments": {
-              "class_name": "dict",
-              "args": {
-                "arg0": "${arg0}"
-              }
+        "name": "drive_to(object arg0)",
+        "postconditions": [
+            {
+                "args": {
+                    "arguments": {
+                        "args": {
+                            "arg0": "${arg0}"
+                        },
+                        "class_name": "dict"
+                    },
+                    "predicate": "(at arg0 agent)"
+                },
+                "class_name": "Condition",
+                "package": "lingua.types",
+                "type": "class"
             }
-          }
-        }
-      ],
-      "preconditions": [
-        {
-          "type": "class", 
-          "package": "lingua.types",
-          "class_name": "Condition",
-          "args": {
-            "predicate": "(not (locked agent))",
-            "arguments": {
-              "class_name": "dict",
-              "args": {}
+        ],
+        "preconditions": [
+            {
+                "args": {
+                    "arguments": {
+                        "args": {},
+                        "class_name": "dict"
+                    },
+                    "predicate": "(not (locked agent))"
+                },
+                "class_name": "Condition",
+                "package": "lingua.types",
+                "type": "class"
             }
-          }
+        ],
+        "root": {
+            "args": {
+                "children": [
+                    {
+                        "args": {
+                            "load_value": "${arg0}"
+                        },
+                        "class_name": "GetObjectPose",
+                        "package": "lingua.leaves",
+                        "type": "class"
+                    },
+                    {
+                        "class_name": "Print",
+                        "package": "rv_leaves.leaves.generic.console",
+                        "type": "class"
+                    },
+                    {
+                        "class_name": "MoveToPose",
+                        "package": "rv_leaves.leaves.mobility.motion",
+                        "type": "class"
+                    }
+                ]
+            },
+            "class_name": "LinguaSequence",
+            "package": "lingua.types",
+            "type": "class"
         }
-      ],
-      "root": {
-          "args": {
-              "children": [
-                  {
-                      "args": {
-                          "load_value": "${arg0}"
-                      },
-                      "class_name": "GetObjectPose",
-                      "package": "lingua.leaves",
-                      "type": "class"
-                  },
-                  {
-                      "class_name": "Print",
-                      "package": "rv_leaves.leaves.generic.console",
-                      "type": "class"
-                  },
-                  {
-                      "class_name": "MoveToPose",
-                      "package": "rv_leaves.leaves.mobility.motion",
-                      "type": "class"
-                  }
-              ]
-          },
-          "class_name": "LinguaSequence",
-          "package": "lingua.types",
-          "type": "class"
-      }
-  }
+    }
 ]
