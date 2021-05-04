@@ -57,55 +57,52 @@ stupid = []
 #   for line in reader:
 #     stupid.append(line[5])
 
-with open(os.path.join(path, 'results', 'base.csv'.format(date_time)), 'w') as f:
-  f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')
-  for test in tests:
-    print(test)
-    sent = test[5]
-    
-    test_passed=True
-    sent = sent.lower().strip().replace(',', ' ,')
-    sent = r.sub(r'\1', sent)
-
-    print(sent)
-    if len(sent) == 0:
-      continue
+for test in tests:
+  print(test)
+  sent = test[5]
   
-    # tokens = nltk.word_tokenize(sent)
-    # tagged = nltk.pos_tag(tokens)
-    # nouns.update((t[0] for t in tagged if t[1] == 'NN'))
-    parses = parser(ParseRequest(text=sent)).parses
-    success = False
+  test_passed=True
+  sent = sent.lower().strip().replace(',', ' ,')
+  sent = r.sub(r'\1', sent)
 
-    parsed = True if len(parses) > 0 else False
+  print(sent)
+  if len(sent) == 0:
+    continue
 
-    for parse in parses:
-      utterance, t = CCGReader.read(parse)
-      
-      if t:
-        print(t.to_btree())
-        success = True
-        valid += 1
-        break
+  # tokens = nltk.word_tokenize(sent)
+  # tagged = nltk.pos_tag(tokens)
+  # nouns.update((t[0] for t in tagged if t[1] == 'NN'))
+  parses = parser(ParseRequest(text=sent)).parses
+  success = False
 
-    # test[4] = '0' if test[5] in stupid else ''
+  parsed = True if len(parses) > 0 else False
 
-    n += 1 if test[4] != '0' else 0
-    m += 1 if parsed else 0
-
-    if test[4] == '0':
-      invalid.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+  for parse in parses:
+    utterance, t = CCGReader.read(parse)
     
-    elif not parsed:
-      failed.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+    if t:
+      print(t.to_btree())
+      print(str(t))
+      success = True
+      valid += 1
+      break
 
-    elif parsed and not success:
-      parsed_only.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+  # test[4] = '0' if test[5] in stupid else ''
 
-    elif success:
-      succeeded.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+  n += 1 if test[4] != '0' else 0
+  m += 1 if parsed else 0
 
-    f.write('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+  if test[4] == '0':
+    invalid.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+  
+  elif not parsed:
+    failed.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+
+  elif parsed and not success:
+    parsed_only.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
+
+  elif success:
+    succeeded.append('{},{},{},{},{},"{}"\n'.format(test[0], test[1], '1' if success else '0', '1' if parsed else '0', '1' if parsed else test[4], test[5]))
 
 with open(os.path.join(path, 'results', 'invalid-{}.csv'.format(len(invalid))), 'w') as f:
   f.write('"Sample ID","Sentence ID","Tree","Parsed","Valid","Sentence"\n')

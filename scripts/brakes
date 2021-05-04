@@ -13,6 +13,8 @@ def get_status(req):
 
 def callback(goal):
   global brakes_locked
+  for n in range(5):
+    time.sleep(1)
   brakes_locked = goal.enabled
   server.set_succeeded(result=SetBrakesResult(True))
 
