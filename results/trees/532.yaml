@@ -1,0 +1,24 @@
+frame: |-
+  when:
+   condition:
+    assert:
+     object:
+      object:water
+       limit:
+        Only: 1
+     is:
+      dummy:*
+       attributes:
+        [state=boiling]
+   body:
+    turn_off(object arg0)
+     arg0:
+      object:stove
+       limit:
+        Only: 1
+tree: |
+  SuccessIsFailure [when]
+  [-] when
+      --> assert:  object:   object:water    limit:     Only: 1  is:   dummy:*    attributes:     [state=boiling]
+      [-] turn_off(object arg0)
+utterance: turn off the stove when the water is boiling

@@ -1,0 +1,13 @@
+frame: |-
+  wipe(object arg0)
+   arg0:
+    object:fridge
+     relation:
+      [with=object:cloth
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  wipe(object arg0)
+utterance: wipe fridge with cloth

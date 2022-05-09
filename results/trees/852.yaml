@@ -1,0 +1,33 @@
+frame: |-
+  and
+   -
+    catch(object arg0)
+     arg0:
+      object:pan
+       limit:
+        Only: 1
+   -
+    and
+     -
+      get_to(object arg0)
+       arg0:
+        object:fridge
+         limit:
+          Only: 1
+     -
+      fill_into(object arg0, object arg1)
+       arg0:
+        object:water
+         limit:
+          Only: 1
+       arg1:
+        anaphora:it
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] catch(object arg0)
+  [-] and
+      [-] get_to(object arg0)
+      [-] fill_into(object arg0, object arg1)
+utterance: catch the pan  , get to the fridge and fill water into it

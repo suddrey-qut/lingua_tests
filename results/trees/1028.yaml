@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:pillow
+       relation:
+        [from=object:bed
+         limit:
+          Only: 1]
+   -
+    move_to(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] move_to(animate-being arg0, object arg1)
+utterance: take the pillows from your bed and move them to the couch

@@ -1,0 +1,15 @@
+frame: |-
+  pour_into(object arg0, object arg1)
+   arg0:
+    object:coffee
+     attributes:
+      [state=finished]
+     limit:
+      Only: 1
+   arg1:
+    object:bowl
+     limit:
+      Only: 1
+tree: |
+  pour_into(object arg0, object arg1)
+utterance: slowly pour the finished coffee into the bowl

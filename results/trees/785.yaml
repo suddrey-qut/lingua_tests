@@ -1,0 +1,11 @@
+frame: |-
+  place(animate-being arg0)
+   arg0:
+    animate-being:pro3n
+     relation:
+      [in=object:sink
+       limit:
+        Only: 1]
+tree: |
+  place(animate-being arg0)
+utterance: place them in the sink

@@ -1,0 +1,13 @@
+frame: |-
+  discard(object arg0)
+   arg0:
+    object:soda
+     relation:
+      [in=object:garbage
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  discard(object arg0)
+utterance: discard soda in garbage

@@ -1,0 +1,13 @@
+frame: |-
+  put_to(object arg0, object arg1)
+   arg0:
+    object:ice_cream
+     limit:
+      Only: 1
+   arg1:
+    object:mug
+     limit:
+      Only: 1
+tree: |
+  put_to(object arg0, object arg1)
+utterance: put ice cream to the mug

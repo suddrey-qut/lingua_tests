@@ -1,0 +1,11 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    object:bottle
+   arg1:
+    object:refrigerator
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put all bottles in the refrigerator

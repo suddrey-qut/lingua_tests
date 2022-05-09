@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    place(object arg0)
+     arg0:
+      object:mug
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    scoop_into(object arg0, object arg1)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] place(object arg0)
+  [-] scoop_into(object arg0, object arg1)
+utterance: place the mug on the table and scoop ice cream into the mug

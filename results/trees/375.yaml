@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:coffee
+       relation:
+        [from=object:cupboard
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] pour_into(object arg0, object arg1)
+utterance: get coffee from the cupboard and pour it into the mug

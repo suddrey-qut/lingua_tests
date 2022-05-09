@@ -1,0 +1,21 @@
+frame: |-
+  take_out(object arg0)
+   arg0:
+    and
+     -
+      object:coffee
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:ice_cream
+         limit:
+          Only: 1
+       -
+        object:syrup
+         limit:
+          Only: 1
+tree: |
+  take_out(object arg0)
+utterance: take out coffee  , ice cream and syrup

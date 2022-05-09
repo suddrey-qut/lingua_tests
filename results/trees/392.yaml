@@ -1,0 +1,15 @@
+frame: |-
+  empty_of(object arg0, object arg1)
+   arg0:
+    object:contents
+   arg1:
+    and
+     -
+      object:cup
+     -
+      object:pot
+       limit:
+        Only: 1
+tree: |
+  empty_of(object arg0, object arg1)
+utterance: empty the contents of the cups and pot

@@ -1,0 +1,13 @@
+frame: |-
+  boil(object arg0)
+   arg0:
+    object:pot
+     relation:
+      [on=object:stove
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  boil(object arg0)
+utterance: boil the pot on the stove

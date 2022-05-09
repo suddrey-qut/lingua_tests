@@ -1,0 +1,15 @@
+frame: |-
+  boil(object arg0)
+   arg0:
+    object:water
+     relation:
+      [in=object:pot
+       attributes:
+        [state=clean]
+       limit:
+        Any: 1]
+     limit:
+      Only: 1
+tree: |
+  boil(object arg0)
+utterance: boil some water in a clean pot

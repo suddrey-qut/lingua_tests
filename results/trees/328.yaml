@@ -1,0 +1,9 @@
+frame: |-
+  clear(object arg0)
+   arg0:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  clear(object arg0)
+utterance: clear the table

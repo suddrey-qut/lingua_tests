@@ -1,0 +1,13 @@
+frame: |-
+  discard(object arg0)
+   arg0:
+    object:bag
+     relation:
+      [in=object:garbage
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  discard(object arg0)
+utterance: discard bag of chips in garbage

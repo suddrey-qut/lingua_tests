@@ -1,0 +1,9 @@
+frame: |-
+  discard(object arg0)
+   arg0:
+    object:garbage
+     limit:
+      Only: 1
+tree: |
+  discard(object arg0)
+utterance: discard garbage

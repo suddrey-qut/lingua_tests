@@ -1,0 +1,17 @@
+frame: |-
+  bring(object arg0, animate-being arg1)
+   arg0:
+    and
+     -
+      object:book
+       limit:
+        Only: 1
+     -
+      object:bag
+       limit:
+        Only: 1
+   arg1:
+    animate-being:pro1
+tree: |
+  bring(object arg0, animate-being arg1)
+utterance: bring us the book and the bag of chips

@@ -1,0 +1,21 @@
+frame: |-
+  add_to(object arg0, object arg1)
+   arg0:
+    object:water
+     limit:
+      Only: 1
+   arg1:
+    and
+     -
+      object:cup
+       attributes:
+        [state=long]
+       limit:
+        Only: 1
+     -
+      object:microwave
+       limit:
+        Only: 1
+tree: |
+  add_to(object arg0, object arg1)
+utterance: add the water to the long cup and microwave

@@ -1,0 +1,7 @@
+frame: |-
+  arrange(object arg0)
+   arg0:
+    object:things
+tree: |
+  arrange(object arg0)
+utterance: arrange all the things

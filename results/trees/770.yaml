@@ -1,0 +1,9 @@
+frame: |-
+  drop_in(object arg0)
+   arg0:
+    object:trash_can
+     limit:
+      Only: 1
+tree: |
+  drop_in(object arg0)
+utterance: drop in trash can

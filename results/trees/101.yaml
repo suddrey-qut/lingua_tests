@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:package
+       limit:
+        Only: 1
+   -
+    open(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] open(object arg0)
+utterance: get the package of ramen and open it

@@ -1,0 +1,15 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:kettle
+     relation:
+      [on=object:front_burner
+       attributes:
+        [state=right]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place the kettle on the right front burner

@@ -1,0 +1,9 @@
+frame: |-
+  drop_near(object arg0)
+   arg0:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  drop_near(object arg0)
+utterance: drop near tv

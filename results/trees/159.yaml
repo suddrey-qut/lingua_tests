@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:television
+       limit:
+        Only: 1
+   -
+    turn_to(object arg0, object arg1)
+     arg0:
+      object:volume
+       limit:
+        Only: 1
+     arg1:
+      object:max
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] turn_to(object arg0, object arg1)
+utterance: turn on the tv and turn the volume to the max

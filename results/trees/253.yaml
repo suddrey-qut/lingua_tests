@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    place_into(object arg0, object arg1)
+     arg0:
+      object:food
+     arg1:
+      object:trash_bag
+       limit:
+        Only: 1
+   -
+    place_into(object arg0, object arg1)
+     arg0:
+      object:trash_bag
+       limit:
+        Only: 1
+     arg1:
+      object:bin
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] place_into(object arg0, object arg1)
+  [-] place_into(object arg0, object arg1)
+utterance: place the food into the trash bag and place trash bag into the bin

@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:drinks
+   -
+    put_on(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:coffee_table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] put_on(animate-being arg0, object arg1)
+utterance: take any drinks and put them on the coffee table

@@ -1,0 +1,7 @@
+frame: |-
+  bring(object arg0)
+   arg0:
+    object:pillow
+tree: |
+  bring(object arg0)
+utterance: bring pillows

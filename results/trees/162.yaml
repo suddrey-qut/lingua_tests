@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    cook(object arg0)
+     arg0:
+      object:egg
+       relation:
+        [on=object:stove
+         limit:
+          Only: 1]
+   -
+    bring_to(object arg0, animate-being arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      animate-being:pro1
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] cook(object arg0)
+  [-] bring_to(object arg0, animate-being arg1)
+utterance: cook some eggs on the stove and then bring it to me

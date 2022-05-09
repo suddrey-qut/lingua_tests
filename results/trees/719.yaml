@@ -1,0 +1,15 @@
+frame: |-
+  set_up(object arg0)
+   arg0:
+    and
+     -
+      object:television
+       limit:
+        Only: 1
+     -
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  set_up(object arg0)
+utterance: set up the tv and the xbox

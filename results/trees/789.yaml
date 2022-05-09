@@ -1,0 +1,13 @@
+frame: |-
+  grasp_to(object arg0, object arg1)
+   arg0:
+    object:pot
+     limit:
+      Only: 1
+   arg1:
+    object:stove
+     limit:
+      Only: 1
+tree: |
+  grasp_to(object arg0, object arg1)
+utterance: grasp pot to the stove

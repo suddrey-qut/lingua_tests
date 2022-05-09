@@ -1,0 +1,9 @@
+frame: |-
+  object:mug
+   attributes:
+    [state=empty]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: empty mug  , cup and glass in the sink  , and then place them in cupboards

@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:vanilla_syrup
+       limit:
+        Only: 1
+   -
+    pour_over(object arg0)
+     arg0:
+      object:icecream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] pour_over(object arg0)
+utterance: take vanilla syrup and pour over icecream

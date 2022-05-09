@@ -1,0 +1,11 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:book
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+tree: |
+  place(object arg0)
+utterance: place the books on the table

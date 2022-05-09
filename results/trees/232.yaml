@@ -1,0 +1,13 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    object:food
+   arg1:
+    object:table
+     attributes:
+      [state=center]
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put the food on the center table

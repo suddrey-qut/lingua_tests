@@ -1,0 +1,13 @@
+frame: |-
+  play(object arg0)
+   arg0:
+    object:game
+     relation:
+      [on=object:xbox
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  play(object arg0)
+utterance: play game on xbox

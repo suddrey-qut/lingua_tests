@@ -1,0 +1,30 @@
+frame: |-
+  and
+   -
+    put_into(object arg0, object arg1)
+     arg0:
+      and
+       -
+        object:chocolate
+         limit:
+          Only: 1
+       -
+        object:vanilla_syrup_bottle
+         limit:
+          Only: 1
+     arg1:
+      object:fridge
+       limit:
+        Only: 1
+   -
+    close(object arg0)
+     arg0:
+      object:fridge_door
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_into(object arg0, object arg1)
+  [-] close(object arg0)
+utterance: put the chocolate and vanilla syrup bottle into the fridge and close the
+  fridge door

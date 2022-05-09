@@ -1,0 +1,13 @@
+frame: |-
+  push_against(object arg0, object arg1)
+   arg0:
+    object:furniture
+     limit:
+      Only: 1
+   arg1:
+    object:wall
+     limit:
+      Only: 1
+tree: |
+  push_against(object arg0, object arg1)
+utterance: push all furniture against wall

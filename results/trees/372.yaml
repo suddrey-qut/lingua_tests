@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    put_into(object arg0, object arg1)
+     arg0:
+      object:game
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+   -
+    connect_to(object arg0, object arg1)
+     arg0:
+      object:xbox
+       limit:
+        Only: 1
+     arg1:
+      object:television
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_into(object arg0, object arg1)
+  [-] connect_to(object arg0, object arg1)
+utterance: put the game into the xbox  , connect xbox to television

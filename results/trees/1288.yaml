@@ -1,0 +1,13 @@
+frame: |-
+  press(object arg0)
+   arg0:
+    object:off_button
+     relation:
+      [on=object:television_remote
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  press(object arg0)
+utterance: press the off button on television remote

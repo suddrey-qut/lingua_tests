@@ -1,0 +1,15 @@
+frame: |-
+  throw_out(object arg0)
+   arg0:
+    and
+     -
+      object:beer
+       limit:
+        Only: 1
+     -
+      object:coke
+       limit:
+        Only: 1
+tree: |
+  throw_out(object arg0)
+utterance: throw out beer and coke

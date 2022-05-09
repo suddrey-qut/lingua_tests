@@ -1,0 +1,27 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:bowl
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:beer
+         limit:
+          Only: 1
+       -
+        object:coke
+         relation:
+          [on=object:table
+           attributes:
+            [state=center]
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  place(object arg0)
+utterance: place the bowl of food  , beer  , and coke on the center table

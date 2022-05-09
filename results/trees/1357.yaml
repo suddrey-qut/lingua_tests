@@ -1,0 +1,13 @@
+frame: |-
+  dump(object arg0)
+   arg0:
+    object:bowl
+     relation:
+      [in=object:trash
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  dump(object arg0)
+utterance: dump the bowl in trash

@@ -1,0 +1,15 @@
+frame: |-
+  bring(object arg0)
+   arg0:
+    object:egg
+     attributes:
+      [state=boiled]
+     relation:
+      [from=object:fridge
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  bring(object arg0)
+utterance: bring boiled egg from the fridge

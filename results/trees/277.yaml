@@ -1,0 +1,13 @@
+frame: |-
+  leave(object arg0)
+   arg0:
+    object:case
+     relation:
+      [near=object:xbox
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  leave(object arg0)
+utterance: leave the case near the xbox

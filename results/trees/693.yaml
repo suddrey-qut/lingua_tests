@@ -1,0 +1,15 @@
+frame: |-
+  fill(object arg0)
+   arg0:
+    object:cup
+     attributes:
+      [state=long]
+     relation:
+      [with=object:ramen
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  fill(object arg0)
+utterance: fill the long cup with ramen

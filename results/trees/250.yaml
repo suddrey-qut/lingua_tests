@@ -1,0 +1,32 @@
+frame: |-
+  and
+   -
+    empty_into(object arg0, object arg1)
+     arg0:
+      object:bag
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       limit:
+        Only: 1
+   -
+    put_of(object arg0, object arg1)
+     arg0:
+      object:table
+       relation:
+        [in=object:front
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] empty_into(object arg0, object arg1)
+  [-] put_of(object arg0, object arg1)
+utterance: empty the bag of chips into the bowl and put that on the table in front
+  of the couch

@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:remote
+       relation:
+        [from=object:shelf
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    and
+     -
+      turn_off(object arg0)
+       arg0:
+        object:television
+         limit:
+          Only: 1
+     -
+      replace(object arg0)
+       arg0:
+        object:remote
+         relation:
+          [on=object:shelf
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] and
+      [-] turn_off(object arg0)
+      [-] replace(object arg0)
+utterance: take remote from shelf and turn off the tv  , then replace remote on shelf

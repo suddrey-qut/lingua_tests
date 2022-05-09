@@ -1,0 +1,18 @@
+frame: |-
+  for:
+   duration:
+    30.0 second(s)
+   body:
+    microwave(object arg0)
+     arg0:
+      object:coffee
+       relation:
+        [in=object:mug
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  Repeat for 30.0 second(s)
+  [-] microwave(object arg0)
+utterance: microwave the coffee in the mug for 30 seconds

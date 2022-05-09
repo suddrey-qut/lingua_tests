@@ -1,0 +1,54 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:television
+       limit:
+        Only: 1
+   -
+    and
+     -
+      put(object arg0, object arg1)
+       arg0:
+        object:game
+         relation:
+          [in=object:xbox
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+       arg1:
+        object:video
+         limit:
+          Only: 1
+     -
+      and
+       -
+        arrange_around(object arg0, object arg1)
+         arg0:
+          object:couch
+         arg1:
+          object:television
+           limit:
+            Only: 1
+       -
+        put_inside(object arg0, object arg1)
+         arg0:
+          object:chips
+           limit:
+            Only: 1
+         arg1:
+          object:bowl
+           limit:
+            Only: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] and
+      [-] put(object arg0, object arg1)
+      [-] and
+          [-] arrange_around(object arg0, object arg1)
+          [-] put_inside(object arg0, object arg1)
+utterance: turn on the tv  , put the video game in the xbox  , arrange couches around
+  the tv  , put the chips inside the bowl

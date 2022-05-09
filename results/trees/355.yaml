@@ -1,0 +1,19 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:beer
+       limit:
+        Only: 1
+     -
+      object:chips
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  place(object arg0)
+utterance: place beer and chips onto the table

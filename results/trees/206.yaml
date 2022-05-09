@@ -1,0 +1,13 @@
+frame: |-
+  pour_on(object arg0, object arg1)
+   arg0:
+    object:syrup
+     limit:
+      Only: 1
+   arg1:
+    object:ice_cream
+     limit:
+      Only: 1
+tree: |
+  pour_on(object arg0, object arg1)
+utterance: pour syrup on to the ice cream

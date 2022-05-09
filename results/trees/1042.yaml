@@ -1,0 +1,13 @@
+frame: |-
+  put_inside(object arg0, object arg1)
+   arg0:
+    anaphora:it
+     limit:
+      Only: 1
+   arg1:
+    object:pot
+     limit:
+      Any: 1
+tree: |
+  put_inside(object arg0, object arg1)
+utterance: put it inside a pot

@@ -1,0 +1,13 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    object:ramen
+     limit:
+      Only: 1
+   arg1:
+    object:kettle
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put all ramen in the kettle

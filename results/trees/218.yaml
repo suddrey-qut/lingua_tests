@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+   -
+    pour_over(object arg0, object arg1)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+     arg1:
+      object:ice_cream
+       relation:
+        [in=object:mug
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] pour_over(object arg0, object arg1)
+utterance: take the coffee and pour the coffee over the ice cream in the mug

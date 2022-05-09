@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:chips
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       limit:
+        Only: 1
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      object:bowl
+       limit:
+        Only: 1
+     arg1:
+      object:table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pour_into(object arg0, object arg1)
+  [-] put_on(object arg0, object arg1)
+utterance: pour all the chips into the bowl and put the bowl on the table

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      object:chocolate_syrup_bottle
+       limit:
+        Only: 1
+   -
+    put_near(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:vanilla_syrup_bottle
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] put_near(object arg0, object arg1)
+utterance: grasp chocolate syrup bottle and put it near the vanilla syrup bottle

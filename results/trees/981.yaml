@@ -1,0 +1,23 @@
+frame: |-
+  empty_into(object arg0, object arg1)
+   arg0:
+    object:bag
+     limit:
+      Only: 1
+   arg1:
+    and
+     -
+      object:bowl
+       limit:
+        Only: 1
+     -
+      object:place_bowl
+       relation:
+        [on=object:centre_table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  empty_into(object arg0, object arg1)
+utterance: empty the bag of chips into bowl and place bowl on centre table

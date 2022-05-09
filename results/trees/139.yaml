@@ -1,0 +1,17 @@
+frame: |-
+  put_to(object arg0, object arg1)
+   arg0:
+    object:pillow
+     attributes:
+      [state=left]
+     limit:
+      Only: 1
+   arg1:
+    object:couch
+     attributes:
+      [state=right]
+     limit:
+      Only: 1
+tree: |
+  put_to(object arg0, object arg1)
+utterance: put the left pillow to right couch

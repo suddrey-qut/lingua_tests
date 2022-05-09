@@ -1,0 +1,9 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    object:instant_ramen_cup
+     limit:
+      Only: 1
+tree: |
+  get(object arg0)
+utterance: get instant ramen cup

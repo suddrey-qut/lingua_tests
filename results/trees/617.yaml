@@ -1,0 +1,24 @@
+frame: |-
+  take_into(object arg0, object arg1)
+   arg0:
+    object:ice_cream
+     relation:
+      [from=conjunction:and]
+     limit:
+      Only: 1
+   arg1:
+    object:mug
+     relation:
+      [with=object:coffee
+       relation:
+        [in=anaphora:it
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  take_into(object arg0, object arg1)
+utterance: take ice cream from freezer and scoop with spoon into the mug with coffee
+  in it

@@ -1,0 +1,17 @@
+frame: |-
+  bring_to(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:utensil
+     -
+      object:napkin
+       limit:
+        Any: 1
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  bring_to(object arg0, object arg1)
+utterance: bring cutlery and a napkin to the table

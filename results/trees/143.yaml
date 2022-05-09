@@ -1,0 +1,13 @@
+frame: |-
+  remove(object arg0)
+   arg0:
+    object:trash_bag
+     relation:
+      [from=object:scenario
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  remove(object arg0)
+utterance: remove the trash bag from the scenario

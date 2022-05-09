@@ -1,0 +1,9 @@
+frame: |-
+  pour_on(object arg0)
+   arg0:
+    object:coffee
+     limit:
+      Only: 1
+tree: |
+  pour_on(object arg0)
+utterance: pour the coffee on top

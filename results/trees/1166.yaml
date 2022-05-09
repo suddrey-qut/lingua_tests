@@ -1,0 +1,9 @@
+frame: |-
+  pick_of(object arg0)
+   arg0:
+    object:ramen
+     limit:
+      Only: 1
+tree: |
+  pick_of(object arg0)
+utterance: pick of ramen

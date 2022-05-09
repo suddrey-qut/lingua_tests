@@ -1,0 +1,9 @@
+frame: |-
+  turn_on(object arg0)
+   arg0:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  turn_on(object arg0)
+utterance: turn on the xbox

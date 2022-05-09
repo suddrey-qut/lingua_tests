@@ -1,0 +1,9 @@
+frame: |-
+  set_up(object arg0)
+   arg0:
+    object:movie_threater
+     limit:
+      Any: 1
+tree: |
+  set_up(object arg0)
+utterance: set up a movie threater

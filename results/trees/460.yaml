@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:cup
+       attributes:
+        [state=long]
+       limit:
+        Only: 1
+   -
+    carry_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:tap
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] carry_to(object arg0, object arg1)
+utterance: pick up long cup and carry it to the tap

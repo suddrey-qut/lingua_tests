@@ -1,0 +1,21 @@
+frame: |-
+  put_with(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:mug
+       limit:
+        Only: 1
+     -
+      object:cup
+       attributes:
+        [state=long]
+       limit:
+        Only: 1
+   arg1:
+    object:plate
+     limit:
+      Only: 1
+tree: |
+  put_with(object arg0, object arg1)
+utterance: put mug and long cup with the plate

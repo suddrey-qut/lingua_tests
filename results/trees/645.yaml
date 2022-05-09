@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:egg
+       relation:
+        [from=object:fridge
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:plate
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] put_on(object arg0, object arg1)
+utterance: get the egg from the fridge and put it on the plate

@@ -1,0 +1,13 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:chips_bag
+     relation:
+      [in=object:garbage_bag
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place chip bag in garbage bag

@@ -1,0 +1,13 @@
+frame: |-
+  rearrange_around(object arg0, object arg1)
+   arg0:
+    object:couch_seat
+     limit:
+      Only: 1
+   arg1:
+    object:coffee_table
+     limit:
+      Only: 1
+tree: |
+  rearrange_around(object arg0, object arg1)
+utterance: rearrange the couch seats around the coffee table

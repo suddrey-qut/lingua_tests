@@ -1,0 +1,15 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    object:pillow
+     limit:
+      Only: 1
+   arg1:
+    object:chair
+     attributes:
+      [size=large]
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put the pillow on the big chair

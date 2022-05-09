@@ -1,0 +1,17 @@
+frame: |-
+  put_with(object arg0, object arg1)
+   arg0:
+    object:bowl
+     limit:
+      Only: 1
+   arg1:
+    object:chips
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  put_with(object arg0, object arg1)
+utterance: put the bowl with chips on the table

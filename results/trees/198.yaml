@@ -1,0 +1,32 @@
+frame: |-
+  and
+   -
+    open_of(object arg0, object arg1)
+     arg0:
+      object:disk_tray
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+   -
+    remove(object arg0, object arg1)
+     arg0:
+      object:case
+       limit:
+        Only: 1
+     arg1:
+      object:video_game_disk
+       relation:
+        [from=animate-being:pro3n
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open_of(object arg0, object arg1)
+  [-] remove(object arg0, object arg1)
+utterance: open the disk tray of the xbox and remove the video game disk from its
+  case

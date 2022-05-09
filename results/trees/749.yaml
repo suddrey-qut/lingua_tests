@@ -1,0 +1,7 @@
+frame: |-
+  object:toggle_front_stove
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: toggle front left stove

@@ -1,0 +1,17 @@
+frame: |-
+  take(object arg0, object arg1)
+   arg0:
+    object:ice_cream
+     limit:
+      Only: 1
+   arg1:
+    object:spoon
+     relation:
+      [from=object:counter_scoop
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  take(object arg0, object arg1)
+utterance: take spoon from counter scoop the ice cream

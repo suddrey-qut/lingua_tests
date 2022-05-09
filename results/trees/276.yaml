@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    place(object arg0)
+     arg0:
+      object:dvd
+       relation:
+        [in=sem-obj:tray
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    close(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] place(object arg0)
+  [-] close(object arg0)
+utterance: place the dvd in the tray and close it

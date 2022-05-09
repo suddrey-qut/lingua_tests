@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    drink(object arg0)
+     arg0:
+      object:coke
+       limit:
+        Only: 1
+   -
+    eat(object arg0)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] drink(object arg0)
+  [-] eat(object arg0)
+utterance: drink the coke and eat the ramen

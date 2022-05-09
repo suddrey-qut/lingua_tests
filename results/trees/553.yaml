@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:bottle
+       limit:
+        Only: 1
+   -
+    pour_into(object arg0)
+     arg0:
+      object:glass
+       attributes:
+        [state=long]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] pour_into(object arg0)
+utterance: open the bottle of canada dry and pour into the long glass

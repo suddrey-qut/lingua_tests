@@ -1,0 +1,13 @@
+frame: |-
+  turn_on(object arg0, object arg1)
+   arg0:
+    object:television
+     limit:
+      Only: 1
+   arg1:
+    object:xbox_input
+     limit:
+      Only: 1
+tree: |
+  turn_on(object arg0, object arg1)
+utterance: turn television on to xbox input

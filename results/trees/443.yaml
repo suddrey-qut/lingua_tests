@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    fill(object arg0)
+     arg0:
+      object:bowl
+       relation:
+        [with=object:chips
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    bring_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:coffee_table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] fill(object arg0)
+  [-] bring_to(object arg0, object arg1)
+utterance: fill the bowl with chips and bring it to the coffee table

@@ -1,0 +1,30 @@
+frame: |-
+  find_into(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:ice_cream
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:scooper
+         limit:
+          Only: 1
+       -
+        object:place_scoop
+         limit:
+          Only: 1
+   arg1:
+    object:bowl
+     relation:
+      [with=object:scooper
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  find_into(object arg0, object arg1)
+utterance: find ice cream and scooper and place one scoop of ice cream into bowl with
+  scooper

@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:noodle
+   -
+    pour(object arg0)
+     arg0:
+      object:water
+       relation:
+        [in=object:noodle]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] pour(object arg0)
+utterance: open noodles and pour water in noodles

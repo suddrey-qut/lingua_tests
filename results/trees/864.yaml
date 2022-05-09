@@ -1,0 +1,13 @@
+frame: |-
+  pour(object arg0)
+   arg0:
+    object:chips
+     relation:
+      [in=object:bowl
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  pour(object arg0)
+utterance: pour chips in bowl

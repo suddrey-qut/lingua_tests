@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    boil(object arg0)
+     arg0:
+      object:water
+       limit:
+        Only: 1
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+     arg1:
+      object:pot
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] boil(object arg0)
+  [-] put_in(object arg0, object arg1)
+utterance: boil the water  , then put the ramen in the pot

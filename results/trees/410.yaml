@@ -1,0 +1,21 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:can
+     -
+      and
+       -
+        object:bottle
+       -
+        object:garbage
+         relation:
+          [in=object:trash
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  place(object arg0)
+utterance: place all cans  , bottles  , and garbage in the trash

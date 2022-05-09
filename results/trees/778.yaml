@@ -1,0 +1,19 @@
+frame: |-
+  grasp(object arg0)
+   arg0:
+    and
+     -
+      object:bowl
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  grasp(object arg0)
+utterance: grasp bowl and place on table

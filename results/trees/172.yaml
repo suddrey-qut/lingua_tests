@@ -1,0 +1,15 @@
+frame: |-
+  put_to(object arg0, object arg1)
+   arg0:
+    object:bag
+     attributes:
+      [state=empty]
+     limit:
+      Only: 1
+   arg1:
+    object:trash_bin
+     limit:
+      Only: 1
+tree: |
+  put_to(object arg0, object arg1)
+utterance: put the empty bag of chips to trash bin

@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    add_to(object arg0, object arg1)
+     arg0:
+      object:syrup
+       limit:
+        Only: 1
+     arg1:
+      object:coffee
+       limit:
+        Only: 1
+   -
+    mix_with(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:spoon
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] add_to(object arg0, object arg1)
+  [-] mix_with(object arg0, object arg1)
+utterance: add the syrup to the coffee and mix it with a spoon

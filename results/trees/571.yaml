@@ -1,0 +1,11 @@
+frame: |-
+  clean(object arg0)
+   arg0:
+    object:bowl
+     relation:
+      [in=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  clean(object arg0)
+utterance: clean bowl in kitchen  , and place chips in bowl

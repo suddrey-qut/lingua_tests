@@ -1,0 +1,13 @@
+frame: |-
+  put_into(object arg0, object arg1)
+   arg0:
+    object:silverwear
+     limit:
+      Only: 1
+   arg1:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  put_into(object arg0, object arg1)
+utterance: put all silverwear into the sink

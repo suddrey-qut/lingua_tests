@@ -1,0 +1,11 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:chips
+     relation:
+      [in=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place chips in bowl and place bowl on desk

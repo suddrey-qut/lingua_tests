@@ -1,0 +1,11 @@
+frame: |-
+  object:place
+   relation:
+    [down=object:kettle
+     limit:
+      Only: 1]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: place down kettle

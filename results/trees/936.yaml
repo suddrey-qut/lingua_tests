@@ -1,0 +1,19 @@
+frame: |-
+  bring_to(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:mug
+       limit:
+        Only: 1
+     -
+      object:plate
+       limit:
+        Only: 1
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  bring_to(object arg0, object arg1)
+utterance: bring the mug and the plate to the table

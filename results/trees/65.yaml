@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      object:chocolate_syrup_bottle
+       limit:
+        Only: 1
+   -
+    add_to(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] add_to(object arg0)
+utterance: grab chocolate syrup bottle and add to coffee

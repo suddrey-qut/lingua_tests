@@ -1,0 +1,11 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    object:items
+   arg1:
+    object:cupboard
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put items in cupboard

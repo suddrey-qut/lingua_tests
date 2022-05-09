@@ -1,0 +1,15 @@
+frame: |-
+  fill(object arg0)
+   arg0:
+    object:mug
+     relation:
+      [with=object:drink
+       relation:
+        [from=conjunction:or]
+       limit:
+        Any: 1]
+     limit:
+      Only: 1
+tree: |
+  fill(object arg0)
+utterance: fill the mug with a drink from the freezer or water

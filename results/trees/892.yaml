@@ -1,0 +1,17 @@
+frame: |-
+  put_between(object arg0, object arg1)
+   arg0:
+    object:table
+     limit:
+      Only: 1
+   arg1:
+    and
+     -
+      object:chair
+     -
+      object:television
+       limit:
+        Only: 1
+tree: |
+  put_between(object arg0, object arg1)
+utterance: put table between chairs and tv

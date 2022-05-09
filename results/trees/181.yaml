@@ -1,0 +1,11 @@
+frame: |-
+  empty(object arg0)
+   arg0:
+    object:contents
+     relation:
+      [on=object:plate
+       limit:
+        Only: 1]
+tree: |
+  empty(object arg0)
+utterance: empty contents of pot onto the plate

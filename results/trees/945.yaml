@@ -1,0 +1,9 @@
+frame: |-
+  cook(object arg0)
+   arg0:
+    object:ramen
+     limit:
+      Only: 1
+tree: |
+  cook(object arg0)
+utterance: cook ramen

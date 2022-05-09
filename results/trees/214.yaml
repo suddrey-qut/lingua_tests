@@ -1,0 +1,13 @@
+frame: |-
+  pour_to(object arg0, object arg1)
+   arg0:
+    object:coffee
+     limit:
+      Only: 1
+   arg1:
+    object:mug
+     limit:
+      Only: 1
+tree: |
+  pour_to(object arg0, object arg1)
+utterance: pour coffee to the mug

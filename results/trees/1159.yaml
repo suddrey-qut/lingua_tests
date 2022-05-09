@@ -1,0 +1,13 @@
+frame: |-
+  remove(object arg0)
+   arg0:
+    object:coffee_mug
+     relation:
+      [from=object:microwave
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  remove(object arg0)
+utterance: remove coffee mug from microwave

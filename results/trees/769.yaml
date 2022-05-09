@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      object:soda
+       limit:
+        Only: 1
+   -
+    and
+     -
+      grasp(object arg0)
+       arg0:
+        object:chips
+         limit:
+          Only: 1
+     -
+      grasp(object arg0)
+       arg0:
+        object:beer
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] and
+      [-] grasp(object arg0)
+      [-] grasp(object arg0)
+utterance: grasp soda  , grasp chips  , grasp beer

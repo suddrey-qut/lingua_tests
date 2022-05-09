@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    set_up(object arg0)
+     arg0:
+      object:xbox
+       relation:
+        [with=object:television
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    put_into(object arg0, object arg1)
+     arg0:
+      object:music_cd
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] set_up(object arg0)
+  [-] put_into(object arg0, object arg1)
+utterance: set up the xbox with the tv and put the music cd into the xbox

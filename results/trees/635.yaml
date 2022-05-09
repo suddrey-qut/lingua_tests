@@ -1,0 +1,9 @@
+frame: |-
+  throw_out(object arg0)
+   arg0:
+    object:trash
+     limit:
+      Only: 1
+tree: |
+  throw_out(object arg0)
+utterance: throw out the trash

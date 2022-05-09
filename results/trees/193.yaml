@@ -1,0 +1,17 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:bag
+     relation:
+      [in=object:trash_bin
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:trash
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put the trash bag in the trash bin

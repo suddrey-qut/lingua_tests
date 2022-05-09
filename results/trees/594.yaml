@@ -1,0 +1,25 @@
+frame: |-
+  pick_up(object arg0)
+   arg0:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:controller
+         limit:
+          Only: 1
+       -
+        object:place
+         relation:
+          [on=object:coffee_table
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  pick_up(object arg0)
+utterance: pick up the xbox and controller and place on coffee table

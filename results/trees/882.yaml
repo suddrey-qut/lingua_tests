@@ -1,0 +1,17 @@
+frame: |-
+  arrange_of(object arg0, object arg1)
+   arg0:
+    object:couch
+     relation:
+      [in=object:front
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  arrange_of(object arg0, object arg1)
+utterance: arrange the couch in front of the tv

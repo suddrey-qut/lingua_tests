@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    remove(object arg0)
+     arg0:
+      object:instant_ramen
+       limit:
+        Only: 1
+   -
+    serve_with(object arg0)
+     arg0:
+      object:fork
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] remove(object arg0)
+  [-] serve_with(object arg0)
+utterance: remove the instant ramen and serve with a fork

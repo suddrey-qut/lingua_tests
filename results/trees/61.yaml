@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      object:cup
+       limit:
+        Any: 1
+   -
+    fill(object arg0)
+     arg0:
+      object:cup
+       relation:
+        [with=object:milk
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] fill(object arg0)
+utterance: grab a cup  , and fill the cup with milk

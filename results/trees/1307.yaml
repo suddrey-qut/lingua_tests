@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    put_over(object arg0, object arg1)
+     arg0:
+      object:book
+     arg1:
+      object:table
+       limit:
+        Only: 1
+   -
+    serve(object arg0)
+     arg0:
+      object:chips
+       relation:
+        [in=object:bowl
+         limit:
+          Any: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_over(object arg0, object arg1)
+  [-] serve(object arg0)
+utterance: put books over the table and serve chips in a bowl

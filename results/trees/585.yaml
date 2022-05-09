@@ -1,0 +1,19 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    and
+     -
+      object:bag
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  take(object arg0)
+utterance: take bag of chips and place on table

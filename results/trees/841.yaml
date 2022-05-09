@@ -1,0 +1,9 @@
+frame: |-
+  clean(object arg0)
+   arg0:
+    object:plate
+     limit:
+      Only: 1
+tree: |
+  clean(object arg0)
+utterance: clean all the plate

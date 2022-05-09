@@ -1,0 +1,13 @@
+frame: |-
+  put_into(object arg0, object arg1)
+   arg0:
+    object:ramen
+     limit:
+      Only: 1
+   arg1:
+    object:refrigerator
+     limit:
+      Only: 1
+tree: |
+  put_into(object arg0, object arg1)
+utterance: put ramen into the refrigerator

@@ -1,0 +1,9 @@
+frame: |-
+  fill(object arg0)
+   arg0:
+    object:pot
+     limit:
+      Only: 1
+tree: |
+  fill(object arg0)
+utterance: fill pot

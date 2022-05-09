@@ -1,0 +1,15 @@
+frame: |-
+  and
+   -
+    get()
+   -
+    open(object arg0)
+     arg0:
+      object:instant_ramen
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get()
+  [-] open(object arg0)
+utterance: get and open the instant ramen

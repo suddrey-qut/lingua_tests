@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    pick(object arg0)
+     arg0:
+      object:beer_bottle
+       relation:
+        [from=object:ground
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    throw_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:dustbin
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick(object arg0)
+  [-] throw_in(object arg0, object arg1)
+utterance: pick the beer bottle from the floor and throw it in the dustbin

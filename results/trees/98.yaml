@@ -1,0 +1,13 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    object:chips
+     limit:
+      Only: 1
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put chips on table

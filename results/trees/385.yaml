@@ -1,0 +1,21 @@
+frame: |-
+  empty_into(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:cup
+     -
+      and
+       -
+        object:mug
+       -
+        object:pot
+         limit:
+          Only: 1
+   arg1:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  empty_into(object arg0, object arg1)
+utterance: empty all cups  , mugs  , and the pot into the sink

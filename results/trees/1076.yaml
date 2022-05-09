@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:kettle
+       limit:
+        Only: 1
+   -
+    move_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:stove
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] move_to(object arg0, object arg1)
+utterance: take the kettle and move it to the stove

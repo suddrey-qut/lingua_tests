@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+import os
+import yaml
+import rospkg
+
+rospack = rospkg.RosPack()
+base_path = rospack.get_path('lingua_tests')
+path = os.path.join(base_path, 'results', 'trees')
+
+files = list(filter(lambda f: f.endswith('.yaml'), os.listdir(path)))
+
+print(len(files))
+
+with open(os.path.join(path, 'results.csv'), 'r') as f:
+  current = len(f.read().split('\n')) - 1
+
+clear = lambda: os.system('clear')
+clear()
+
+for index in range(current, len(files)):
+  print('{}/{}'.format(index, len(files)))
+  with open(os.path.join(path, '{}.yaml'.format(index)), 'r') as f:
+    data = yaml.load(f.read(), Loader=yaml.Loader)
+
+  print('Utterance: {}'.format(data['utterance']))
+  print('Frame:\n{}'.format(data['frame']))
+  print('Tree:\n{}'.format(data['tree']))
+
+  c = input('[y/n/q]> ')
+  
+  if c == 'y' or c == 'n':
+    with open(os.path.join(path, 'results.csv'), 'a') as fo:
+      fo.write('{},{}\n'.format(index, 1 if c == 'y' else 0))
+
+  if c == 'q':
+    break
+
+  clear()
+      
+  
+
+
+

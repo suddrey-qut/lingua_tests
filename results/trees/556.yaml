@@ -1,0 +1,19 @@
+frame: |-
+  prepare(object arg0)
+   arg0:
+    and
+     -
+      object:ramen
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [in=object:mug
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  prepare(object arg0)
+utterance: prepare ramen and place in the mug

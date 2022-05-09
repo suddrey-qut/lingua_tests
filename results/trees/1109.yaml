@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    go_to(object arg0)
+     arg0:
+      object:television
+       limit:
+        Only: 1
+   -
+    turn_off(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] go_to(object arg0)
+  [-] turn_off(object arg0)
+utterance: go to the tv and turn it off

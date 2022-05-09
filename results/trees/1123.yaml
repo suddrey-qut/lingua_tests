@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:spoon
+       limit:
+        Only: 1
+   -
+    stir(object arg0)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] stir(object arg0)
+utterance: pick up spoon and stir ramen

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:microwave
+       limit:
+        Only: 1
+   -
+    start(object arg0)
+     arg0:
+      object:microwave
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_in(object arg0, object arg1)
+  [-] start(object arg0)
+utterance: put it in the microwave and start the microwave

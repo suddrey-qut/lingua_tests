@@ -1,0 +1,9 @@
+frame: |-
+  wipe(object arg0)
+   arg0:
+    object:fridge_door
+     limit:
+      Only: 1
+tree: |
+  wipe(object arg0)
+utterance: wipe fridge door

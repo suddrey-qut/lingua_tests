@@ -1,0 +1,15 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:book
+     attributes:
+      [color=brown]
+     relation:
+      [on=object:desk
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place the brown book on the desk

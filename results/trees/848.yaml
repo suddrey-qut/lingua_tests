@@ -1,0 +1,9 @@
+frame: |-
+  clean(room arg0)
+   arg0:
+    room:room
+     limit:
+      Only: 1
+tree: |
+  clean(room arg0)
+utterance: clean the room

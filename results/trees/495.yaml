@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    pour_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:plate
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] pour_on(object arg0, object arg1)
+utterance: pick up the mug of coffee and pour it on a plate

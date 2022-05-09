@@ -1,0 +1,9 @@
+frame: |-
+  start(object arg0)
+   arg0:
+    object:microwave
+     limit:
+      Only: 1
+tree: |
+  start(object arg0)
+utterance: start microwave

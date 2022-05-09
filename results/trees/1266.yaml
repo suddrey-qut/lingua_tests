@@ -1,0 +1,9 @@
+frame: |-
+  pick_up(object arg0)
+   arg0:
+    object:syrup
+     limit:
+      Only: 1
+tree: |
+  pick_up(object arg0)
+utterance: pick up syrup

@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      and
+       -
+        object:fridge
+         limit:
+          Only: 1
+       -
+        object:freezer
+         limit:
+          Only: 1
+   -
+    pick(object arg0)
+     arg0:
+      object:drink
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] pick(object arg0)
+utterance: open fridge and freezer and pick a drink

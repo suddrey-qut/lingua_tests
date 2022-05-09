@@ -1,0 +1,17 @@
+frame: |-
+  and
+   -
+    find(object arg0)
+     arg0:
+      object:pillow
+   -
+    arrange_on(object arg0)
+     arg0:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] find(object arg0)
+  [-] arrange_on(object arg0)
+utterance: find pillows and arrange on couch

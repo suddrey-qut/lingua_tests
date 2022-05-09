@@ -1,0 +1,19 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:beer
+       limit:
+        Only: 1
+     -
+      object:chips
+       limit:
+        Only: 1
+   arg1:
+    object:trash_can
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put beer and chips in trash can

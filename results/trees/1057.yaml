@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      and
+       -
+        object:plate
+       -
+        object:cup
+   -
+    put_in(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] put_in(animate-being arg0, object arg1)
+utterance: pick up plates and cups and put them in the sink

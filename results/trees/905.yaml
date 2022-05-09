@@ -1,0 +1,13 @@
+frame: |-
+  assert:
+   object:
+    object:mix_till_egg
+     limit:
+      Only: 1
+   is:
+    dummy:*
+     attributes:
+      [state=solid]
+tree: |
+  assert:  object:   object:mix_till_egg    limit:     Only: 1  is:   dummy:*    attributes:     [state=solid]
+utterance: mix till eggs are solid

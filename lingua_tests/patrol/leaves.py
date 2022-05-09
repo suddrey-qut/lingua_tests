@@ -1,8 +1,8 @@
 import json
 import rospy
 
-from rv_trees.leaves_ros import ServiceLeaf
-from rv_trees.leaves import Leaf
+from ros_trees.leaves_ros import ServiceLeaf
+from ros_trees.leaves import Leaf
 from lingua.types import Object
 
 from geometry_msgs.msg import PoseStamped, PoseWithCovarianceStamped

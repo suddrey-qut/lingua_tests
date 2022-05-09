@@ -1,0 +1,19 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    and
+     -
+      object:soda
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:desk
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  find(object arg0)
+utterance: find soda and place on desk

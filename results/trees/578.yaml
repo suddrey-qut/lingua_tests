@@ -1,0 +1,19 @@
+frame: |-
+  wash(object arg0)
+   arg0:
+    and
+     -
+      object:pot
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:stove
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  wash(object arg0)
+utterance: wash pot and place on stove

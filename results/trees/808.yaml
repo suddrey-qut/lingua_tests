@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    prepare(object arg0)
+     arg0:
+      object:food
+   -
+    take_to(animate-being arg0, animate-being arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      animate-being:pro1
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] prepare(object arg0)
+  [-] take_to(animate-being arg0, animate-being arg1)
+utterance: prepare the food and take them to me

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+   -
+    put_inside(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:coffee
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] put_inside(object arg0, object arg1)
+utterance: grab the ice cream and put it inside the coffee

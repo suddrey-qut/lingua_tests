@@ -1,0 +1,9 @@
+frame: |-
+  make(object arg0)
+   arg0:
+    object:pot
+     limit:
+      Any: 1
+tree: |
+  make(object arg0)
+utterance: make a pot of coffee

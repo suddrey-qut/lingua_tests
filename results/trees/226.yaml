@@ -1,0 +1,13 @@
+frame: |-
+  connect_to(object arg0, object arg1)
+   arg0:
+    object:xbox
+     limit:
+      Only: 1
+   arg1:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  connect_to(object arg0, object arg1)
+utterance: connect xbox to tv

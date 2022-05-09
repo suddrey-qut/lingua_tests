@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    find(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] find(object arg0)
+  [-] pour_into(object arg0, object arg1)
+utterance: find coffee and pour it into a bowl

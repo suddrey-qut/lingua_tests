@@ -1,0 +1,9 @@
+frame: |-
+  eat(object arg0)
+   arg0:
+    object:trash_waste
+     limit:
+      Only: 1
+tree: |
+  eat(object arg0)
+utterance: eat the trash waste

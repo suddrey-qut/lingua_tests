@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    gather(object arg0)
+     arg0:
+      and
+       -
+        object:mustard
+         limit:
+          Only: 1
+       -
+        object:chocolate_syrup
+         limit:
+          Only: 1
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:fridge
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] gather(object arg0)
+  [-] put_in(object arg0, object arg1)
+utterance: gather the mustard and chocolate syrup and put it in the fridge

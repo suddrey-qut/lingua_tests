@@ -1,0 +1,23 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:controller
+       limit:
+        Only: 1
+     -
+      object:game_cd
+       relation:
+        [on=object:shelf
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   arg1:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put xbox controller and game cd on the shelf

@@ -1,0 +1,15 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    object:pot
+     limit:
+      Only: 1
+   arg1:
+    object:front_stove_burner
+     attributes:
+      [state=right]
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put pot on right front stove burner

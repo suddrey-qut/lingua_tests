@@ -1,0 +1,40 @@
+frame: |-
+  and
+   -
+    take_out(object arg0)
+     arg0:
+      object:food
+       relation:
+        [from=object:refrigerator
+         limit:
+          Only: 1]
+   -
+    and
+     -
+      place_on(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:plate
+         limit:
+          Any: 1
+     -
+      heat_in(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:microwave
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] take_out(object arg0)
+  [-] and
+      [-] place_on(object arg0, object arg1)
+      [-] heat_in(object arg0, object arg1)
+utterance: take out food from the refrigerator  , place it on a plate and then heat
+  it in the microwave

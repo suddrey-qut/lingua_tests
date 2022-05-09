@@ -1,0 +1,15 @@
+frame: |-
+  open(object arg0)
+   arg0:
+    and
+     -
+      object:dvd_case
+       limit:
+        Only: 1
+     -
+      object:xbox_disk_tray
+       limit:
+        Only: 1
+tree: |
+  open(object arg0)
+utterance: open the dvd case and xbox disk tray

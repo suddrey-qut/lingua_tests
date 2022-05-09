@@ -1,0 +1,9 @@
+frame: |-
+  take_out(object arg0)
+   arg0:
+    object:coffee
+     limit:
+      Only: 1
+tree: |
+  take_out(object arg0)
+utterance: take out the coffee

@@ -1,0 +1,9 @@
+frame: |-
+  clean_up(object arg0)
+   arg0:
+    object:ground
+     limit:
+      Only: 1
+tree: |
+  clean_up(object arg0)
+utterance: clean the floor up

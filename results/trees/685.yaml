@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:xbox
+       relation:
+        [from=object:shelf
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    place_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] place_on(object arg0, object arg1)
+utterance: get xbox from the shelf and place it on the table

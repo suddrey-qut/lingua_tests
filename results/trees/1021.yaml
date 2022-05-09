@@ -1,0 +1,19 @@
+frame: |-
+  walk_to(object arg0)
+   arg0:
+    and
+     -
+      object:counter
+       limit:
+        Only: 1
+     -
+      object:double-click
+       relation:
+        [on=object:glass
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  walk_to(object arg0)
+utterance: walk to the counter and double-click on glass

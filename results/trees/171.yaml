@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    boil(object arg0)
+     arg0:
+      object:water
+       relation:
+        [on=object:stove
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    pour_to(object arg0, object arg1)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+     arg1:
+      object:water
+       attributes:
+        [state=boiled]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] boil(object arg0)
+  [-] pour_to(object arg0, object arg1)
+utterance: boil water on the stove and pour ramen to boiled water

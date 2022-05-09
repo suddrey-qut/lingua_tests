@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    add(object arg0)
+     arg0:
+      object:sauce
+       limit:
+        Only: 1
+   -
+    mix(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] add(object arg0)
+  [-] mix(object arg0)
+utterance: add sauce and then mix it

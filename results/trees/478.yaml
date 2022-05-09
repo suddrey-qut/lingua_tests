@@ -1,0 +1,17 @@
+frame: |-
+  move_of(object arg0, object arg1)
+   arg0:
+    object:couch
+     relation:
+      [in=object:front
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  move_of(object arg0, object arg1)
+utterance: move the couch in front of the television

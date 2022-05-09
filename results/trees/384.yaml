@@ -1,0 +1,40 @@
+frame: |-
+  and
+   -
+    collect(object arg0)
+     arg0:
+      and
+       -
+        object:plate
+       -
+        and
+         -
+          object:cup
+         -
+          and
+           -
+            object:mug
+           -
+            and
+             -
+              object:pot
+               limit:
+                Only: 1
+             -
+              object:silverware
+               limit:
+                Only: 1
+   -
+    place(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [in=object:sink
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] collect(object arg0)
+  [-] place(animate-being arg0)
+utterance: collect all plates  , cups  , mugs  , pot  , and silverware and place them
+  in the sink

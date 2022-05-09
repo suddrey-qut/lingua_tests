@@ -1,0 +1,7 @@
+frame: |-
+  grasp(object arg0)
+   arg0:
+    object:plate
+tree: |
+  grasp(object arg0)
+utterance: grasp the two plates

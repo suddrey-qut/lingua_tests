@@ -1,0 +1,7 @@
+frame: |-
+  have(object arg0)
+   arg0:
+    object:food
+tree: |
+  have(object arg0)
+utterance: have some food

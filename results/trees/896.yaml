@@ -1,0 +1,15 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:noodle
+     relation:
+      [in=anaphora:it
+       limit:
+        Only: 1]
+   arg1:
+    object:ramen
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put ramen noodles in it

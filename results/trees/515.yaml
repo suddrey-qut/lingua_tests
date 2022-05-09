@@ -1,0 +1,11 @@
+frame: |-
+  bring(object arg0)
+   arg0:
+    object:chips
+     relation:
+      [in=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  bring(object arg0)
+utterance: bring chips in bowl and place on coffee table

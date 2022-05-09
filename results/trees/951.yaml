@@ -1,0 +1,7 @@
+frame: |-
+  grab(object arg0)
+   arg0:
+    object:snack
+tree: |
+  grab(object arg0)
+utterance: grab snacks

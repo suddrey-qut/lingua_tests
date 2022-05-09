@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      object:xbox_games
+       limit:
+        Only: 1
+   -
+    get_ready(object arg0)
+     arg0:
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] get_ready(object arg0)
+utterance: grab some xbox games and get the xbox ready

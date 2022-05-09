@@ -1,0 +1,15 @@
+frame: |-
+  get_for(object arg0, animate-being arg1)
+   arg0:
+    object:food
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+   arg1:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  get_for(object arg0, animate-being arg1)
+utterance: get the food on the table for me

@@ -1,0 +1,9 @@
+frame: |-
+  grab(object arg0)
+   arg0:
+    object:game_cd
+     limit:
+      Only: 1
+tree: |
+  grab(object arg0)
+utterance: grab the game cd

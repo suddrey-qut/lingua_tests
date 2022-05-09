@@ -1,0 +1,9 @@
+frame: |-
+  drop_at(object arg0)
+   arg0:
+    object:sofa
+     limit:
+      Only: 1
+tree: |
+  drop_at(object arg0)
+utterance: drop at sofa

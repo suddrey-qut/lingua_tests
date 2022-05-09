@@ -1,0 +1,13 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:pot
+     relation:
+      [on=object:front_stove
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place pot on front left stove

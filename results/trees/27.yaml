@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+   -
+    and
+     -
+      fill_up(object arg0)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+     -
+      boil(object arg0)
+       arg0:
+        object:water
+         relation:
+          [on=object:stove
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] put_in(object arg0, object arg1)
+  [-] and
+      [-] fill_up(object arg0)
+      [-] boil(object arg0)
+utterance: put the pot in the sink  , fill it up and boil the water on the stove

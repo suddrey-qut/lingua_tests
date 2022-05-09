@@ -1,0 +1,19 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    and
+     -
+      object:cd
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [in=object:xbox
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  find(object arg0)
+utterance: find cd and place in xbox

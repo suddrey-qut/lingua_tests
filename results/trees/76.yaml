@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    bring_to(object arg0, object arg1)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+   -
+    fill_with(object arg0)
+     arg0:
+      object:water
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] bring_to(object arg0, object arg1)
+  [-] fill_with(object arg0)
+utterance: bring pot to sink and fill with water

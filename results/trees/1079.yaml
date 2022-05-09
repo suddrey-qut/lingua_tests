@@ -1,0 +1,9 @@
+frame: |-
+  serve(object arg0)
+   arg0:
+    anaphora:it
+     limit:
+      Only: 1
+tree: |
+  serve(object arg0)
+utterance: serve it

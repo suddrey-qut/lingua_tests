@@ -1,0 +1,11 @@
+frame: |-
+  grab(object arg0)
+   arg0:
+    and
+     -
+      object:cup
+     -
+      object:plate
+tree: |
+  grab(object arg0)
+utterance: grab cups and plates

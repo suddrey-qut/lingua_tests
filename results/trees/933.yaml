@@ -1,0 +1,19 @@
+frame: |-
+  pour_over(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:coffee
+       limit:
+        Only: 1
+     -
+      object:syrup
+       limit:
+        Only: 1
+   arg1:
+    object:ice_cream
+     limit:
+      Only: 1
+tree: |
+  pour_over(object arg0, object arg1)
+utterance: pour coffee and syrup over ice cream

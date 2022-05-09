@@ -1,0 +1,13 @@
+frame: |-
+  turn(object arg0)
+   arg0:
+    object:off_water_faucet
+     relation:
+      [in=room:kitchen
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  turn(object arg0)
+utterance: turn off water faucet in kitchen

@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    make(object arg0)
+     arg0:
+      object:food
+   -
+    and
+     -
+      get(object arg0)
+       arg0:
+        object:pillow
+     -
+      watch(object arg0)
+       arg0:
+        object:movie
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] make(object arg0)
+  [-] and
+      [-] get(object arg0)
+      [-] watch(object arg0)
+utterance: make food  , get pillows  , watch movie

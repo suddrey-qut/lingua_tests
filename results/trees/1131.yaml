@@ -1,0 +1,17 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:book
+   -
+    move_to(object arg0)
+     arg0:
+      object:table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] move_to(object arg0)
+utterance: pick up books and move to table

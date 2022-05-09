@@ -1,0 +1,30 @@
+frame: |-
+  and
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      object:pillow
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+   -
+    play_through(object arg0, object arg1)
+     arg0:
+      object:music
+       relation:
+        [on=object:xbox
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+     arg1:
+      object:television
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_on(object arg0, object arg1)
+  [-] play_through(object arg0, object arg1)
+utterance: put the pillows on the couch  , play some music on the xbox through the
+  tv

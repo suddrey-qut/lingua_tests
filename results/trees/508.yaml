@@ -1,0 +1,13 @@
+frame: |-
+  bring(object arg0, animate-being arg1)
+   arg0:
+    object:coke
+     limit:
+      Any: 1
+   arg1:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  bring(object arg0, animate-being arg1)
+utterance: bring me a coke

@@ -1,0 +1,11 @@
+frame: |-
+  move_to(object arg0, object arg1)
+   arg0:
+    object:drinks
+   arg1:
+    object:coffee_table
+     limit:
+      Only: 1
+tree: |
+  move_to(object arg0, object arg1)
+utterance: move all drinks to the coffee table

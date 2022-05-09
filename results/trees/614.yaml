@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    fluff(object arg0)
+     arg0:
+      object:pillow
+       relation:
+        [on=object:couch
+         limit:
+          Only: 1]
+   -
+    stand_up(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+tree: |
+  and
+  [-] fluff(object arg0)
+  [-] stand_up(animate-being arg0)
+utterance: fluff pillows on couch and stand them up

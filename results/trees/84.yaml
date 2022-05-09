@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:fridge_door
+       limit:
+        Only: 1
+   -
+    place_inside(object arg0, object arg1)
+     arg0:
+      object:bottle
+       limit:
+        Only: 1
+     arg1:
+      object:fridge
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] place_inside(object arg0, object arg1)
+utterance: open the fridge door and place the bottle inside the fridge

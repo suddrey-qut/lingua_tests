@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    bring(object arg0)
+     arg0:
+      object:drinks
+       relation:
+        [in=room:room
+         limit:
+          Only: 1]
+   -
+    put_on(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] bring(object arg0)
+  [-] put_on(animate-being arg0, object arg1)
+utterance: bring all the drinks in the room and put them on the table

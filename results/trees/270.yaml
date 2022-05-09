@@ -1,0 +1,7 @@
+frame: |-
+  serve_on(object arg0)
+   arg0:
+    object:plate
+tree: |
+  serve_on(object arg0)
+utterance: serve on the plates

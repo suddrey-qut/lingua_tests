@@ -1,0 +1,14 @@
+frame: |-
+  put_of(object arg0, object arg1)
+   arg0:
+    object:pillow
+     relation:
+      [on=conjunction:and]
+   arg1:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  put_of(object arg0, object arg1)
+utterance: put the pillows on the couch and the books on the table in front of the
+  couch

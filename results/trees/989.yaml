@@ -1,0 +1,19 @@
+frame: |-
+  add_to(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:ice-cream
+       limit:
+        Only: 1
+     -
+      object:chocolate_syrup
+       limit:
+        Only: 1
+   arg1:
+    object:mug
+     limit:
+      Only: 1
+tree: |
+  add_to(object arg0, object arg1)
+utterance: add ice-cream and chocolate syrup to the mug

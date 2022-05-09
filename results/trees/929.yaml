@@ -1,0 +1,9 @@
+frame: |-
+  select(object arg0)
+   arg0:
+    object:xbox_game
+     limit:
+      Only: 1
+tree: |
+  select(object arg0)
+utterance: select xbox game

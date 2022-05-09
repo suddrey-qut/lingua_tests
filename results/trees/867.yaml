@@ -1,0 +1,13 @@
+frame: |-
+  heat(object arg0)
+   arg0:
+    object:kettle
+     relation:
+      [on=object:stove
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  heat(object arg0)
+utterance: heat kettle on stove

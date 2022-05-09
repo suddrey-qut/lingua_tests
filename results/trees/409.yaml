@@ -1,0 +1,42 @@
+frame: |-
+  and
+   -
+    dump_into(object arg0, object arg1)
+     arg0:
+      object:bowl
+       limit:
+        Only: 1
+     arg1:
+      object:trash
+       limit:
+        Only: 1
+   -
+    and
+     -
+      take(object arg0)
+       arg0:
+        object:bowl
+         limit:
+          Only: 1
+     -
+      place_in(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:sink
+         relation:
+          [in=room:kitchen
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] dump_into(object arg0, object arg1)
+  [-] and
+      [-] take(object arg0)
+      [-] place_in(object arg0, object arg1)
+utterance: dump the bowl into the trash and take the bowl and place it in the sink
+  in the kitchen

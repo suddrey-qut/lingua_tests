@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pour(object arg0)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+   -
+    wash_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pour(object arg0)
+  [-] wash_in(object arg0, object arg1)
+utterance: pour the pot and wash it in the sink

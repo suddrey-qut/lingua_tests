@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    boil(object arg0)
+     arg0:
+      object:water
+       limit:
+        Only: 1
+   -
+    make(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] boil(object arg0)
+  [-] make(object arg0)
+utterance: boil some water and make some coffee

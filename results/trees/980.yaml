@@ -1,0 +1,11 @@
+frame: |-
+  pick_up(object arg0)
+   arg0:
+    object:cd
+     relation:
+      [from=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  pick_up(object arg0)
+utterance: pick up  cd from shelf and place on centre table

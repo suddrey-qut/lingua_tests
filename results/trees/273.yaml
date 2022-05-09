@@ -1,0 +1,11 @@
+frame: |-
+  serve(object arg0)
+   arg0:
+    object:food
+     relation:
+      [in=object:plate
+       limit:
+        Only: 1]
+tree: |
+  serve(object arg0)
+utterance: serve the food in the plate

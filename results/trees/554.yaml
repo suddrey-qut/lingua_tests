@@ -1,0 +1,25 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:coke
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:beer
+         limit:
+          Only: 1
+       -
+        object:bowl
+         limit:
+          Only: 1
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put the coke  , beer and the bowl on the table

@@ -1,0 +1,19 @@
+frame: |-
+  place_into(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:dishes
+     -
+      object:utensil
+       relation:
+        [from=object:counter
+         limit:
+          Only: 1]
+   arg1:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  place_into(object arg0, object arg1)
+utterance: place all dishes and utensils from the counter into the sink

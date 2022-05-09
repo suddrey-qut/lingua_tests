@@ -1,0 +1,23 @@
+frame: |-
+  bring_of(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      object:xbox_controller
+       relation:
+        [in=object:front
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   arg1:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  bring_of(object arg0, object arg1)
+utterance: bring the xbox and xbox controllers in front of the television

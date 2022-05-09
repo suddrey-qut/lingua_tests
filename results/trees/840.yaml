@@ -1,0 +1,13 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    object:far_cry_game_cd
+     relation:
+      [on=object:desktop
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  get(object arg0)
+utterance: get the far cry game cd on the desktop

@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:pillow
+       relation:
+        [from=object:shelf
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    bring_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] bring_to(object arg0, object arg1)
+utterance: take the pillow from the shelf and bring it to the couch

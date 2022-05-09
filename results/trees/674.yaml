@@ -1,0 +1,33 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      and
+       -
+        object:beer
+         limit:
+          Only: 1
+       -
+        object:coke
+         limit:
+          Only: 1
+   -
+    and
+     -
+      bowl()
+     -
+      place(animate-being arg0)
+       arg0:
+        animate-being:pro3n
+         relation:
+          [on=object:coffee_table
+           limit:
+            Only: 1]
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] and
+      [-] bowl()
+      [-] place(animate-being arg0)
+utterance: grab the beer  , coke and bowl and place them on the coffee table

@@ -6,6 +6,7 @@ import os
 import csv
 import re
 import sys
+import yaml
 from openccg_ros.srv import Parse, ParseRequest
 import xml.etree.ElementTree as ET
 import collections
@@ -33,8 +34,10 @@ parsed = True if len(parses) > 0 else False
 
 for parse in parses:
   utterance, t = CCGReader.read(parse)
-  
-  if t:
-    print(t.to_btree())
-    break
-  print(t)
+  print(yaml.dump(t.left))
+  print(str(t.left))
+  break
+  # if t:
+  #   print(t.to_btree())
+  #   break
+  # print(t)

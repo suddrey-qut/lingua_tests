@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:garbage_bag
+       limit:
+        Only: 1
+   -
+    throw_away(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] throw_away(object arg0)
+utterance: take garbage bag and throw it away

@@ -1,0 +1,11 @@
+frame: |-
+  get_for(object arg0, animate-being arg1)
+   arg0:
+    object:pillow
+   arg1:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  get_for(object arg0, animate-being arg1)
+utterance: get pillows for me

@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    toggle(object arg0)
+     arg0:
+      object:sink
+       limit:
+        Only: 1
+   -
+    fill(object arg0)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] toggle(object arg0)
+  [-] fill(object arg0)
+utterance: toggle the sink and fill the pot

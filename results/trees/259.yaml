@@ -1,0 +1,11 @@
+frame: |-
+  move_around(object arg0, object arg1)
+   arg0:
+    object:chair
+   arg1:
+    object:coffee_table
+     limit:
+      Only: 1
+tree: |
+  move_around(object arg0, object arg1)
+utterance: move all chairs around the coffee table

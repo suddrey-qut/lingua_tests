@@ -1,0 +1,13 @@
+frame: |-
+  assert:
+   object:
+    object:mix_egg_till_yoke
+     limit:
+      Only: 1
+   is:
+    dummy:*
+     attributes:
+      [state=broken]
+tree: |
+  assert:  object:   object:mix_egg_till_yoke    limit:     Only: 1  is:   dummy:*    attributes:     [state=broken]
+utterance: mix eggs till yokes are broken

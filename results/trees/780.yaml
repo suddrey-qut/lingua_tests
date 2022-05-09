@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    grasp_from(object arg0, object arg1)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+     arg1:
+      object:microwave
+       limit:
+        Only: 1
+   -
+    take_out(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grasp_from(object arg0, object arg1)
+  [-] take_out(object arg0)
+utterance: grasp mug from inside the microwave and take it out

@@ -1,0 +1,9 @@
+frame: |-
+  remove(object arg0)
+   arg0:
+    object:instant_ramen
+     limit:
+      Only: 1
+tree: |
+  remove(object arg0)
+utterance: remove instant ramen

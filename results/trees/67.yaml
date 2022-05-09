@@ -1,0 +1,17 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:cream
+     relation:
+      [in=object:freezer
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:ice
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put ice cream in freezer

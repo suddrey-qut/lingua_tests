@@ -1,0 +1,23 @@
+frame: |-
+  pour_into(object arg0, object arg1)
+   arg0:
+    object:chips
+     limit:
+      Only: 1
+   arg1:
+    and
+     -
+      object:bowl
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:coffee_table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  pour_into(object arg0, object arg1)
+utterance: pour the chips into the bowl and place on coffee table

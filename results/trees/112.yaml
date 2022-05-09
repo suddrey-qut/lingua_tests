@@ -1,0 +1,13 @@
+frame: |-
+  arrange(object arg0)
+   arg0:
+    object:pillow
+     relation:
+      [on=object:couch
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  arrange(object arg0)
+utterance: arrange pillow on couch

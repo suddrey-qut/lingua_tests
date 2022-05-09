@@ -1,0 +1,17 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:equipment
+     relation:
+      [in=object:cupboard
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put the xbox equipment in the cupboard

@@ -1,0 +1,7 @@
+frame: |-
+  object:xbox
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: make sure the xbox and the tv are connected

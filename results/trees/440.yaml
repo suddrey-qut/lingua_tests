@@ -1,0 +1,15 @@
+frame: |-
+  pour_on(object arg0)
+   arg0:
+    and
+     -
+      object:chocolate
+       limit:
+        Only: 1
+     -
+      object:vanilla_syrup
+       limit:
+        Only: 1
+tree: |
+  pour_on(object arg0)
+utterance: pour chocolate and vanilla syrup on top

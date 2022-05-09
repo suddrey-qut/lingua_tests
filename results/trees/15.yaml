@@ -1,0 +1,13 @@
+frame: |-
+  give(object arg0, animate-being arg1)
+   arg0:
+    object:bag
+     limit:
+      Only: 1
+   arg1:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  give(object arg0, animate-being arg1)
+utterance: give me the bag of chips

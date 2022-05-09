@@ -1,0 +1,9 @@
+frame: |-
+  take_outside(object arg0)
+   arg0:
+    object:garbage_bag
+     limit:
+      Only: 1
+tree: |
+  take_outside(object arg0)
+utterance: take the garbage bag outside

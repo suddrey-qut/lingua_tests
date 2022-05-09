@@ -1,0 +1,28 @@
+frame: |-
+  if:
+   condition:
+    assert:
+     object:
+      object:bag
+       limit:
+        Only: 1
+     is:
+      dummy:*
+       attributes:
+        [state=empty]
+   body:
+    throw_away(object arg0)
+     arg0:
+      object:bag
+       relation:
+        [in=object:garbage_bag
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  if
+  -^- Inverter [condition]
+      --> condition
+  [-] body
+utterance: if the bag of chips is empty throw away the bag in the garbage bag

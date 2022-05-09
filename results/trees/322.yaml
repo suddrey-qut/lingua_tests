@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    scoop_into(object arg0, object arg1)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+   -
+    put_over(object arg0, object arg1)
+     arg0:
+      object:vanilla_syrup
+       limit:
+        Only: 1
+     arg1:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] scoop_into(object arg0, object arg1)
+  [-] put_over(object arg0, object arg1)
+utterance: scoop some ice cream into the mug  , then put vanilla syrup over it

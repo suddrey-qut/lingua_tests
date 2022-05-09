@@ -1,0 +1,13 @@
+frame: |-
+  fill_with(object arg0)
+   arg0:
+    object:water
+     relation:
+      [from=object:fridge
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  fill_with(object arg0)
+utterance: fill with water from fridge

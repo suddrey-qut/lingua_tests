@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:xbox
+       limit:
+        Only: 1
+   -
+    serve(object arg0)
+     arg0:
+      and
+       -
+        object:beer
+         limit:
+          Only: 1
+       -
+        and
+         -
+          object:coca-cola
+           limit:
+            Only: 1
+         -
+          object:chips
+           limit:
+            Only: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] serve(object arg0)
+utterance: turn on xbox and serve beer  , coca-cola and chips

@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:chips
+       limit:
+        Only: 1
+   -
+    put_beside(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] put_beside(animate-being arg0, object arg1)
+utterance: take the chips and put them by the couch

@@ -1,0 +1,13 @@
+frame: |-
+  open(object arg0)
+   arg0:
+    object:gamecd
+     relation:
+      [with=object:television
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  open(object arg0)
+utterance: open the gamecd with tv

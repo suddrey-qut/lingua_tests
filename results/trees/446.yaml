@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      and
+       -
+        object:bottle
+       -
+        and
+         -
+          object:can
+         -
+          object:trash
+           limit:
+            Only: 1
+   -
+    put_in(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:trash_can
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] put_in(animate-being arg0, object arg1)
+utterance: take all bottles  , cans  , and trash and put them in the trash can

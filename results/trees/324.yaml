@@ -1,0 +1,17 @@
+frame: |-
+  fill(object arg0)
+   arg0:
+    object:pot
+     relation:
+      [with=object:water
+       relation:
+        [from=object:faucet
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  fill(object arg0)
+utterance: fill the pot with water from the faucet

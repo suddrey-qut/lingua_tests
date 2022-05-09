@@ -1,0 +1,13 @@
+frame: |-
+  serve(object arg0)
+   arg0:
+    object:milk
+     relation:
+      [in=object:glass
+       limit:
+        Any: 1]
+     limit:
+      Only: 1
+tree: |
+  serve(object arg0)
+utterance: serve milk in a glass

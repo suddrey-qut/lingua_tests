@@ -1,0 +1,15 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:can
+     -
+      object:bottle
+   arg1:
+    object:trash
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put cans and bottles in the trash

@@ -1,0 +1,7 @@
+frame: |-
+  object:television
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: hook the xbox up to the tv and make sure the tv is on the right channel

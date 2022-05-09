@@ -1,0 +1,19 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:beer
+       limit:
+        Only: 1
+     -
+      object:bag
+       relation:
+        [on=object:counter
+         attributes:
+          [color=white]
+         limit:
+          Only: 1]
+tree: |
+  place(object arg0)
+utterance: place all of the beer and bags of chips on the white counter

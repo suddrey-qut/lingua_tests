@@ -1,0 +1,9 @@
+frame: |-
+  run(object arg0)
+   arg0:
+    object:gamecd
+     limit:
+      Only: 1
+tree: |
+  run(object arg0)
+utterance: run the gamecd

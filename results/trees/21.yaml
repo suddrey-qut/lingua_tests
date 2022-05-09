@@ -1,0 +1,19 @@
+frame: |-
+  place_underneath(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      object:xbox_controller
+       limit:
+        Only: 1
+   arg1:
+    object:television_console
+     limit:
+      Only: 1
+tree: |
+  place_underneath(object arg0, object arg1)
+utterance: place the xbox and xbox controller underneath the television console

@@ -1,0 +1,15 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:book
+     relation:
+      [in=room:room
+       relation:
+        [on=object:desk
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+tree: |
+  place(object arg0)
+utterance: place all  books in room on the desk

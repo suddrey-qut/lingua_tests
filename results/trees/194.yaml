@@ -1,0 +1,13 @@
+frame: |-
+  arrange(object arg0)
+   arg0:
+    object:food
+     relation:
+      [on=object:table
+       attributes:
+        [state=center]
+       limit:
+        Only: 1]
+tree: |
+  arrange(object arg0)
+utterance: arrange the food on the center table

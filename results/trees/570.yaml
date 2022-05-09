@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:remote
+       limit:
+        Only: 1
+   -
+    switch_to(object arg0, object arg1)
+     arg0:
+      object:channel
+       limit:
+        Only: 1
+     arg1:
+      object:music_channel
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] switch_to(object arg0, object arg1)
+utterance: pick up remote and switch channel to a music channel

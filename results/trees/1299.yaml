@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:syrup
+       limit:
+        Only: 1
+   -
+    squeeze_over(object arg0)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] squeeze_over(object arg0)
+utterance: take syrup and squeeze over the ice cream

@@ -1,0 +1,9 @@
+frame: |-
+  shut_down(object arg0)
+   arg0:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  shut_down(object arg0)
+utterance: shut down the tv

@@ -1,0 +1,11 @@
+frame: |-
+  open_back(object arg0)
+   arg0:
+    object:burner
+     attributes:
+      [state=left]
+     limit:
+      Only: 1
+tree: |
+  open_back(object arg0)
+utterance: open back left burner

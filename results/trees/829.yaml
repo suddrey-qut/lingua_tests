@@ -1,0 +1,19 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    and
+     -
+      object:bag
+       limit:
+        Only: 1
+     -
+      object:bowl
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  get(object arg0)
+utterance: get the bag of chips and bowl on the table

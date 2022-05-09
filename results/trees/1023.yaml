@@ -1,0 +1,15 @@
+frame: |-
+  repeat_for(object arg0)
+   arg0:
+    and
+     -
+      object:spoon
+       limit:
+        Only: 1
+     -
+      object:mug
+       limit:
+        Only: 1
+tree: |
+  repeat_for(object arg0)
+utterance: repeat for spoon and mug

@@ -1,0 +1,19 @@
+frame: |-
+  throw(object arg0)
+   arg0:
+    and
+     -
+      object:coke
+       limit:
+        Only: 1
+     -
+      object:beer
+       relation:
+        [in=object:trash
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  throw(object arg0)
+utterance: throw coke and beer in trash

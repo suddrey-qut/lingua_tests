@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    boil(object arg0)
+     arg0:
+      object:water
+       relation:
+        [with=object:pot
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:water
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       attributes:
+        [state=clean]
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] boil(object arg0)
+  [-] pour_into(object arg0, object arg1)
+utterance: boil some water with the pot and pour water into a clean mug

@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    retrieve(object arg0)
+     arg0:
+      object:coffee_mug
+       limit:
+        Only: 1
+   -
+    pour_over(object arg0, object arg1)
+     arg0:
+      object:contents
+     arg1:
+      object:ice_cream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] retrieve(object arg0)
+  [-] pour_over(object arg0, object arg1)
+utterance: retrieve the coffee mug and slowly pour the contents over the ice cream

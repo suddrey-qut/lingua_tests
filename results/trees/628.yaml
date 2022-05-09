@@ -1,0 +1,17 @@
+frame: |-
+  and
+   -
+    go_to(object arg0)
+     arg0:
+      object:shelf
+       limit:
+        Only: 1
+   -
+    take_down(object arg0)
+     arg0:
+      object:pillow
+tree: |
+  and
+  [-] go_to(object arg0)
+  [-] take_down(object arg0)
+utterance: go to shelf and take pillows down

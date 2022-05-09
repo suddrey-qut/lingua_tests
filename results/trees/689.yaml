@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    get_out(object arg0)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+   -
+    cook(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get_out(object arg0)
+  [-] cook(object arg0)
+utterance: get out the ramen and then cook it

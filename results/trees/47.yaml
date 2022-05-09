@@ -1,0 +1,19 @@
+frame: |-
+  put_of(object arg0, object arg1)
+   arg0:
+    object:cd
+     relation:
+      [on=object:table
+       relation:
+        [in=object:front
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+   arg1:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  put_of(object arg0, object arg1)
+utterance: put all the cds on the table in front of the couch

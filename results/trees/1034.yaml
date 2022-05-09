@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+   -
+    move_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] move_to(object arg0, object arg1)
+utterance: take the pot and move it to the sink

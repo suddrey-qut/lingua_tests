@@ -1,0 +1,9 @@
+frame: |-
+  object:countertop
+   attributes:
+    [state=clean]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: clean countertop

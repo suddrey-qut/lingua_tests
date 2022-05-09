@@ -1,0 +1,17 @@
+frame: |-
+  turn_on(object arg0)
+   arg0:
+    object:stove_burner
+     relation:
+      [with=object:kettle
+       relation:
+        [on=anaphora:it
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  turn_on(object arg0)
+utterance: turn stove burner with kettle on it on

@@ -1,0 +1,11 @@
+frame: |-
+  bring_around(object arg0, object arg1)
+   arg0:
+    object:chair
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  bring_around(object arg0, object arg1)
+utterance: bring all chairs around the table

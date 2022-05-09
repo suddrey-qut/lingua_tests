@@ -1,0 +1,11 @@
+frame: |-
+  arrange_over(object arg0, object arg1)
+   arg0:
+    object:pillow
+   arg1:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  arrange_over(object arg0, object arg1)
+utterance: arrange pillows over the couch

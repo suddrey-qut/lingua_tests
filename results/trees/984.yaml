@@ -1,0 +1,7 @@
+frame: |-
+  hang_up(object arg0)
+   arg0:
+    object:clothes
+tree: |
+  hang_up(object arg0)
+utterance: hang up clothes

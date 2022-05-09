@@ -1,0 +1,7 @@
+frame: |-
+  object:game_cd
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: game cd is on the shelf

@@ -1,0 +1,17 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:refrigerator
+       limit:
+        Only: 1
+   -
+    grab(object arg0)
+     arg0:
+      object:food
+tree: |
+  and
+  [-] open(object arg0)
+  [-] grab(object arg0)
+utterance: open refrigerator and grab food

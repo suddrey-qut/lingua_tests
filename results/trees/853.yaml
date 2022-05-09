@@ -1,0 +1,9 @@
+frame: |-
+  care(animate-being arg0)
+   arg0:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  care(animate-being arg0)
+utterance: care me

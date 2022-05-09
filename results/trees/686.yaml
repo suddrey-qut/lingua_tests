@@ -1,0 +1,15 @@
+frame: |-
+  put_to(object arg0, object arg1)
+   arg0:
+    object:everything
+     relation:
+      [on=object:ground
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:table
+tree: |
+  put_to(object arg0, object arg1)
+utterance: put everything on the floor to the tables

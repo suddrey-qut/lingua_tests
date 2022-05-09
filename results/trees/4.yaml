@@ -1,0 +1,9 @@
+frame: |-
+  toggle_on(object arg0)
+   arg0:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  toggle_on(object arg0)
+utterance: toggle sink on

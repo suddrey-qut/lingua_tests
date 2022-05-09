@@ -1,0 +1,14 @@
+frame: |-
+  for:
+   duration:
+    2.0 minute(s)
+   body:
+    turn_on(object arg0)
+     arg0:
+      object:microwave
+       limit:
+        Only: 1
+tree: |
+  Repeat for 2.0 minute(s)
+  [-] turn_on(object arg0)
+utterance: turn the microwave on for two minutes

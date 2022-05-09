@@ -1,0 +1,9 @@
+frame: |-
+  toggle_off(object arg0)
+   arg0:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  toggle_off(object arg0)
+utterance: toggle off the tv

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    collect(object arg0)
+     arg0:
+      object:book
+       relation:
+        [from=room:room
+         limit:
+          Only: 1]
+   -
+    place(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [on=object:coffee_table
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] collect(object arg0)
+  [-] place(animate-being arg0)
+utterance: collect all books from the room and place them on the coffee table

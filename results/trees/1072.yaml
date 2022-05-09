@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:book
+       limit:
+        Only: 1
+   -
+    move_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:shelf
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] move_to(object arg0, object arg1)
+utterance: pick up the book and move it to the shelf

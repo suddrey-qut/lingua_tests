@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+   -
+    add_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:pot
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] add_to(object arg0, object arg1)
+utterance: take the ramen and add it to the pot

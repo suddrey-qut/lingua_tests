@@ -1,0 +1,25 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:chocolate
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:vanilla_syrup
+         limit:
+          Only: 1
+       -
+        object:ramen
+         relation:
+          [in=object:pantry
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  place(object arg0)
+utterance: place chocolate and vanilla syrup  , and ramen in pantry

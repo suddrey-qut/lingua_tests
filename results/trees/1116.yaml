@@ -1,0 +1,13 @@
+frame: |-
+  wipe(object arg0)
+   arg0:
+    object:counter
+     relation:
+      [with=object:cloth
+       limit:
+        Any: 1]
+     limit:
+      Only: 1
+tree: |
+  wipe(object arg0)
+utterance: wipe the counter with a cloth

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:game
+       limit:
+        Only: 1
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] put_in(object arg0, object arg1)
+utterance: pick up the game and put it in the xbox

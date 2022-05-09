@@ -1,0 +1,7 @@
+frame: |-
+  lower(object arg0)
+   arg0:
+    object:light
+tree: |
+  lower(object arg0)
+utterance: lower lights

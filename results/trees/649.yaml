@@ -1,0 +1,9 @@
+frame: |-
+  boil(object arg0)
+   arg0:
+    object:water
+     limit:
+      Only: 1
+tree: |
+  boil(object arg0)
+utterance: boil some water

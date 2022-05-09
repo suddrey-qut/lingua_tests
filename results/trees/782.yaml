@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+   -
+    place_on(object arg0)
+     arg0:
+      object:stove
+       attributes:
+        [state=right]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] place_on(object arg0)
+utterance: grasp the pot and place on back right stove

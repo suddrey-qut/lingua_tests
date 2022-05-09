@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      object:bowl
+       limit:
+        Only: 1
+     arg1:
+      object:table
+       limit:
+        Only: 1
+   -
+    fill(object arg0)
+     arg0:
+      object:bowl
+       relation:
+        [with=object:chips
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_on(object arg0, object arg1)
+  [-] fill(object arg0)
+utterance: put the bowl on the table and fill the bowl with chips

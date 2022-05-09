@@ -1,0 +1,13 @@
+frame: |-
+  pour_into(object arg0, object arg1)
+   arg0:
+    object:kettle
+     limit:
+      Only: 1
+   arg1:
+    object:ramen
+     limit:
+      Only: 1
+tree: |
+  pour_into(object arg0, object arg1)
+utterance: pour the kettle into the ramen

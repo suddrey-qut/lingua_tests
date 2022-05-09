@@ -1,0 +1,33 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+   -
+    and
+     -
+      eat(object arg0)
+       arg0:
+        object:ice_cream
+         limit:
+          Only: 1
+     -
+      use_for(object arg0, object arg1)
+       arg0:
+        object:syrup
+         limit:
+          Only: 1
+       arg1:
+        object:ice_cream
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] and
+      [-] eat(object arg0)
+      [-] use_for(object arg0, object arg1)
+utterance: take coffee  , eat the ice cream and use syrup for ice cream

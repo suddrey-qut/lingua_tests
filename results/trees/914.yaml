@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    find(object arg0)
+     arg0:
+      and
+       -
+        object:beer
+         limit:
+          Only: 1
+       -
+        object:soda
+         limit:
+          Only: 1
+   -
+    place(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [on=object:desk
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] find(object arg0)
+  [-] place(animate-being arg0)
+utterance: find beer and soda and place them on desk

@@ -1,0 +1,13 @@
+frame: |-
+  pick_up(object arg0)
+   arg0:
+    object:anything
+     relation:
+      [on=object:ground
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  pick_up(object arg0)
+utterance: pick up anything on the floor

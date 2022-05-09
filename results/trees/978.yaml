@@ -1,0 +1,18 @@
+frame: |-
+  for:
+   duration:
+    2.0 minute(s)
+   body:
+    put_on(object arg0, object arg1)
+     arg0:
+      object:kettle
+       limit:
+        Only: 1
+     arg1:
+      object:stove
+       limit:
+        Only: 1
+tree: |
+  Repeat for 2.0 minute(s)
+  [-] put_on(object arg0, object arg1)
+utterance: put kettle on stove for 2 minutes

@@ -1,0 +1,15 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:book
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+   arg1:
+    object:school
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put all the school books on the table

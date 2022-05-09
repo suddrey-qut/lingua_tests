@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:glass
+       limit:
+        Only: 1
+   -
+    and
+     -
+      fill_with(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:water
+         limit:
+          Only: 1
+     -
+      set_down(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:counter
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] and
+      [-] fill_with(object arg0, object arg1)
+      [-] set_down(object arg0, object arg1)
+utterance: pick up the glass and fill it with water  , then set it down on the counter

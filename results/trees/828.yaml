@@ -1,0 +1,7 @@
+frame: |-
+  object:toggle_back-left_burner
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: toggle back-left burner

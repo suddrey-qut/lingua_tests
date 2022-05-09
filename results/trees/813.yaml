@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    get_out(object arg0)
+     arg0:
+      object:movie
+       limit:
+        Only: 1
+   -
+    prepare_for(object arg0)
+     arg0:
+      object:food
+       relation:
+        [in=object:fridge
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] get_out(object arg0)
+  [-] prepare_for(object arg0)
+utterance: get out the movie and prepare for food in the fridge

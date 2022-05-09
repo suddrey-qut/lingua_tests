@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:bottle
+       limit:
+        Only: 1
+   -
+    squeeze(object arg0)
+     arg0:
+      object:plate
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] squeeze(object arg0)
+utterance: pick up the bottle of syrup and squeeze some on the plate

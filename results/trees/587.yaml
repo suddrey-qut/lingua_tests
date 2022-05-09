@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:food
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:coffee_table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] put_on(object arg0, object arg1)
+utterance: get food and put it on the coffee table

@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    place_of(object arg0, object arg1)
+     arg0:
+      object:pot
+       relation:
+        [on=object:burner
+         limit:
+          Any: 1]
+       limit:
+        Only: 1
+     arg1:
+      object:stove
+       limit:
+        Only: 1
+   -
+    turn_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:medium
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] place_of(object arg0, object arg1)
+  [-] turn_on(object arg0, object arg1)
+utterance: place the pot on a burner of the stove and turn it on medium

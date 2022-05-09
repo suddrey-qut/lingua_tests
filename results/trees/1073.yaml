@@ -1,0 +1,13 @@
+frame: |-
+  move_to(object arg0, object arg1)
+   arg0:
+    object:kettle
+     limit:
+      Only: 1
+   arg1:
+    object:stove
+     limit:
+      Only: 1
+tree: |
+  move_to(object arg0, object arg1)
+utterance: move the kettle to the stove

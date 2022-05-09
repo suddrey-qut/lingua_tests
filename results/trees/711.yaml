@@ -1,0 +1,15 @@
+frame: |-
+  place_into(object arg0, object arg1)
+   arg0:
+    object:scoop
+     relation:
+      [from=conjunction:and]
+     limit:
+      Any: 1
+   arg1:
+    anaphora:it
+     limit:
+      Only: 1
+tree: |
+  place_into(object arg0, object arg1)
+utterance: place a scoop of icecream from the freezer and syrup into it

@@ -1,0 +1,13 @@
+frame: |-
+  put_into(object arg0, object arg1)
+   arg0:
+    object:trash_bag
+     limit:
+      Only: 1
+   arg1:
+    object:trash_can
+     limit:
+      Only: 1
+tree: |
+  put_into(object arg0, object arg1)
+utterance: put the trash bag into the trash can

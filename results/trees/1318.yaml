@@ -1,0 +1,9 @@
+frame: |-
+  set_on(object arg0)
+   arg0:
+    object:stove
+     limit:
+      Only: 1
+tree: |
+  set_on(object arg0)
+utterance: set on stove

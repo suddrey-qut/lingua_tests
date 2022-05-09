@@ -1,0 +1,13 @@
+frame: |-
+  put_away(object arg0, object arg1)
+   arg0:
+    object:coke
+     limit:
+      Only: 1
+   arg1:
+    object:beer
+     limit:
+      Only: 1
+tree: |
+  put_away(object arg0, object arg1)
+utterance: put away the coke and the beer

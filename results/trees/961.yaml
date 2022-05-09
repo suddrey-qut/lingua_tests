@@ -1,0 +1,11 @@
+frame: |-
+  make_for(object arg0, object arg1)
+   arg0:
+    object:food
+   arg1:
+    object:breakfast
+     limit:
+      Only: 1
+tree: |
+  make_for(object arg0, object arg1)
+utterance: make food for breakfast

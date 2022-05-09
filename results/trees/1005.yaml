@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    fill(object arg0)
+     arg0:
+      object:instant_ramen
+       relation:
+        [with=object:water
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    heat_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:microwave
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] fill(object arg0)
+  [-] heat_in(object arg0, object arg1)
+utterance: fill the instant ramen with water and heat it in the microwave

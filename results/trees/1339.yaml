@@ -1,0 +1,11 @@
+frame: |-
+  place_on(object arg0)
+   arg0:
+    object:burner
+     attributes:
+      [state=right]
+     limit:
+      Only: 1
+tree: |
+  place_on(object arg0)
+utterance: place on back right burner

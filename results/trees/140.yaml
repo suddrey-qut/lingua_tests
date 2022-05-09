@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:water
+       relation:
+        [in=object:pot
+         relation:
+          [from=object:sink
+           limit:
+            Only: 1]
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    boil(object arg0)
+     arg0:
+      object:water
+       relation:
+        [on=object:stove
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] boil(object arg0)
+utterance: get water in the pot from the sink then boil the water on the stove

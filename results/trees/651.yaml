@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:water
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       limit:
+        Any: 1
+   -
+    put(object arg0, object arg1)
+     arg0:
+      object:ramen
+       relation:
+        [in=anaphora:it
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+     arg1:
+      object:instant
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pour_into(object arg0, object arg1)
+  [-] put(object arg0, object arg1)
+utterance: pour some water into a bowl and put the instant ramen in it

@@ -1,0 +1,13 @@
+frame: |-
+  bring_to(object arg0, object arg1)
+   arg0:
+    object:bowl
+     limit:
+      Only: 1
+   arg1:
+    object:coffee_table
+     limit:
+      Only: 1
+tree: |
+  bring_to(object arg0, object arg1)
+utterance: bring the bowl of chips to the coffee table

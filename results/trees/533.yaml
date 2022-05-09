@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    pour(object arg0, animate-being arg1)
+     arg0:
+      object:contents
+       relation:
+        [on=object:plate
+         limit:
+          Any: 1]
+     arg1:
+      animate-being:pro3n
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] pour(object arg0, animate-being arg1)
+utterance: take the mug and pour its contents on a plate

@@ -1,0 +1,17 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:ramen
+     relation:
+      [in=object:microwave
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:instant
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put instant ramen in microwave

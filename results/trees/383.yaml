@@ -1,0 +1,18 @@
+frame: |-
+  for:
+   duration:
+    10.0 minute(s)
+   body:
+    heat_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:stove
+       limit:
+        Only: 1
+tree: |
+  Repeat for 10.0 minute(s)
+  [-] heat_on(object arg0, object arg1)
+utterance: heat it on the stove for 10 minutes

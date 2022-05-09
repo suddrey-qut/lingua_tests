@@ -1,0 +1,23 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      object:xbox_controller
+       relation:
+        [on=object:shelf
+         relation:
+          [in=object:corner
+           limit:
+            Only: 1]
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  place(object arg0)
+utterance: place the xbox and xbox controllers onto the shelf in the corner

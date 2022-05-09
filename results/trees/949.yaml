@@ -1,0 +1,7 @@
+frame: |-
+  get_ready(object arg0)
+   arg0:
+    object:textbook
+tree: |
+  get_ready(object arg0)
+utterance: get textbooks ready

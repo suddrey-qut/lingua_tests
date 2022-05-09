@@ -1,0 +1,9 @@
+frame: |-
+  sit_on(object arg0)
+   arg0:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  sit_on(object arg0)
+utterance: sit on couch

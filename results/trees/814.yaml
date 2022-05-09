@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:pillow
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:sofa
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] put_on(object arg0, object arg1)
+utterance: take pillows and put it on the sofa

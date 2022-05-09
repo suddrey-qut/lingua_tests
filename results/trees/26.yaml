@@ -1,0 +1,11 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:coke_can
+     relation:
+      [on=conjunction:and_with]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place the coke can on the counter along with the beer and chips

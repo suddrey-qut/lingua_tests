@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    clear(object arg0)
+     arg0:
+      and
+       -
+        object:table
+       -
+        object:chair
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      object:contents
+     arg1:
+      object:shelves
+tree: |
+  and
+  [-] clear(object arg0)
+  [-] put_on(object arg0, object arg1)
+utterance: clear the tables and chairs and put the contents on the shelves

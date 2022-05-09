@@ -1,0 +1,25 @@
+frame: |-
+  grasp(object arg0)
+   arg0:
+    and
+     -
+      object:cup
+       attributes:
+        [state=long]
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:cup
+         attributes:
+          [state=long]
+         limit:
+          Only: 1
+       -
+        object:glass
+         limit:
+          Only: 1
+tree: |
+  grasp(object arg0)
+utterance: grasp long cup  , long cup and glass

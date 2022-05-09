@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    add_to(object arg0, object arg1)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+     arg1:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] add_to(object arg0, object arg1)
+utterance: take the mug of coffee and add ice cream to it

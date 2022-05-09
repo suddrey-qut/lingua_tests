@@ -1,0 +1,17 @@
+frame: |-
+  and
+   -
+    cook()
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      object:food
+     arg1:
+      object:bed
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] cook()
+  [-] put_on(object arg0, object arg1)
+utterance: cook and put the food on the bed

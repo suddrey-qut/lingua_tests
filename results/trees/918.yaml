@@ -1,0 +1,11 @@
+frame: |-
+  remove(object arg0)
+   arg0:
+    object:egg
+     relation:
+      [from=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  remove(object arg0)
+utterance: remove egg from water and place on plate

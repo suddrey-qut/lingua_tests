@@ -1,0 +1,9 @@
+frame: |-
+  make(object arg0)
+   arg0:
+    object:bed
+     limit:
+      Only: 1
+tree: |
+  make(object arg0)
+utterance: make the bed

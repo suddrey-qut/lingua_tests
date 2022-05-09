@@ -1,0 +1,9 @@
+frame: |-
+  turn_of(object arg0)
+   arg0:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  turn_of(object arg0)
+utterance: turn of the television

@@ -1,0 +1,13 @@
+frame: |-
+  put_inside(object arg0, object arg1)
+   arg0:
+    object:xbox_equipment
+     limit:
+      Only: 1
+   arg1:
+    object:cupboard
+     limit:
+      Only: 1
+tree: |
+  put_inside(object arg0, object arg1)
+utterance: put the xbox equipment inside the cupboard

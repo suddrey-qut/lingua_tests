@@ -1,0 +1,7 @@
+frame: |-
+  bring(object arg0)
+   arg0:
+    object:textbook
+tree: |
+  bring(object arg0)
+utterance: bring all the textbooks

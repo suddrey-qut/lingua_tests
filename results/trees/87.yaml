@@ -1,0 +1,15 @@
+frame: |-
+  bring_to(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:plate
+     -
+      object:cup
+   arg1:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  bring_to(object arg0, object arg1)
+utterance: bring plates and cups to sink

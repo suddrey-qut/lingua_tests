@@ -1,0 +1,9 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    object:kettle
+     limit:
+      Only: 1
+tree: |
+  find(object arg0)
+utterance: find kettle

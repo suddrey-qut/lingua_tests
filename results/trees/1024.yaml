@@ -1,0 +1,12 @@
+frame: |-
+  object:pickup_book_place
+   relation:
+    [on=object:shelf
+     limit:
+      Only: 1]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: pickup books place on shelf  , turn on then turn off the tv and pick up
+  food

@@ -1,0 +1,11 @@
+frame: |-
+  pick_up(object arg0)
+   arg0:
+    object:guiness_book
+     relation:
+      [from=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  pick_up(object arg0)
+utterance: pick up guiness book from the floor and place on desk

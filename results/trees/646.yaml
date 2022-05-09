@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:cup
+       limit:
+        Only: 1
+   -
+    pour(object arg0)
+     arg0:
+      object:water
+       relation:
+        [in=anaphora:it
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] pour(object arg0)
+utterance: take the cup and pour water in it

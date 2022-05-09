@@ -1,0 +1,9 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:pillow
+     relation:
+      [on=object:couch]
+tree: |
+  place(object arg0)
+utterance: place the three pillows on the couches

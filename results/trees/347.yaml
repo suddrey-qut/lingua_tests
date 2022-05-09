@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    fill(object arg0)
+     arg0:
+      object:pot
+       relation:
+        [with=object:water
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    and
+     -
+      put_on(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:stove
+         limit:
+          Only: 1
+     -
+      turn_on(object arg0)
+       arg0:
+        object:stove
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] fill(object arg0)
+  [-] and
+      [-] put_on(object arg0, object arg1)
+      [-] turn_on(object arg0)
+utterance: fill the pot with water  , put it on the stove  , and turn on the stove

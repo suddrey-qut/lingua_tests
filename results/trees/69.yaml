@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+   -
+    bring_to(object arg0)
+     arg0:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] bring_to(object arg0)
+utterance: grab pot and bring to sink

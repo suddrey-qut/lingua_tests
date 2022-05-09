@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    get_out(object arg0)
+     arg0:
+      object:ramen
+       relation:
+        [from=object:fridge
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    cook_in(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:pan
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get_out(object arg0)
+  [-] cook_in(object arg0, object arg1)
+utterance: get out the ramen from the fridge and then cook it in the pan

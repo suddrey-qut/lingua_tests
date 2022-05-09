@@ -1,0 +1,21 @@
+frame: |-
+  bring(object arg0)
+   arg0:
+    and
+     -
+      object:bag
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:coffee_table
+         attributes:
+          [state=center]
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  bring(object arg0)
+utterance: bring bag of chips and place on the center coffee table

@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    fill(object arg0)
+     arg0:
+      object:pot
+       relation:
+        [with=object:water
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    boil(object arg0)
+     arg0:
+      object:water
+       relation:
+        [in=object:pot
+         relation:
+          [on=object:stove
+           limit:
+            Only: 1]
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] fill(object arg0)
+  [-] boil(object arg0)
+utterance: fill the pot with water then boil the water in the pot on the stove

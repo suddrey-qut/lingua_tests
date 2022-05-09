@@ -1,0 +1,17 @@
+frame: |-
+  drop(object arg0)
+   arg0:
+    object:beer
+     relation:
+      [near=object:coke
+       relation:
+        [on=object:centre_table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  drop(object arg0)
+utterance: drop beer near coke on centre table

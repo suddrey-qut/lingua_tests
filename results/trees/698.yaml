@@ -1,0 +1,17 @@
+frame: |-
+  put_into(object arg0, object arg1)
+   arg0:
+    object:cd
+     relation:
+      [with=object:music
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  put_into(object arg0, object arg1)
+utterance: put the cd with music into the xbox

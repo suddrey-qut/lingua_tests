@@ -1,0 +1,11 @@
+frame: |-
+  fix(object arg0)
+   arg0:
+    object:pillow
+     relation:
+      [on=object:couch
+       limit:
+        Only: 1]
+tree: |
+  fix(object arg0)
+utterance: fix the pillows on the couch

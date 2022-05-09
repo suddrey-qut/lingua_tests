@@ -1,0 +1,7 @@
+frame: |-
+  object:toggle_television_off
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: toggle tv off

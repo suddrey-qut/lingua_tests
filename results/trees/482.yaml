@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    place(object arg0)
+     arg0:
+      object:ramen
+       relation:
+        [in=object:microwave
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    heat()
+tree: |
+  and
+  [-] place(object arg0)
+  [-] heat()
+utterance: place the ramen in the microwave and heat

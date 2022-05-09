@@ -1,0 +1,9 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    object:bowl
+     limit:
+      Any: 1
+tree: |
+  get(object arg0)
+utterance: get a bowl

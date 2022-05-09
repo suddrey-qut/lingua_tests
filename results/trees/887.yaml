@@ -1,0 +1,25 @@
+frame: |-
+  place_of(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:xbox_games
+       limit:
+        Only: 1
+     -
+      object:food
+       relation:
+        [on=object:table
+         relation:
+          [in=object:front
+           limit:
+            Only: 1]
+         limit:
+          Any: 1]
+   arg1:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  place_of(object arg0, object arg1)
+utterance: place xbox games and food on a table in front of the couch

@@ -1,0 +1,28 @@
+frame: |-
+  and
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:water
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+   -
+    for:
+     duration:
+      3.0 minute(s)
+     body:
+      hit_in(object arg0)
+       arg0:
+        object:microwave
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] put_in(object arg0, object arg1)
+  -^- Repeat for 3.0 minute(s)
+      [-] hit_in(object arg0)
+utterance: put water in the mug and hit in the microwave for three minutes

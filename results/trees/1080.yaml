@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    heat_up(object arg0)
+     arg0:
+      object:coffee
+       relation:
+        [in=object:microwave
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] heat_up(object arg0)
+utterance: get the mug and heat up coffee in the microwave

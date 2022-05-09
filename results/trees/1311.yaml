@@ -1,0 +1,15 @@
+frame: |-
+  serve(object arg0)
+   arg0:
+    and
+     -
+      object:beer
+       limit:
+        Only: 1
+     -
+      object:soda
+       limit:
+        Only: 1
+tree: |
+  serve(object arg0)
+utterance: serve beer and soda

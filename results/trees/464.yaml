@@ -1,0 +1,11 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:food
+     relation:
+      [on=object:plate
+       limit:
+        Only: 1]
+tree: |
+  place(object arg0)
+utterance: place food on plate

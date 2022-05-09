@@ -1,0 +1,11 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    object:movie
+     relation:
+      [from=object:cd]
+     limit:
+      Any: 1
+tree: |
+  take(object arg0)
+utterance: take a movie from the cds

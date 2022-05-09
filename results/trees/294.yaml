@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:fridge
+       limit:
+        Only: 1
+   -
+    remove(object arg0)
+     arg0:
+      object:milk
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] remove(object arg0)
+utterance: open the fridge and remove milk

@@ -1,0 +1,42 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:ramen
+       limit:
+        Only: 1
+   -
+    when:
+     condition:
+      assert:
+       object:
+        object:water
+         relation:
+          [in=object:pot
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+       is:
+        dummy:*
+         attributes:
+          [state=boiling]
+     body:
+      put_in(object arg0, object arg1)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+       arg1:
+        object:pot
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  -^- SuccessIsFailure [when]
+      [-] when
+          --> assert:  object:   object:water    relation:     [in=object:pot      limit:       Only: 1]    limit:     Only: 1  is:   dummy:*    attributes:     [state=boiling]
+          [-] put_in(object arg0, object arg1)
+utterance: get the ramen and put it in pot when the water in the pot is boiling

@@ -1,0 +1,9 @@
+frame: |-
+  prepare(object arg0)
+   arg0:
+    object:ice_cream
+     limit:
+      Only: 1
+tree: |
+  prepare(object arg0)
+utterance: prepare the ice cream

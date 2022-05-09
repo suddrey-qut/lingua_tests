@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    place(object arg0)
+     arg0:
+      object:chips
+       relation:
+        [in=object:bowl
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:coffee_table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] place(object arg0)
+  [-] put_on(object arg0, object arg1)
+utterance: place chips in the bowl and put it on the coffee table

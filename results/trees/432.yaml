@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    fill(object arg0)
+     arg0:
+      object:pot
+       attributes:
+        [state=clean]
+       relation:
+        [with=object:water
+         limit:
+          Only: 1]
+       limit:
+        Any: 1
+   -
+    boil(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] fill(object arg0)
+  [-] boil(object arg0)
+utterance: fill a clean pot with water and boil it

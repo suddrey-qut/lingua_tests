@@ -1,0 +1,13 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:kettle
+     relation:
+      [on=object:stove_burner
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place kettle on any stove burner

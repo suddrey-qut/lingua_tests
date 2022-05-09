@@ -1,0 +1,9 @@
+frame: |-
+  empty(object arg0)
+   arg0:
+    object:middle_area
+     limit:
+      Only: 1
+tree: |
+  empty(object arg0)
+utterance: empty the middle area

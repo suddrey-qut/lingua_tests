@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:chips
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       limit:
+        Only: 1
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:table
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_in(object arg0, object arg1)
+  [-] put_on(object arg0, object arg1)
+utterance: put the chips in the bowl and put it on the table

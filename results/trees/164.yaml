@@ -1,0 +1,19 @@
+frame: |-
+  put_in(object arg0, room arg1)
+   arg0:
+    object:drinks
+   arg1:
+    room:room
+     relation:
+      [with=object:bowl
+       relation:
+        [on=object:coffee_table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, room arg1)
+utterance: put all drinks in the room with the bowl of chips on the coffee table

@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:chips
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       limit:
+        Only: 1
+   -
+    throw_into(object arg0, object arg1)
+     arg0:
+      object:container
+       limit:
+        Only: 1
+     arg1:
+      object:trash_bag
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pour_into(object arg0, object arg1)
+  [-] throw_into(object arg0, object arg1)
+utterance: pour chips into the bowl and throw the container into the trash bag

@@ -1,0 +1,21 @@
+frame: |-
+  put_to(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:cup
+       attributes:
+        [state=empty]
+       limit:
+        Only: 1
+     -
+      object:dish
+       limit:
+        Only: 1
+   arg1:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  put_to(object arg0, object arg1)
+utterance: put the empty cup and the dish to the sink

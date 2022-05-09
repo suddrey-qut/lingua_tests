@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:music
+       limit:
+        Only: 1
+   -
+    and
+     -
+      put_on(object arg0, object arg1)
+       arg0:
+        object:food
+       arg1:
+        object:table
+         limit:
+          Only: 1
+     -
+      clean_up(room arg0)
+       arg0:
+        room:room
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] and
+      [-] put_on(object arg0, object arg1)
+      [-] clean_up(room arg0)
+utterance: turn on the music  , put food on the table  , clean up the room

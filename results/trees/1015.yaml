@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    put_into(object arg0, object arg1)
+     arg0:
+      object:dishes
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+   -
+    wash(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+tree: |
+  and
+  [-] put_into(object arg0, object arg1)
+  [-] wash(animate-being arg0)
+utterance: put all of the dishes into the sink and wash them

@@ -1,0 +1,17 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    object:bottle
+     relation:
+      [on=object:table
+       relation:
+        [in=room:kitchen
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  get(object arg0)
+utterance: get the bottle on the table in the kitchen

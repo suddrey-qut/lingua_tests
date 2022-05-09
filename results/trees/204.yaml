@@ -1,0 +1,13 @@
+frame: |-
+  grab(object arg0, object arg1)
+   arg0:
+    object:ice_cream
+     limit:
+      Only: 1
+   arg1:
+    object:spoon_scoop
+     limit:
+      Only: 1
+tree: |
+  grab(object arg0, object arg1)
+utterance: grab spoon scoop the ice cream

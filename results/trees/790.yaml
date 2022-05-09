@@ -1,0 +1,9 @@
+frame: |-
+  toggle(object arg0)
+   arg0:
+    object:burner
+     limit:
+      Only: 1
+tree: |
+  toggle(object arg0)
+utterance: toggle the burner

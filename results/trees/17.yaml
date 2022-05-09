@@ -1,0 +1,30 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      and
+       -
+        object:plate
+       -
+        and
+         -
+          object:cup
+         -
+          object:spoon
+           relation:
+            [on=object:counter]
+   -
+    put_in(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] put_in(animate-being arg0, object arg1)
+utterance: get all the plates  , cups  , and spoons on the counters and put them in
+  the sink

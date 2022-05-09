@@ -1,0 +1,11 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    object:pillow
+     relation:
+      [on=object:sofa
+       limit:
+        Only: 1]
+tree: |
+  get(object arg0)
+utterance: get some pillows on the sofa

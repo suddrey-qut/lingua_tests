@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    empty_into(object arg0, object arg1)
+     arg0:
+      object:liquid
+       limit:
+        Only: 1
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] empty_into(object arg0, object arg1)
+utterance: pick up mug and empty liquid into the sink

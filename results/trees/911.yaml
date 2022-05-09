@@ -1,0 +1,19 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    and
+     -
+      object:chips
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [in=object:bowl
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  find(object arg0)
+utterance: find chips and place in bowl

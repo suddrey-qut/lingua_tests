@@ -1,0 +1,13 @@
+frame: |-
+  pour(object arg0, animate-being arg1)
+   arg0:
+    object:orange_juice
+     limit:
+      Only: 1
+   arg1:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  pour(object arg0, animate-being arg1)
+utterance: pour me some orange juice

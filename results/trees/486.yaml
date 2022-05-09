@@ -1,0 +1,13 @@
+frame: |-
+  bring(object arg0)
+   arg0:
+    object:energy_drink
+     relation:
+      [from=object:fridge
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  bring(object arg0)
+utterance: bring energy drink from the fridge

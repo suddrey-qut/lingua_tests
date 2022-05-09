@@ -1,0 +1,17 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    and
+     -
+      object:coffee
+       limit:
+        Only: 1
+     -
+      object:mix
+       relation:
+        [with=conjunction:and]
+       limit:
+        Only: 1
+tree: |
+  take(object arg0)
+utterance: take the coffee and then mix with ice cream and syrup

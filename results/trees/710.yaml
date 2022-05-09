@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    add(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] add(object arg0)
+utterance: take the mug and add coffee

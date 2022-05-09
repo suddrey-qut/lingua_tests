@@ -1,0 +1,17 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:bowl
+       limit:
+        Only: 1
+     -
+      object:cd
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put bowl and cd's on the table

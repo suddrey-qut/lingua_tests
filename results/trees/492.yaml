@@ -1,0 +1,19 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    and
+     -
+      object:mug
+       limit:
+        Only: 1
+     -
+      object:plate
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  place(object arg0)
+utterance: place the mug and plate on the table

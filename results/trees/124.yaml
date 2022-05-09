@@ -1,0 +1,13 @@
+frame: |-
+  dispose(object arg0, object arg1)
+   arg0:
+    object:bag
+     limit:
+      Only: 1
+   arg1:
+    object:garbage
+     limit:
+      Only: 1
+tree: |
+  dispose(object arg0, object arg1)
+utterance: dispose garbage bag

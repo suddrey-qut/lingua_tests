@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    find(object arg0)
+     arg0:
+      object:game
+       limit:
+        Only: 1
+   -
+    put_into(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] find(object arg0)
+  [-] put_into(object arg0, object arg1)
+utterance: find the game and put it into the xbox

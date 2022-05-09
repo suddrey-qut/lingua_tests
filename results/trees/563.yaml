@@ -1,0 +1,13 @@
+frame: |-
+  change_to(object arg0, object arg1)
+   arg0:
+    object:television_channel
+     limit:
+      Only: 1
+   arg1:
+    object:music_channel
+     limit:
+      Any: 1
+tree: |
+  change_to(object arg0, object arg1)
+utterance: change the tv channel to a music channel

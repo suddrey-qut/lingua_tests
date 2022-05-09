@@ -1,0 +1,27 @@
+frame: |-
+  place_of(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:bowl
+       limit:
+        Only: 1
+     -
+      object:chips
+       relation:
+        [on=object:table
+         relation:
+          [in=object:front
+           limit:
+            Only: 1]
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   arg1:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  place_of(object arg0, object arg1)
+utterance: place the bowl and the chips on the table in front of the couch

@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    prepare(object arg0, animate-being arg1)
+     arg0:
+      object:food
+     arg1:
+      animate-being:pro1
+   -
+    bring(object arg0)
+     arg0:
+      object:coke
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] prepare(object arg0, animate-being arg1)
+  [-] bring(object arg0)
+utterance: prepare us food and bring the coke

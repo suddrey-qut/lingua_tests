@@ -1,0 +1,9 @@
+frame: |-
+  boil(object arg0)
+   arg0:
+    anaphora:it
+     limit:
+      Only: 1
+tree: |
+  boil(object arg0)
+utterance: boil it

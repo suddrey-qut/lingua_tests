@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    bring(object arg0)
+     arg0:
+      object:pot
+       relation:
+        [on=object:stove
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    turn_on(object arg0)
+     arg0:
+      object:stove
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] bring(object arg0)
+  [-] turn_on(object arg0)
+utterance: bring the pot onto the stove and turn the stove on

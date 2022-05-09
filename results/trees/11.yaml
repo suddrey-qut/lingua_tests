@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:movie
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+   -
+    turn_to(object arg0, object arg1)
+     arg0:
+      object:television_input
+       limit:
+        Only: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_in(object arg0, object arg1)
+  [-] turn_to(object arg0, object arg1)
+utterance: put the movie in the xbox and turn the television input to xbox

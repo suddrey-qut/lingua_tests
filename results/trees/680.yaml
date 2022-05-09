@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      object:pot
+       limit:
+        Only: 1
+   -
+    walk_to(object arg0)
+     arg0:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] walk_to(object arg0)
+utterance: grasp the pot and walk to the sink

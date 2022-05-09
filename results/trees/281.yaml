@@ -1,0 +1,13 @@
+frame: |-
+  insert_into(object arg0, object arg1)
+   arg0:
+    object:gamecd
+     limit:
+      Only: 1
+   arg1:
+    object:dvd
+     limit:
+      Only: 1
+tree: |
+  insert_into(object arg0, object arg1)
+utterance: insert the gamecd into the dvd

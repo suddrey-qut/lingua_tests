@@ -1,0 +1,23 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:controller
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put xbox and xbox controller on the table

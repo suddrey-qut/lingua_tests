@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:television
+       limit:
+        Only: 1
+   -
+    set_to(object arg0)
+     arg0:
+      object:movie_channel
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] set_to(object arg0)
+utterance: turn on the tv and set to movie channel

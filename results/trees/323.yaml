@@ -1,0 +1,15 @@
+frame: |-
+  dump_of(object arg0, object arg1)
+   arg0:
+    object:contents
+   arg1:
+    object:mug
+     relation:
+      [down=object:sink
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  dump_of(object arg0, object arg1)
+utterance: dump the contents of the mug down the sink

@@ -1,0 +1,9 @@
+frame: |-
+  put_over(object arg0, object arg1)
+   arg0:
+    object:pillow
+   arg1:
+    object:couch
+tree: |
+  put_over(object arg0, object arg1)
+utterance: put pillows over the couches

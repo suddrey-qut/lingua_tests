@@ -1,0 +1,13 @@
+frame: |-
+  remove(object arg0)
+   arg0:
+    object:beer
+     relation:
+      [from=object:coffee_table
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  remove(object arg0)
+utterance: remove beer from the coffee table

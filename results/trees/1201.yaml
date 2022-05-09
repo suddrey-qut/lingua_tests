@@ -1,0 +1,13 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    object:syrup
+     limit:
+      Only: 1
+   arg1:
+    object:coffee_mug
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put syrup in coffee mug

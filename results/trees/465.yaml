@@ -1,0 +1,13 @@
+frame: |-
+  remove(object arg0)
+   arg0:
+    object:xbox
+     relation:
+      [from=object:desk
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  remove(object arg0)
+utterance: remove the xbox from the desk

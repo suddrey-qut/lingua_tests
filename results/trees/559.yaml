@@ -1,0 +1,11 @@
+frame: |-
+  put_of(object arg0, object arg1)
+   arg0:
+    object:book
+   arg1:
+    object:shelf
+     limit:
+      Only: 1
+tree: |
+  put_of(object arg0, object arg1)
+utterance: put all books of the shelf

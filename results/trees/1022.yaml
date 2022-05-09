@@ -1,0 +1,9 @@
+frame: |-
+  repeat_for(object arg0)
+   arg0:
+    object:plate
+     limit:
+      Only: 1
+tree: |
+  repeat_for(object arg0)
+utterance: repeat for plate

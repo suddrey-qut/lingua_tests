@@ -1,0 +1,11 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    object:school_book
+     relation:
+      [in=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  find(object arg0)
+utterance: find all school books in room and place on desk

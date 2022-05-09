@@ -1,0 +1,26 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      and
+       -
+        object:vanilla_syrup_bottle
+         limit:
+          Only: 1
+       -
+        object:chocolate_syrup_bottle
+         limit:
+          Only: 1
+   -
+    open(object arg0)
+     arg0:
+      object:fridge_door
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] open(object arg0)
+utterance: grab the vanilla syrup bottle and chocolate syrup bottle  , and open the
+  fridge door

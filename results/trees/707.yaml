@@ -1,0 +1,11 @@
+frame: |-
+  prepare(object arg0)
+   arg0:
+    object:ramen
+     relation:
+      [in=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  prepare(object arg0)
+utterance: prepare the ramen in a long cup and microwave

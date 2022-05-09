@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:book
+   -
+    place(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [on=object:shelf
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] place(animate-being arg0)
+utterance: pick up all books and place them on the shelf

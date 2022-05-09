@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:chocolate_syrup
+       limit:
+        Only: 1
+   -
+    pump_over(object arg0)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] pump_over(object arg0)
+utterance: get chocolate syrup and pump over ice cream

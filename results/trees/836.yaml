@@ -1,0 +1,15 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      object:controller
+       limit:
+        Only: 1
+tree: |
+  get(object arg0)
+utterance: get the xbox and controller

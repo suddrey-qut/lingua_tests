@@ -1,0 +1,25 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:syrup
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:ramen
+         limit:
+          Only: 1
+       -
+        object:salt
+         limit:
+          Only: 1
+   arg1:
+    object:pantry
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put syrup  , ramen  , and salt in pantry

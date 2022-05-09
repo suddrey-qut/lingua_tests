@@ -1,0 +1,30 @@
+frame: |-
+  and
+   -
+    empty_of(object arg0, object arg1)
+     arg0:
+      object:contents
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+   -
+    put_inside(object arg0, object arg1)
+     arg0:
+      and
+       -
+        object:dishes
+         attributes:
+          [state=dirty]
+       -
+        object:utensil
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] empty_of(object arg0, object arg1)
+  [-] put_inside(object arg0, object arg1)
+utterance: empty the contents of the mug and put the dirty dishes and utensils inside
+  the sink

@@ -5,13 +5,24 @@ import rospkg
 import os
 import csv
 import re
+import py_trees
+import yaml
 from openccg_ros.srv import Parse, ParseRequest
-import xml.etree.ElementTree as ET
-import collections
 
 from datetime import datetime
 
 from lingua.ccg_reader import CCGReader
+
+def represent_str(dumper, instance):
+    if "\n" in instance:
+        return dumper.represent_scalar('tag:yaml.org,2002:str',
+                                       instance,
+                                       style='|')
+    else:
+        return dumper.represent_scalar('tag:yaml.org,2002:str',
+                                       instance)
+
+yaml.add_representer(str, represent_str)
 
 now = datetime.now() 
 
@@ -58,14 +69,12 @@ stupid = []
 #     stupid.append(line[5])
 
 for test in tests:
-  print(test)
   sent = test[5]
   
   test_passed=True
   sent = sent.lower().strip().replace(',', ' ,')
   sent = r.sub(r'\1', sent)
 
-  print(sent)
   if len(sent) == 0:
     continue
 
@@ -81,8 +90,20 @@ for test in tests:
     utterance, t = CCGReader.read(parse)
     
     if t:
-      print(t.to_btree())
+      print(utterance)
+      print(py_trees.display.print_ascii_tree(t.to_btree()))
       print(str(t))
+      
+      with open(os.path.join(path, 'results/trees', '{}.yaml'.format(valid)), 'w') as f:
+        writing = {
+          'utterance': utterance,
+          'frame': str(t),
+          'tree': py_trees.display.ascii_tree(t.to_btree())
+        }
+        f.write(yaml.dump(writing,
+                  allow_unicode=True,
+                  encoding='utf-8',
+                  default_flow_style=False).decode())
       success = True
       valid += 1
       break

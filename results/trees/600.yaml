@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    bring_to(object arg0, object arg1)
+     arg0:
+      and
+       -
+        object:xbox
+         limit:
+          Only: 1
+       -
+        object:controller_closer
+         limit:
+          Only: 1
+     arg1:
+      object:television
+       limit:
+        Only: 1
+   -
+    set_up()
+tree: |
+  and
+  [-] bring_to(object arg0, object arg1)
+  [-] set_up()
+utterance: bring xbox and controller closer to the tv and set up

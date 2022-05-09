@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    grab(object arg0)
+     arg0:
+      and
+       -
+        object:cup
+         limit:
+          Only: 1
+       -
+        object:glass
+         limit:
+          Only: 1
+   -
+    fill_with(object arg0)
+     arg0:
+      object:sink_water
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grab(object arg0)
+  [-] fill_with(object arg0)
+utterance: grab cup and glass and fill with sink water

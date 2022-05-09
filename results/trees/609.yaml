@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:mug
+       relation:
+        [with=object:coffee
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    pour_over(object arg0)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] pour_over(object arg0)
+utterance: get mug with coffee and pour over ice cream

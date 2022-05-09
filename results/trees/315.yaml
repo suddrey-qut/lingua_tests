@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    remove(object arg0)
+     arg0:
+      object:cd
+       relation:
+        [from=object:case
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    insert_into(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:disk_tray
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] remove(object arg0)
+  [-] insert_into(object arg0, object arg1)
+utterance: remove cd from case and insert it into disk tray of xbox

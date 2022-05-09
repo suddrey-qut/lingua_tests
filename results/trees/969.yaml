@@ -1,0 +1,7 @@
+frame: |-
+  open(object arg0)
+   arg0:
+    object:book
+tree: |
+  open(object arg0)
+utterance: open books

@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      and
+       -
+        object:spoon
+         limit:
+          Only: 1
+       -
+        and
+         -
+          object:fork
+           limit:
+            Only: 1
+         -
+          and
+           -
+            object:mug
+             limit:
+              Only: 1
+           -
+            object:glass
+             limit:
+              Only: 1
+   -
+    bring_to(object arg0)
+     arg0:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] bring_to(object arg0)
+utterance: grasp the spoon  , fork  , mug  , and glass and bring to the sink

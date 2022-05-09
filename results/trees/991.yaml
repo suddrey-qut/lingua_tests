@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    hook_up(object arg0, object arg1)
+     arg0:
+      object:xbox
+       limit:
+        Only: 1
+     arg1:
+      object:television
+       limit:
+        Only: 1
+   -
+    turn_on(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] hook_up(object arg0, object arg1)
+  [-] turn_on(object arg0)
+utterance: hook the xbox up to the tv and turn it on

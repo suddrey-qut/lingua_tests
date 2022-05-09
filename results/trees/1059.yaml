@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    move(object arg0)
+     arg0:
+      object:pillow
+       relation:
+        [from=object:shelf
+         limit:
+          Only: 1]
+   -
+    put_on(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] move(object arg0)
+  [-] put_on(animate-being arg0, object arg1)
+utterance: move pillows from the shelf and put them on the couch

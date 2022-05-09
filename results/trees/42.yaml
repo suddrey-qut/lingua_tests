@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      object:pillow
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+   -
+    turn_towards(object arg0, object arg1)
+     arg0:
+      object:chair
+     arg1:
+      object:television
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_on(object arg0, object arg1)
+  [-] turn_towards(object arg0, object arg1)
+utterance: put the pillows on the couch and turn the chairs towards the tv

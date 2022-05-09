@@ -1,0 +1,9 @@
+frame: |-
+  serve_with(object arg0)
+   arg0:
+    object:fork
+     limit:
+      Any: 1
+tree: |
+  serve_with(object arg0)
+utterance: serve with a fork

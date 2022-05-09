@@ -1,0 +1,15 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:garbage_bin
+     relation:
+      [near=object:counter
+       attributes:
+        [color=white]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place the garbage bin near the white counter

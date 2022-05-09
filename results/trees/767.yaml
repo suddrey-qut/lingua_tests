@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      object:chips
+       limit:
+        Only: 1
+   -
+    grasp(object arg0)
+     arg0:
+      object:pillow
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] grasp(object arg0)
+utterance: grasp chips and grasp pillow

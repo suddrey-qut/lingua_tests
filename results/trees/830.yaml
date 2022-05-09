@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    take_to(object arg0, object arg1)
+     arg0:
+      object:kettle
+       limit:
+        Only: 1
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+   -
+    fill_with(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:water
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take_to(object arg0, object arg1)
+  [-] fill_with(object arg0, object arg1)
+utterance: take the kettle to the sink and fill it with water

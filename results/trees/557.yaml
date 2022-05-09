@@ -1,0 +1,11 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    object:food
+   arg1:
+    object:plate
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put food on the plate

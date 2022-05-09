@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:dvd
+       limit:
+        Only: 1
+   -
+    put_inside(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:dvd_player
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] put_inside(object arg0, object arg1)
+utterance: take the dvd and put it inside the dvd player

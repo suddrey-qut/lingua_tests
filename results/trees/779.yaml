@@ -1,0 +1,13 @@
+frame: |-
+  move(object arg0)
+   arg0:
+    object:couch
+     relation:
+      [near=object:television
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  move(object arg0)
+utterance: move couch near tv

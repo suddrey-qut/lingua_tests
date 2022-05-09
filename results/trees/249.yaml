@@ -1,0 +1,11 @@
+frame: |-
+  bring_to(object arg0, object arg1)
+   arg0:
+    object:pillow
+   arg1:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  bring_to(object arg0, object arg1)
+utterance: bring the pillows to the couch

@@ -1,0 +1,10 @@
+frame: |-
+  for:
+   duration:
+    3.0 minute(s)
+   body:
+    cook()
+tree: |
+  Repeat for 3.0 minute(s)
+  [-] cook()
+utterance: cook for 3 minutes

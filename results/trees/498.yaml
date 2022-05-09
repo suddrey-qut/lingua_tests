@@ -1,0 +1,15 @@
+frame: |-
+  clean_up(object arg0)
+   arg0:
+    and
+     -
+      object:xbox
+       limit:
+        Only: 1
+     -
+      object:xbox_controller
+       limit:
+        Only: 1
+tree: |
+  clean_up(object arg0)
+utterance: clean up xbox and xbox controller

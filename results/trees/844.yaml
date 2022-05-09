@@ -1,0 +1,9 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    object:object
+     limit:
+      Any: 1
+tree: |
+  find(object arg0)
+utterance: find an object

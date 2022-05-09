@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:drink
+       limit:
+        Only: 1
+     arg1:
+      object:glass
+       attributes:
+        [state=long]
+       limit:
+        Only: 1
+   -
+    serve(object arg0)
+     arg0:
+      object:ramen
+       relation:
+        [on=object:plate
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] pour_into(object arg0, object arg1)
+  [-] serve(object arg0)
+utterance: pour the drink into the long glass and serve ramen on the plate

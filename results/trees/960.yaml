@@ -1,0 +1,11 @@
+frame: |-
+  get_out(object arg0)
+   arg0:
+    and
+     -
+      object:cup
+     -
+      object:drinks
+tree: |
+  get_out(object arg0)
+utterance: get cups and drinks out

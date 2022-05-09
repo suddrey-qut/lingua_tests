@@ -1,0 +1,31 @@
+frame: |-
+  and
+   -
+    put(object arg0, object arg1)
+     arg0:
+      object:disk
+       relation:
+        [in=object:xbox
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+     arg1:
+      object:music
+       limit:
+        Only: 1
+   -
+    connect_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:television
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put(object arg0, object arg1)
+  [-] connect_to(object arg0, object arg1)
+utterance: put the music disk in the xbox and connect it to the tv

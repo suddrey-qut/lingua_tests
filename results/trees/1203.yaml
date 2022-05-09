@@ -1,0 +1,9 @@
+frame: |-
+  walk_to(object arg0)
+   arg0:
+    object:faucet
+     limit:
+      Only: 1
+tree: |
+  walk_to(object arg0)
+utterance: walk to faucet

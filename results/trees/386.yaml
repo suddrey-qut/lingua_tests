@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:syrup_bottle
+       limit:
+        Only: 1
+   -
+    place(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [in=object:refrigerator
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] take(object arg0)
+  [-] place(animate-being arg0)
+utterance: take the syrup bottles and place them in the refrigerator

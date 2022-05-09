@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:milk
+       limit:
+        Only: 1
+     arg1:
+      object:glass
+       limit:
+        Any: 1
+   -
+    add(object arg0)
+     arg0:
+      object:vanilla_syrup
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] put_in(object arg0, object arg1)
+  [-] add(object arg0)
+utterance: put milk in a glass and add vanilla syrup

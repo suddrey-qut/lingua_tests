@@ -1,0 +1,9 @@
+frame: |-
+  set_up(object arg0)
+   arg0:
+    object:stereo
+     limit:
+      Only: 1
+tree: |
+  set_up(object arg0)
+utterance: set up the stereo

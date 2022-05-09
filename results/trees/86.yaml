@@ -1,0 +1,48 @@
+frame: |-
+  carry(object arg0)
+   arg0:
+    and
+     -
+      object:glass
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:cup
+         attributes:
+          [state=long]
+         limit:
+          Only: 1
+       -
+        and
+         -
+          object:mug
+           limit:
+            Only: 1
+         -
+          and
+           -
+            object:cup
+             attributes:
+              [state=long]
+             limit:
+              Only: 1
+           -
+            and
+             -
+              object:pot
+               limit:
+                Only: 1
+             -
+              object:spoon
+               relation:
+                [near=object:sink
+                 limit:
+                  Only: 1]
+               limit:
+                Only: 1
+tree: |
+  carry(object arg0)
+utterance: carry glass  , long cup  , mug  , long cup  , pot  , and spoon near the
+  sink

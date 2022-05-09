@@ -1,0 +1,13 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:controller
+     relation:
+      [with=object:xbox
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place controller with xbox

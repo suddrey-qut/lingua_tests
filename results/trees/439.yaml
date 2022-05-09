@@ -1,0 +1,40 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      and
+       -
+        object:cup
+       -
+        and
+         -
+          object:plate
+         -
+          and
+           -
+            object:bowls
+             limit:
+              Only: 1
+           -
+            and
+             -
+              object:pot
+             -
+              object:silverware
+               limit:
+                Only: 1
+   -
+    put_into(animate-being arg0, object arg1)
+     arg0:
+      animate-being:pro3n
+     arg1:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] put_into(animate-being arg0, object arg1)
+utterance: take all cups  , plates  , bowls  , pots  , and silverware and put them
+  into the sink

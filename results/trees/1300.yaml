@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    turn(object arg0)
+     arg0:
+      object:off_television
+       limit:
+        Only: 1
+   -
+    put_over(object arg0, object arg1)
+     arg0:
+      object:book
+     arg1:
+      object:table
+       attributes:
+        [state=center]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] turn(object arg0)
+  [-] put_over(object arg0, object arg1)
+utterance: turn off tv and put books over the center table

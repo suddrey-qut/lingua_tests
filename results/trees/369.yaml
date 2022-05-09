@@ -1,0 +1,11 @@
+frame: |-
+  find(object arg0)
+   arg0:
+    object:bowl
+     attributes:
+      [color=white]
+     limit:
+      Any: 1
+tree: |
+  find(object arg0)
+utterance: find a white bowl

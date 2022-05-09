@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    arrange(object arg0)
+     arg0:
+      object:things
+   -
+    and
+     -
+      take_out(object arg0)
+       arg0:
+        object:trash_waste
+         limit:
+          Only: 1
+     -
+      sit_on(object arg0)
+       arg0:
+        object:chair
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] arrange(object arg0)
+  [-] and
+      [-] take_out(object arg0)
+      [-] sit_on(object arg0)
+utterance: arrange things and take out trash waste then sit on the chair

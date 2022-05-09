@@ -1,0 +1,9 @@
+frame: |-
+  play(object arg0)
+   arg0:
+    object:movie
+     limit:
+      Only: 1
+tree: |
+  play(object arg0)
+utterance: play the movie

@@ -1,0 +1,23 @@
+frame: |-
+  put_of(object arg0, object arg1)
+   arg0:
+    object:bag
+     limit:
+      Only: 1
+   arg1:
+    and
+     -
+      object:chips
+       limit:
+        Only: 1
+     -
+      object:coke
+       relation:
+        [on=object:table
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  put_of(object arg0, object arg1)
+utterance: put bag of chips and coke on table

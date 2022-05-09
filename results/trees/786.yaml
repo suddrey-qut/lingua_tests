@@ -1,0 +1,9 @@
+frame: |-
+  shut(object arg0)
+   arg0:
+    object:microwave_door
+     limit:
+      Only: 1
+tree: |
+  shut(object arg0)
+utterance: shut the microwave door

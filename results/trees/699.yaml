@@ -1,0 +1,13 @@
+frame: |-
+  run(object arg0)
+   arg0:
+    object:xbox
+     relation:
+      [with=object:music_cd
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  run(object arg0)
+utterance: run the xbox with the music cd

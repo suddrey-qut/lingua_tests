@@ -1,0 +1,9 @@
+frame: |-
+  go_to(object arg0)
+   arg0:
+    object:stove
+     limit:
+      Only: 1
+tree: |
+  go_to(object arg0)
+utterance: go to the stove

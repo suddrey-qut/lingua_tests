@@ -1,0 +1,9 @@
+frame: |-
+  object:dishwasher
+   attributes:
+    [state=empty]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: empty dishwasher

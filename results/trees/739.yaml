@@ -1,0 +1,17 @@
+frame: |-
+  grasp(object arg0)
+   arg0:
+    and
+     -
+      object:book
+       attributes:
+        [color=brown]
+       limit:
+        Only: 1
+     -
+      object:math_book
+       limit:
+        Only: 1
+tree: |
+  grasp(object arg0)
+utterance: grasp the brown book and math book

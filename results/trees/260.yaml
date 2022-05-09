@@ -1,0 +1,17 @@
+frame: |-
+  cook(object arg0)
+   arg0:
+    object:ramen
+     relation:
+      [in=object:pot
+       relation:
+        [with=object:water
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  cook(object arg0)
+utterance: cook the ramen in the pot with water

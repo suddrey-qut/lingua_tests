@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    turn_on()
+   -
+    connect(object arg0)
+     arg0:
+      and
+       -
+        object:television
+         limit:
+          Only: 1
+       -
+        object:xbox
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] turn_on()
+  [-] connect(object arg0)
+utterance: turn on and connect the tv and xbox

@@ -1,0 +1,13 @@
+frame: |-
+  put_near(object arg0, object arg1)
+   arg0:
+    object:xboxcontroller
+     limit:
+      Only: 1
+   arg1:
+    object:television_remote
+     limit:
+      Only: 1
+tree: |
+  put_near(object arg0, object arg1)
+utterance: put the xboxcontroller near tv remote

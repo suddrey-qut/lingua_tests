@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    turn(object arg0)
+     arg0:
+      object:off_television
+       limit:
+        Only: 1
+   -
+    put_in(object arg0, object arg1)
+     arg0:
+      object:pillow
+     arg1:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] turn(object arg0)
+  [-] put_in(object arg0, object arg1)
+utterance: turn off tv and put pillows in the couch

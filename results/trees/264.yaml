@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:music
+       limit:
+        Only: 1
+   -
+    increase(object arg0)
+     arg0:
+      object:volume
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] increase(object arg0)
+utterance: turn on the music and increase the volume

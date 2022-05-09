@@ -1,0 +1,13 @@
+frame: |-
+  put_in(object arg0, object arg1)
+   arg0:
+    object:dvd
+     limit:
+      Only: 1
+   arg1:
+    object:player
+     limit:
+      Only: 1
+tree: |
+  put_in(object arg0, object arg1)
+utterance: put dvd in player

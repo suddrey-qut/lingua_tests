@@ -1,0 +1,29 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    and
+     -
+      object:cup
+     -
+      and
+       -
+        object:mug
+       -
+        and
+         -
+          object:spoon
+         -
+          and
+           -
+            object:fork
+           -
+            object:place
+             relation:
+              [in=object:sink
+               limit:
+                Only: 1]
+             limit:
+              Only: 1
+tree: |
+  take(object arg0)
+utterance: take all cups  , mugs  , spoons  , and forks and place in sink

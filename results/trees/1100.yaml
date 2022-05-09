@@ -1,0 +1,13 @@
+frame: |-
+  insert_into(object arg0, object arg1)
+   arg0:
+    object:cd
+     limit:
+      Only: 1
+   arg1:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  insert_into(object arg0, object arg1)
+utterance: insert cd into xbox

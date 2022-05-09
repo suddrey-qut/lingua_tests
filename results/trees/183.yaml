@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    remove(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+   -
+    close(object arg0)
+     arg0:
+      object:microwave_door
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] remove(object arg0)
+  [-] close(object arg0)
+utterance: remove mug and close the microwave door

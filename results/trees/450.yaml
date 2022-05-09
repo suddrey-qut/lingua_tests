@@ -1,0 +1,23 @@
+frame: |-
+  bring(object arg0, animate-being arg1)
+   arg0:
+    object:egg
+     attributes:
+      [state=boiled]
+     relation:
+      [from=object:fridge
+       relation:
+        [on=object:plate
+         limit:
+          Any: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    animate-being:pro1
+     limit:
+      Only: 1
+tree: |
+  bring(object arg0, animate-being arg1)
+utterance: bring me the boiled egg from the fridge on a plate

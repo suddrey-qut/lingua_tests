@@ -1,0 +1,9 @@
+frame: |-
+  raise_up(object arg0)
+   arg0:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  raise_up(object arg0)
+utterance: raise up the xbox

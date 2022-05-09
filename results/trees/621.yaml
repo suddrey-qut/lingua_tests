@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    go_to(object arg0)
+     arg0:
+      object:shelf
+       limit:
+        Only: 1
+   -
+    and
+     -
+      pick_up(object arg0)
+       arg0:
+        object:pillow
+     -
+      distribute_on(object arg0)
+       arg0:
+        object:couch
+tree: |
+  and
+  [-] go_to(object arg0)
+  [-] and
+      [-] pick_up(object arg0)
+      [-] distribute_on(object arg0)
+utterance: go to shelf and pick up pillows and distribute on couches

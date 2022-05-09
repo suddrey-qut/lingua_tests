@@ -1,0 +1,13 @@
+frame: |-
+  add_to(object arg0, object arg1)
+   arg0:
+    object:ramen
+     limit:
+      Only: 1
+   arg1:
+    object:pot
+     limit:
+      Only: 1
+tree: |
+  add_to(object arg0, object arg1)
+utterance: add ramen to the pot

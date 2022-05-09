@@ -1,0 +1,13 @@
+frame: |-
+  grab(object arg0)
+   arg0:
+    and
+     -
+      object:food
+     -
+      object:drink
+       limit:
+        Only: 1
+tree: |
+  grab(object arg0)
+utterance: grab food and drink

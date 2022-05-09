@@ -1,0 +1,9 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    object:pot
+     limit:
+      Only: 1
+tree: |
+  take(object arg0)
+utterance: take pot

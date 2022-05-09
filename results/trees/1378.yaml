@@ -1,0 +1,15 @@
+frame: |-
+  pick_up(object arg0)
+   arg0:
+    and
+     -
+      object:chips
+       limit:
+        Only: 1
+     -
+      object:dip
+       limit:
+        Only: 1
+tree: |
+  pick_up(object arg0)
+utterance: pick up chips and dip

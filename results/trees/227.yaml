@@ -1,0 +1,11 @@
+frame: |-
+  bring(object arg0, animate-being arg1)
+   arg0:
+    object:bag
+     limit:
+      Only: 1
+   arg1:
+    animate-being:pro1
+tree: |
+  bring(object arg0, animate-being arg1)
+utterance: bring us bag of chips

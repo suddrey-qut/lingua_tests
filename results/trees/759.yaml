@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      object:bowl
+       limit:
+        Only: 1
+   -
+    and
+     -
+      pour_into(object arg0)
+       arg0:
+        object:trash_bin
+         limit:
+          Only: 1
+     -
+      grasp(object arg0)
+       arg0:
+        object:trash_bag
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] and
+      [-] pour_into(object arg0)
+      [-] grasp(object arg0)
+utterance: grasp bowl and pour into trash bin  , grasp trash bag

@@ -1,0 +1,11 @@
+frame: |-
+  close(object arg0)
+   arg0:
+    object:fridge_door
+     attributes:
+      [state=right]
+     limit:
+      Only: 1
+tree: |
+  close(object arg0)
+utterance: close the right fridge door

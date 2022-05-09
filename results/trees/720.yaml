@@ -1,0 +1,13 @@
+frame: |-
+  put_into(object arg0, object arg1)
+   arg0:
+    object:movie
+     limit:
+      Only: 1
+   arg1:
+    object:xbox
+     limit:
+      Only: 1
+tree: |
+  put_into(object arg0, object arg1)
+utterance: put the movie into the xbox

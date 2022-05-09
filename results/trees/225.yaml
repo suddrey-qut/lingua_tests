@@ -1,0 +1,17 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:cd
+     relation:
+      [in=object:xbox
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:game
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put game cd in xbox

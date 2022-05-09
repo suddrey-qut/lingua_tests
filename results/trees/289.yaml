@@ -1,0 +1,14 @@
+frame: |-
+  for:
+   duration:
+    2.0 minute(s)
+   body:
+    microwave(object arg0)
+     arg0:
+      object:mug
+       limit:
+        Only: 1
+tree: |
+  Repeat for 2.0 minute(s)
+  [-] microwave(object arg0)
+utterance: microwave the mug for 2 minutes

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    gather(object arg0)
+     arg0:
+      and
+       -
+        object:cup
+         attributes:
+          [state=used]
+       -
+        object:glass
+   -
+    place_into(object arg0)
+     arg0:
+      object:sink
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] gather(object arg0)
+  [-] place_into(object arg0)
+utterance: gather all used cups and glasses and place into the sink

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    turn_off(object arg0)
+     arg0:
+      object:television
+       limit:
+        Only: 1
+   -
+    pour(object arg0)
+     arg0:
+      and
+       -
+        object:chips
+         limit:
+          Only: 1
+       -
+        object:drinks
+tree: |
+  and
+  [-] turn_off(object arg0)
+  [-] pour(object arg0)
+utterance: turn off the tv and pour some chips and drinks

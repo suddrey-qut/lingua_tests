@@ -1,0 +1,29 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:freezer
+       limit:
+        Only: 1
+   -
+    and
+     -
+      remove(object arg0)
+       arg0:
+        object:icecream
+         limit:
+          Only: 1
+     -
+      close(object arg0)
+       arg0:
+        object:freezer
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] and
+      [-] remove(object arg0)
+      [-] close(object arg0)
+utterance: open freezer  , remove icecream  , close freezer

@@ -1,0 +1,19 @@
+frame: |-
+  fill(object arg0)
+   arg0:
+    object:kettle
+     relation:
+      [with=object:water
+       attributes:
+        [state=hot]
+       relation:
+        [from=object:sink
+         limit:
+          Only: 1]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  fill(object arg0)
+utterance: fill kettle with hot water from the sink

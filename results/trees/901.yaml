@@ -1,0 +1,7 @@
+frame: |-
+  get(object arg0)
+   arg0:
+    object:egg
+tree: |
+  get(object arg0)
+utterance: get eggs

@@ -1,0 +1,9 @@
+frame: |-
+  get_out(object arg0)
+   arg0:
+    object:drink
+     limit:
+      Any: 1
+tree: |
+  get_out(object arg0)
+utterance: get a drink out

@@ -1,0 +1,29 @@
+frame: |-
+  place_underneath(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:cd
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:xbox
+         limit:
+          Only: 1
+       -
+        object:controller
+         relation:
+          [in=object:cabinet
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+   arg1:
+    object:television
+     limit:
+      Only: 1
+tree: |
+  place_underneath(object arg0, object arg1)
+utterance: place the cd  , xbox  , and controller in the cabinet under the tv

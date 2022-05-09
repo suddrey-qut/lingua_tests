@@ -1,0 +1,28 @@
+frame: |-
+  and
+   -
+    add_to(object arg0, object arg1)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+   -
+    for:
+     duration:
+      120.0 second(s)
+     body:
+      microwave(object arg0)
+       arg0:
+        anaphora:it
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] add_to(object arg0, object arg1)
+  -^- Repeat for 120.0 second(s)
+      [-] microwave(object arg0)
+utterance: add coffee to the mug and microwave it for 120 seconds

@@ -1,0 +1,15 @@
+frame: |-
+  put_on(object arg0, object arg1)
+   arg0:
+    object:drinks
+   arg1:
+    object:table
+     relation:
+      [with=object:bag
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  put_on(object arg0, object arg1)
+utterance: put the drinks on the table with the bag of chips

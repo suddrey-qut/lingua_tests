@@ -1,0 +1,11 @@
+frame: |-
+  bring_to(object arg0, room arg1)
+   arg0:
+    object:book
+   arg1:
+    room:room
+     limit:
+      Only: 1
+tree: |
+  bring_to(object arg0, room arg1)
+utterance: bring books to the room

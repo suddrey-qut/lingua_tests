@@ -1,0 +1,15 @@
+frame: |-
+  pour_into(object arg0, object arg1)
+   arg0:
+    object:drink
+     limit:
+      Only: 1
+   arg1:
+    object:cup
+     attributes:
+      [state=long]
+     limit:
+      Any: 1
+tree: |
+  pour_into(object arg0, object arg1)
+utterance: pour the drink into a long cup

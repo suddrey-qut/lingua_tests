@@ -1,0 +1,34 @@
+frame: |-
+  and
+   -
+    bring_to(object arg0, object arg1)
+     arg0:
+      and
+       -
+        object:bowl
+         limit:
+          Only: 1
+       -
+        object:bag
+         limit:
+          Only: 1
+     arg1:
+      object:table
+       attributes:
+        [state=center]
+       limit:
+        Only: 1
+   -
+    empty_into(object arg0, object arg1)
+     arg0:
+      object:contents
+     arg1:
+      object:bowl
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] bring_to(object arg0, object arg1)
+  [-] empty_into(object arg0, object arg1)
+utterance: bring the bowl and bag of chips to the center table and empty contents
+  of chip bag into the bowl

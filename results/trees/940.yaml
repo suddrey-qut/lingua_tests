@@ -1,0 +1,13 @@
+frame: |-
+  clear_of(object arg0, room arg1)
+   arg0:
+    object:middle
+     limit:
+      Only: 1
+   arg1:
+    room:room
+     limit:
+      Only: 1
+tree: |
+  clear_of(object arg0, room arg1)
+utterance: clear the middle of the room

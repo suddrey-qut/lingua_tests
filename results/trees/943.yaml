@@ -1,0 +1,9 @@
+frame: |-
+  move(object arg0)
+   arg0:
+    object:couch
+     limit:
+      Only: 1
+tree: |
+  move(object arg0)
+utterance: move the couch

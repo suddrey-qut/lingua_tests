@@ -1,0 +1,11 @@
+frame: |-
+  object:place
+   relation:
+    [on=object:coffee_table
+     limit:
+      Only: 1]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: place on coffee table

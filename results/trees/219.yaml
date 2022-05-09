@@ -1,0 +1,9 @@
+frame: |-
+  drizzle_with(object arg0)
+   arg0:
+    object:syrup
+     limit:
+      Only: 1
+tree: |
+  drizzle_with(object arg0)
+utterance: drizzle with syrup

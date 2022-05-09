@@ -1,0 +1,11 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    object:bowl
+     relation:
+      [from=conjunction:and]
+     limit:
+      Only: 1
+tree: |
+  take(object arg0)
+utterance: take bowl from floor and place in kitchen

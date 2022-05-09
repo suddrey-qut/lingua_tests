@@ -1,0 +1,13 @@
+frame: |-
+  place_inside(object arg0, object arg1)
+   arg0:
+    object:trash_bag
+     limit:
+      Only: 1
+   arg1:
+    object:garbage_bin
+     limit:
+      Only: 1
+tree: |
+  place_inside(object arg0, object arg1)
+utterance: place the trash bag inside the garbage bin

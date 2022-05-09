@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    empty_into(object arg0, object arg1)
+     arg0:
+      object:bowl
+       limit:
+        Only: 1
+     arg1:
+      object:trash
+       limit:
+        Only: 1
+   -
+    take_to(object arg0, room arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      room:kitchen
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] empty_into(object arg0, object arg1)
+  [-] take_to(object arg0, room arg1)
+utterance: empty the bowl into the trash and take it to the kitchen

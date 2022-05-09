@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:mug
+       relation:
+        [in=object:microwave
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    and
+     -
+      go_to(object arg0)
+       arg0:
+        object:sink
+         limit:
+          Only: 1
+     -
+      add_to(object arg0, object arg1)
+       arg0:
+        object:water
+         limit:
+          Only: 1
+       arg1:
+        anaphora:it
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] and
+      [-] go_to(object arg0)
+      [-] add_to(object arg0, object arg1)
+utterance: take the mug in the microwave and go to the sink and add water to it

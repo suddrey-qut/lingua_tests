@@ -1,0 +1,7 @@
+frame: |-
+  stack(object arg0)
+   arg0:
+    object:cup
+tree: |
+  stack(object arg0)
+utterance: stack the cups

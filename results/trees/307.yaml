@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    find(object arg0)
+     arg0:
+      object:movie
+       limit:
+        Only: 1
+   -
+    open(object arg0)
+     arg0:
+      object:case
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] find(object arg0)
+  [-] open(object arg0)
+utterance: find the movie  , open the case

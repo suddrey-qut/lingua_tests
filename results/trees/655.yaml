@@ -1,0 +1,46 @@
+frame: |-
+  place_against(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:glass
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:cup
+         attributes:
+          [state=long]
+         limit:
+          Only: 1
+       -
+        and
+         -
+          object:cup
+           attributes:
+            [state=long]
+           limit:
+            Only: 1
+         -
+          and
+           -
+            object:mug
+             limit:
+              Only: 1
+           -
+            object:canada_dry
+             relation:
+              [on=object:table
+               limit:
+                Only: 1]
+             limit:
+              Only: 1
+   arg1:
+    object:wall
+     limit:
+      Only: 1
+tree: |
+  place_against(object arg0, object arg1)
+utterance: place glass  , long cup  , long cup  , mug and canada dry on the table
+  against the wall

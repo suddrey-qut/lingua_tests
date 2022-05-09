@@ -1,0 +1,15 @@
+frame: |-
+  grasp(object arg0)
+   arg0:
+    and
+     -
+      object:far_cry
+       limit:
+        Only: 1
+     -
+      object:xbox
+       limit:
+        Only: 1
+tree: |
+  grasp(object arg0)
+utterance: grasp far cry and xbox

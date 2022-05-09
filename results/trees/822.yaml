@@ -1,0 +1,14 @@
+frame: |-
+  for:
+   duration:
+    5.0 minute(s)
+   body:
+    boil(object arg0)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+tree: |
+  Repeat for 5.0 minute(s)
+  [-] boil(object arg0)
+utterance: boil it for 5 minutes

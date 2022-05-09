@@ -1,0 +1,50 @@
+frame: |-
+  and
+   -
+    grasp(object arg0)
+     arg0:
+      and
+       -
+        object:beer
+         limit:
+          Only: 1
+       -
+        object:coke
+         limit:
+          Only: 1
+   -
+    and
+     -
+      place_on(object arg0)
+       arg0:
+        object:table
+         limit:
+          Only: 1
+     -
+      and
+       -
+        take(object arg0)
+         arg0:
+          object:trash
+           limit:
+            Only: 1
+       -
+        place_in(object arg0, object arg1)
+         arg0:
+          anaphora:it
+           limit:
+            Only: 1
+         arg1:
+          object:trash_bin
+           limit:
+            Only: 1
+tree: |
+  and
+  [-] grasp(object arg0)
+  [-] and
+      [-] place_on(object arg0)
+      [-] and
+          [-] take(object arg0)
+          [-] place_in(object arg0, object arg1)
+utterance: grasp beer and coke and place on table and take trash and place it in the
+  trash bin

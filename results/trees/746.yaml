@@ -1,0 +1,9 @@
+frame: |-
+  grasp(object arg0)
+   arg0:
+    object:pot
+     limit:
+      Only: 1
+tree: |
+  grasp(object arg0)
+utterance: grasp the pot

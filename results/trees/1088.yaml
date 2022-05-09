@@ -1,0 +1,13 @@
+frame: |-
+  walk_up(object arg0)
+   arg0:
+    object:remote
+     relation:
+      [on=object:counter
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  walk_up(object arg0)
+utterance: walk up to the remote on counter

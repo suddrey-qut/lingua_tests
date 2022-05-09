@@ -1,0 +1,37 @@
+frame: |-
+  and
+   -
+    go_to(object arg0)
+     arg0:
+      object:game_system
+       limit:
+        Only: 1
+   -
+    and
+     -
+      go_to(object arg0)
+       arg0:
+        object:xbox
+         limit:
+          Only: 1
+     -
+      and
+       -
+        get(object arg0)
+         arg0:
+          object:food
+       -
+        arrange(object arg0)
+         arg0:
+          object:couch
+           limit:
+            Only: 1
+tree: |
+  and
+  [-] go_to(object arg0)
+  [-] and
+      [-] go_to(object arg0)
+      [-] and
+          [-] get(object arg0)
+          [-] arrange(object arg0)
+utterance: go to the game system and go to the xbox  , get the food and arrange couch

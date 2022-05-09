@@ -1,0 +1,34 @@
+frame: |-
+  and
+   -
+    prepare(object arg0)
+     arg0:
+      object:mug
+       relation:
+        [with=object:coffee
+         limit:
+          Only: 1]
+       limit:
+        Any: 1
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+     arg1:
+      object:bowl
+       attributes:
+        [color=white]
+       relation:
+        [on=object:counter
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] prepare(object arg0)
+  [-] pour_into(object arg0, object arg1)
+utterance: prepare a mug with coffee  , then pour the coffee into the white bowl on
+  the counter

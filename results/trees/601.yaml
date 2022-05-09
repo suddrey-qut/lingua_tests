@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    empty(object arg0)
+     arg0:
+      object:bowl
+       limit:
+        Only: 1
+   -
+    pour_in(object arg0)
+     arg0:
+      object:chips
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] empty(object arg0)
+  [-] pour_in(object arg0)
+utterance: empty bowl and pour chips in

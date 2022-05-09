@@ -1,0 +1,9 @@
+frame: |-
+  walk_to(object arg0)
+   arg0:
+    object:fridge
+     limit:
+      Only: 1
+tree: |
+  walk_to(object arg0)
+utterance: walk to fridge

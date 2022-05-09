@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    serve(object arg0)
+     arg0:
+      object:food
+       relation:
+        [on=object:plate]
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:drink
+       limit:
+        Any: 1
+     arg1:
+      object:cup
+       attributes:
+        [state=long]
+tree: |
+  and
+  [-] serve(object arg0)
+  [-] pour_into(object arg0, object arg1)
+utterance: serve the food on the plates and pour a drink into the long cups

@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    turn_on(object arg0)
+     arg0:
+      object:television
+       limit:
+        Only: 1
+   -
+    change_to(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:channel
+       relation:
+        [with=object:movie
+         limit:
+          Any: 1]
+       limit:
+        Any: 1
+tree: |
+  and
+  [-] turn_on(object arg0)
+  [-] change_to(object arg0, object arg1)
+utterance: turn on the tv and change it to a channel with a movie

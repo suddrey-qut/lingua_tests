@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:fridge
+       limit:
+        Only: 1
+   -
+    grasp(object arg0)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] grasp(object arg0)
+utterance: open the fridge and grasp the ice cream

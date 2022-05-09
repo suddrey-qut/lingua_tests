@@ -1,0 +1,15 @@
+frame: |-
+  clean(object arg0)
+   arg0:
+    object:sink
+     relation:
+      [with=object:water
+       attributes:
+        [state=running]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  clean(object arg0)
+utterance: clean the sink with the running water

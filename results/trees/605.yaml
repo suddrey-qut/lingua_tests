@@ -1,0 +1,33 @@
+frame: |-
+  and
+   -
+    peel(object arg0)
+     arg0:
+      object:egg
+       limit:
+        Only: 1
+   -
+    and
+     -
+      add_to(object arg0)
+       arg0:
+        object:ramen
+         limit:
+          Only: 1
+     -
+      throw(object arg0)
+       arg0:
+        object:shell
+         relation:
+          [in=object:trash
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  and
+  [-] peel(object arg0)
+  [-] and
+      [-] add_to(object arg0)
+      [-] throw(object arg0)
+utterance: peel egg and add to ramen and throw shell in trash

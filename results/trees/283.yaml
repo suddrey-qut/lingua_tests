@@ -1,0 +1,21 @@
+frame: |-
+  put_of(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:drinks
+     -
+      object:bowl
+       relation:
+        [in=object:middle
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   arg1:
+    object:table
+     limit:
+      Only: 1
+tree: |
+  put_of(object arg0, object arg1)
+utterance: put the drinks and bowl in the middle of the table

@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      object:syrup_bottle
+       limit:
+        Only: 1
+   -
+    squeeze(object arg0)
+     arg0:
+      object:plate
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] take(object arg0)
+  [-] squeeze(object arg0)
+utterance: take the syrup bottle and squeeze some on the plate

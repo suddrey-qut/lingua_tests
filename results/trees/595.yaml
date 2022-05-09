@@ -1,0 +1,17 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:pillow
+   -
+    move(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [on=object:couch]
+tree: |
+  and
+  [-] get(object arg0)
+  [-] move(animate-being arg0)
+utterance: get the pillows and move them onto the couches

@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    make(object arg0)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+   -
+    pour_into(object arg0, object arg1)
+     arg0:
+      object:coffee
+       limit:
+        Only: 1
+     arg1:
+      object:mug
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] make(object arg0)
+  [-] pour_into(object arg0, object arg1)
+utterance: make coffee and pour coffee into mug

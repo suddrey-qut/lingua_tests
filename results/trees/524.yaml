@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    take(object arg0)
+     arg0:
+      and
+       -
+        object:bag
+         limit:
+          Only: 1
+       -
+        object:bowl
+         limit:
+          Only: 1
+   -
+    place(animate-being arg0)
+     arg0:
+      animate-being:pro3n
+       relation:
+        [on=object:coffee_table
+         limit:
+          Only: 1]
+tree: |
+  and
+  [-] take(object arg0)
+  [-] place(animate-being arg0)
+utterance: take the bag of chips and the bowl and place them on the coffee table

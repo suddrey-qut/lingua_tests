@@ -1,0 +1,13 @@
+frame: |-
+  grab(object arg0)
+   arg0:
+    object:ramen
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  grab(object arg0)
+utterance: grab the ramen on the table

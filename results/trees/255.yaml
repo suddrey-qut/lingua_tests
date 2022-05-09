@@ -1,0 +1,11 @@
+frame: |-
+  move_of(object arg0, object arg1)
+   arg0:
+    object:controller_off
+   arg1:
+    object:coffee_table
+     limit:
+      Only: 1
+tree: |
+  move_of(object arg0, object arg1)
+utterance: move all controllers off of the coffee table

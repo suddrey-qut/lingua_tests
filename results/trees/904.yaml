@@ -1,0 +1,11 @@
+frame: |-
+  object:place
+   relation:
+    [in=object:frying_pan
+     limit:
+      Only: 1]
+   limit:
+    Only: 1
+tree: |
+  Ground Objects
+utterance: place in frying pan

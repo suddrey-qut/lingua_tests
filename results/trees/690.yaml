@@ -1,0 +1,25 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:book
+   -
+    and
+     -
+      close(object arg0)
+       arg0:
+        object:television
+         limit:
+          Only: 1
+     -
+      prepare(object arg0)
+       arg0:
+        object:food
+tree: |
+  and
+  [-] get(object arg0)
+  [-] and
+      [-] close(object arg0)
+      [-] prepare(object arg0)
+utterance: get the books and close the tv and prepare food

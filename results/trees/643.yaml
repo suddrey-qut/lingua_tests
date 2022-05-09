@@ -1,0 +1,13 @@
+frame: |-
+  replace(object arg0)
+   arg0:
+    object:ice_cream
+     relation:
+      [in=object:freezer
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  replace(object arg0)
+utterance: replace ice cream in freezer

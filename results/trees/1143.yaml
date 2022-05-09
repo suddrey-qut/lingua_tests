@@ -1,0 +1,17 @@
+frame: |-
+  put(object arg0, object arg1)
+   arg0:
+    object:book
+     relation:
+      [on=object:coffee_table
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+   arg1:
+    object:guiness
+     limit:
+      Only: 1
+tree: |
+  put(object arg0, object arg1)
+utterance: put guiness book on coffee table

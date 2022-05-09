@@ -1,0 +1,17 @@
+frame: |-
+  place_into(object arg0, object arg1)
+   arg0:
+    and
+     -
+      object:glassware
+       limit:
+        Only: 1
+     -
+      object:mug
+   arg1:
+    object:sink
+     limit:
+      Only: 1
+tree: |
+  place_into(object arg0, object arg1)
+utterance: place the glassware and mugs into the sink

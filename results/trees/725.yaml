@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    put_into(object arg0, object arg1)
+     arg0:
+      object:music_cd
+       limit:
+        Any: 1
+     arg1:
+      object:xbox
+       limit:
+        Only: 1
+   -
+    play()
+tree: |
+  and
+  [-] put_into(object arg0, object arg1)
+  [-] play()
+utterance: put a music cd into the xbox and play

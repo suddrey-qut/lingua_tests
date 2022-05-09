@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    pick_up(object arg0)
+     arg0:
+      object:book
+   -
+    put(object arg0, animate-being arg1)
+     arg0:
+      object:desk
+       limit:
+        Only: 1
+     arg1:
+      animate-being:pro3n
+tree: |
+  and
+  [-] pick_up(object arg0)
+  [-] put(object arg0, animate-being arg1)
+utterance: pick up the books and put them all on the desk

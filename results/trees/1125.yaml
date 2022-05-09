@@ -1,0 +1,21 @@
+frame: |-
+  serve(object arg0)
+   arg0:
+    and
+     -
+      object:ramen
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:spoon
+         limit:
+          Only: 1
+       -
+        object:mug
+         limit:
+          Only: 1
+tree: |
+  serve(object arg0)
+utterance: serve the ramen  , spoon  , and mug

@@ -1,0 +1,35 @@
+frame: |-
+  wash(object arg0)
+   arg0:
+    and
+     -
+      object:mug
+       limit:
+        Only: 1
+     -
+      and
+       -
+        object:cup
+         attributes:
+          [state=long]
+       -
+        and
+         -
+          object:spoon
+           limit:
+            Only: 1
+         -
+          and
+           -
+            object:bowl
+             limit:
+              Only: 1
+           -
+            object:place
+             relation:
+              [in=object:cabinet]
+             limit:
+              Only: 1
+tree: |
+  wash(object arg0)
+utterance: wash mug  , long cups  , spoon and bowl and place in cabinets

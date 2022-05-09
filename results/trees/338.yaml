@@ -1,0 +1,11 @@
+frame: |-
+  move(object arg0)
+   arg0:
+    object:pillow
+     attributes:
+      [state=available]
+     relation:
+      [on=object:couch]
+tree: |
+  move(object arg0)
+utterance: move all available pillows onto the couches

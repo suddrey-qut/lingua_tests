@@ -1,0 +1,11 @@
+frame: |-
+  open(object arg0)
+   arg0:
+    object:drinks
+     relation:
+      [on=object:table
+       limit:
+        Only: 1]
+tree: |
+  open(object arg0)
+utterance: open both drinks on the table

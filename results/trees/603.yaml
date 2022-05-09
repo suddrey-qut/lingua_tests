@@ -1,0 +1,21 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      object:pillow
+       relation:
+        [from=object:shelf
+         limit:
+          Only: 1]
+   -
+    arrange_on(object arg0)
+     arg0:
+      object:couch
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] arrange_on(object arg0)
+utterance: get pillows from shelf and arrange on couch

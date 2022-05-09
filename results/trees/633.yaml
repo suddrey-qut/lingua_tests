@@ -1,0 +1,25 @@
+frame: |-
+  take(object arg0)
+   arg0:
+    and
+     -
+      object:book
+       attributes:
+        [color=brown]
+       limit:
+        Only: 1
+     -
+      object:place
+       relation:
+        [on=object:shelf
+         relation:
+          [with=object:cd
+           limit:
+            Only: 1]
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+tree: |
+  take(object arg0)
+utterance: take brown book and place on shelf with cd

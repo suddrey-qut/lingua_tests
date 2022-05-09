@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:bag
+       limit:
+        Only: 1
+   -
+    pour_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:plate
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] pour_on(object arg0, object arg1)
+utterance: open the bag of chips and pour it onto the plate

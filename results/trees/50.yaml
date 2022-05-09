@@ -1,0 +1,15 @@
+frame: |-
+  place(object arg0)
+   arg0:
+    object:television_remote
+     relation:
+      [on=object:table
+       attributes:
+        [state=center]
+       limit:
+        Only: 1]
+     limit:
+      Only: 1
+tree: |
+  place(object arg0)
+utterance: place the tv remote on the center table

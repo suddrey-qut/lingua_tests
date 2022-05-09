@@ -1,0 +1,33 @@
+frame: |-
+  and
+   -
+    get(object arg0)
+     arg0:
+      and
+       -
+        object:ice_cream
+         limit:
+          Only: 1
+       -
+        object:syrup
+         relation:
+          [from=object:counter
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+   -
+    put_on(object arg0, object arg1)
+     arg0:
+      anaphora:it
+       limit:
+        Only: 1
+     arg1:
+      object:plate
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] get(object arg0)
+  [-] put_on(object arg0, object arg1)
+utterance: get the ice cream and the syrup from the counter and put it on the plate

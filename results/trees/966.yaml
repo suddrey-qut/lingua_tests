@@ -1,0 +1,9 @@
+frame: |-
+  move_to(object arg0)
+   arg0:
+    object:counter
+     limit:
+      Only: 1
+tree: |
+  move_to(object arg0)
+utterance: move to counter

@@ -1,0 +1,25 @@
+frame: |-
+  dump(object arg0)
+   arg0:
+    and
+     -
+      object:contents
+     -
+      and
+       -
+        object:cup
+         attributes:
+          [state=long]
+         limit:
+          Only: 1
+       -
+        object:pot
+         relation:
+          [in=object:sink
+           limit:
+            Only: 1]
+         limit:
+          Only: 1
+tree: |
+  dump(object arg0)
+utterance: dump contents of mug  , long cup  , and pot in sink

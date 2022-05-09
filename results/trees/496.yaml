@@ -1,0 +1,27 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:refrigerator
+       limit:
+        Only: 1
+   -
+    scoop(object arg0, object arg1)
+     arg0:
+      object:cream
+       relation:
+        [on=object:plate
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+     arg1:
+      object:ice
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] scoop(object arg0, object arg1)
+utterance: open the refrigerator and scoop some ice cream onto the plate

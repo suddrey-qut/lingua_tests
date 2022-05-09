@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    find(object arg0)
+     arg0:
+      object:television_remote
+       limit:
+        Only: 1
+   -
+    turn(object arg0)
+     arg0:
+      object:off_television
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] find(object arg0)
+  [-] turn(object arg0)
+utterance: find television remote and turn off television

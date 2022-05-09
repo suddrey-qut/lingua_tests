@@ -1,0 +1,23 @@
+frame: |-
+  and
+   -
+    place(object arg0)
+     arg0:
+      object:pot
+       relation:
+        [on=object:stove
+         limit:
+          Only: 1]
+       limit:
+        Only: 1
+   -
+    turn_on(object arg0)
+     arg0:
+      object:stove
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] place(object arg0)
+  [-] turn_on(object arg0)
+utterance: place pot on the stove and turn the stove on

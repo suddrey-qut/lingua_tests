@@ -1,0 +1,19 @@
+frame: |-
+  and
+   -
+    open(object arg0)
+     arg0:
+      object:freezer_door
+       limit:
+        Only: 1
+   -
+    grab(object arg0)
+     arg0:
+      object:ice_cream
+       limit:
+        Only: 1
+tree: |
+  and
+  [-] open(object arg0)
+  [-] grab(object arg0)
+utterance: open freezer door and grab ice cream
